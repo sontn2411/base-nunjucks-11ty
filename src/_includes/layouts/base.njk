@@ -11,9 +11,14 @@
 
 <body class="bg-gray-50 text-gray-900 font-body custom-scss">
 
+
+  {% include "components/navbar.njk" %}
+
   {{ content | safe }}
 
+
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/flowbite.min.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,22 @@
 [
   {
-    "label": "Home",
-    "url": "/"
+    "label": "Giới thiệu",
+    "url": "/about/",
+    "icon": "about"
   },
   {
-    "label": "About",
-    "url": "/about/"
+    "label": "Dịch vụ",
+    "url": "/services/",
+    "icon": "services"
+  },
+  {
+    "label": "Đội ngũ",
+    "url": "/doctors/",
+    "icon": "doctors"
+  },
+  {
+    "label": "Liên hệ",
+    "url": "/contact/",
+    "icon": "location"
   }
 ]

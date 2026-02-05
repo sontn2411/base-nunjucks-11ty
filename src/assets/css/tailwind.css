@@ -1,6 +1,21 @@
 @import 'tailwindcss';
 
+@import './fonts.css';
+
+:root {
+  --color-primary: #349f87;
+}
+
 @theme {
-  --font-display: 'Satoshi', 'sans-serif';
-  --font-body: 'Inter', 'sans-serif';
+  --font-display: 'Montserrat', 'sans-serif';
+  --font-body: 'Montserrat', 'sans-serif';
+
+  --color-primary: var(--color-primary);
+  --color-color-2: #f5f5ee;
+  --color-color-3: #c4c2be;
+  --color-color-4: #f5f5ee;
+}
+
+body {
+  background-color: #f5f5ee;
 }
