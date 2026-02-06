@@ -1,0 +1,38 @@
+<section class="py-24 ">
+  <div class="container mx-auto px-4 max-w-7xl ">
+    <div class="flex flex-col md:flex-row gap-10">
+      <!-- Title Column -->
+      <div class="md:w-1/4 relative flex flex-col items-center md:items-start text-center md:text-left">
+        <span class="text-primary/80 font-bold tracking-widest text-xs uppercase mb-3 block">Tin tức & Sự kiện</span>
+        <h2 class="text-4xl font-bold text-gray-900 leading-tight mb-6">Thông báo <br/> <span class="text-primary">Mới nhất</span></h2>
+        <div class="h-1.5 w-16 bg-color-6 rounded-full"></div>
+      </div>
+
+      <!-- News List Column -->
+      <div class="md:w-3/4">
+        <div class="flex flex-col gap-2">
+          {% for item in news %}
+          <a href="#" class="group flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-gray-100 pb-4 last:border-0  transition-colors rounded-lg p-2 -mx-2">
+            <time class="text-gray-500 font-medium min-w-[100px]">{{ item.date }}</time>
+            <span class="inline-block border px-3 py-1 bg-white group-hover:bg-primary group-hover:text-white text-primary text-xs font-semibold rounded-lg min-w-[100px] text-center w-fit">
+              {{ item.tag }}
+            </span>
+            <h3 class="text-gray-800 font-medium group-hover:text-primary transition-colors flex-1 truncate">
+              {{ item.title }}
+            </h3>
+          </a>
+          {% endfor %}
+        </div>
+         <div class="flex  justify-end">
+            <a href="/news/" class="flex items-center group gap-2 mt-6   text-gray-800 text-sm  duration-300 hover:text-primary/80 font-medium transition-colors">
+          Xem tất cả 
+          <span class='bg-primary h-8 w-8 rounded-full border border-primary group-hover:translate-x-1.5 duration-300  group-hover:bg-white group-hover:text-primary transition-all flex items-center justify-center text-white'>
+            {{ icon('arrow-right', 'w-4 h-4') }}
+          </span>
+        </a>
+          </div>
+      </div>
+    
+    </div>
+  </div>
+</section>

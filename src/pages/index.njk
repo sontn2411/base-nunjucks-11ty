@@ -7,107 +7,21 @@ permalink: /
 {% from "components/icons.njk" import icon %}
 
 
-<main class=" min-h-[2000px]  pt-10">
+<main class="min-h-[2000px] pt-20 pb-20">
   {# section banner #}
-  <section class=' grid grid-cols-12 gap-10 px-12 min-h-screen'>
-    <div class=' col-span-3 flex flex-col gap-2'>
-      <div>
-      <img src="/assets/images/logo-doc.png" class=" w-full h-40 object-contain " alt="Logo" />
-      </div>
-      <ul class ='grid grid-cols-2 gap-4 py-2'>
-        {% for item in navigation %}
-        <li class='flex flex-col items-center bg-white rounded-xl p-4'>
-            {{ icon(item.icon, "h-8 w-8 text-primary group-hover:text-primary/80") }}
-          <a href="{{ item.url }}" class='  text-sm font-medium text-primary mt-2'>{{ item.label }}</a>
-        </li>
-        {% endfor %}
+  {% include "components/home/banner.njk" %}
 
-        <li class=''> 
-          <a href="/booking/" class="bg-primary h-12  hover:bg-primary/90 text-white w-full font-medium rounded-lg text-sm flex justify-center items-center  focus:outline-none shadow-lg hover:shadow-xl transition-all">
-        Đặt lịch ngay
-      </a></li>
-      <li > 
-        <div class="flex gap-1 h-12 items-center justify-center bg-[#002A1D] text-white p-2 rounded-lg">
-          {{ icon("phone", "h-5 w-5") }}
-          <a href="tel:0123456789" class="text-xs font-bold ">0123 456 789</a>
-        </div>      
-      </li>
-      </ul>
+  {# section news #}
+  {% include "components/home/news.njk" %}
 
-      <div class="mt-8 px-2">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="text-primary border-b border-gray-300">
-              <th class="pb-3 pt-2 font-bold text-left ">Giờ làm việc</th>
-              <th class="pb-3 pt-2 font-medium text-center">T2</th>
-              <th class="pb-3 pt-2 font-medium text-center">T3</th>
-              <th class="pb-3 pt-2 font-medium text-center">T4</th>
-              <th class="pb-3 pt-2 font-medium text-center">T5</th>
-              <th class="pb-3 pt-2 font-medium text-center">T6</th>
-              <th class="pb-3 pt-2 font-medium text-center">T7</th>
-              <th class="pb-3 pt-2 font-medium text-center">CN</th>
-            </tr>
-          </thead>
-          <tbody class="text-gray-600">
-            <tr class="border-b border-gray-100">
-              <td class="py-3 font-medium whitespace-nowrap text-primary">09:00 - 12:30</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-gray-400">—</td>
-            </tr>
-            <tr>
-              <td class="py-3 font-medium whitespace-nowrap text-primary">14:30 - 18:00</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-gray-400">—</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-primary">○</td>
-              <td class="py-3 text-center text-gray-400">—</td>
-              <td class="py-3 text-center text-gray-400">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  {# section about #}
+  {% include "components/home/about.njk" %}
 
-    </div>
-    </div>
-    <div class='col-span-9'>
-      <div id="fade-carousel" class="relative w-full h-full">
-        <!-- Carousel wrapper -->
-        <div class="relative overflow-hidden rounded-2xl  h-[calc(100vh-250px)]  ">
-        
-          {# <div class="absolute top-0 left-0 w-full h-full z-20 pointer-events-none">
-            <div class="w-full h-full bg-[#f5f5ee]" style="clip-path: polygon(0 0, 101% 0, 0 45%);"></div>
-          </div> #}
+  {# section features #}
+  {% include "components/home/features.njk" %}
 
-          {% set banners = [
-            "/assets/images/banner1.png",
-            "/assets/images/banner2.png",
-            "/assets/images/banner3.png",
-            "/assets/images/banner4.png"
-          ] %}
 
-          {% for banner in banners %}
-          <!-- Item {{ loop.index }} -->
-          <div class="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out   {{ 'opacity-100 z-10' if loop.first else 'opacity-0 z-0' }}" data-carousel-item>
-            <img src="{{ banner }}" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner {{ loop.index }}">
-          </div>
-          {% endfor %}
 
-           <!-- Slider indicators -->
-        <div class="absolute z-30 flex flex-col gap-4 bottom-1/2 right-10 ">
-          {% for banner in banners %}
-          <button type="button" class="w-3 h-3 rounded-full {{ 'bg-primary' if loop.first else 'bg-white' }} transition-colors" data-slide-index="{{ loop.index0 }}" aria-label="Slide {{ loop.index }}"></button>
-          {% endfor %}
-        </div>
-        </div>
-        
-       
-      </div>
-    </div>
-  </section>
+
+  
 </main>

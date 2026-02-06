@@ -8,7 +8,8 @@
     "serve": "npm-run-all clean serve:*",
     "dev": "NODE_ENV=development npx @11ty/eleventy --serve",
     "build:eleventy": "cross-env NODE_ENV=production npx @11ty/eleventy",
-    "build": "npm-run-all --parallel clean build:*"
+    "build": "npm-run-all --parallel clean build:*",
+    "start": "npm-run-all clean serve:*"
   },
   "keywords": [],
   "author": "",

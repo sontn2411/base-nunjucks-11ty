@@ -1,0 +1,26 @@
+[
+  {
+    "src": "/assets/images/banner1.png",
+    "title": "Chăm sóc sức khỏe toàn diện",
+    "desc": "Đội ngũ bác sĩ chuyên nghiệp, tận tâm vì sức khỏe của bạn và gia đình.",
+    "cta": "Tìm hiểu thêm"
+  },
+  {
+    "src": "/assets/images/banner2.png",
+    "title": "Công nghệ y tế tiên tiến",
+    "desc": "Trang thiết bị hiện đại, hỗ trợ chẩn đoán và điều trị chính xác.",
+    "cta": "Dịch vụ"
+  },
+  {
+    "src": "/assets/images/banner3.png",
+    "title": "Đặt lịch khám dễ dàng",
+    "desc": "Tiết kiệm thời gian, chủ động lịch trình với hệ thống đặt lịch online.",
+    "cta": "Đặt lịch ngay"
+  },
+  {
+    "src": "/assets/images/banner4.png",
+    "title": "Tư vấn sức khỏe 24/7",
+    "desc": "Luôn sẵn sàng lắng nghe và giải đáp mọi thắc mắc của bạn.",
+    "cta": "Liên hệ"
+  }
+]

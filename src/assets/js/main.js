@@ -2,112 +2,72 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById('main-header');
 
   if (header) {
+    const banner = document.getElementById('home-banner');
+    const triggerHeight = banner ? banner.offsetHeight - 100 : window.innerHeight;
+
+    // Initial check: Ensure header is visible on mobile immediately
+    if (window.innerWidth < 1024) {
+      header.classList.remove('-translate-y-full');
+    }
+
     window.addEventListener('scroll', () => {
-      if (window.scrollY > window.innerHeight) {
-        header.classList.remove('-translate-y-full');
+      // Only hide/show header on desktop (lg breakpoint = 1024px)
+      if (window.innerWidth >= 1024) {
+        if (window.scrollY > triggerHeight) {
+          header.classList.remove('-translate-y-full');
+        } else {
+          header.classList.add('-translate-y-full');
+        }
       } else {
-        header.classList.add('-translate-y-full');
+        // Ensure header is always visible on mobile
+        header.classList.remove('-translate-y-full');
+      }
+    });
+
+    // Reset header position on resize to ensure it doesn't get stuck hidden
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 1024) {
+        header.classList.remove('-translate-y-full');
       }
     });
   }
 
-  // Fade Carousel Logic
-  const carousel = document.getElementById('fade-carousel');
-  if (carousel) {
-    const items = carousel.querySelectorAll('[data-carousel-item]');
-    const indicators = carousel.querySelectorAll('[data-slide-index]');
-    let currentIndex = 0;
-    const intervalTime = 5000;
+  // Mobile Menu Logic
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconMenu = document.getElementById('icon-menu');
+  const iconClose = document.getElementById('icon-close');
 
-    const showSlide = (index) => {
-      items.forEach((item, i) => {
-        if (i === index) {
-          item.classList.remove('opacity-0', 'z-0');
-          item.classList.add('opacity-100', 'z-10');
-        } else {
-          item.classList.remove('opacity-100', 'z-10');
-          item.classList.add('opacity-0', 'z-0');
-        }
-      });
+  if (mobileMenuBtn && mobileMenu) {
+    function toggleMenu() {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      // console.log(isHidden);
+      if (isHidden) {
+        // Open menu
+        mobileMenu.classList.remove('hidden');
+        if (iconMenu) iconMenu.classList.add('hidden');
+        if (iconClose) iconClose.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
 
-      indicators.forEach((indicator, i) => {
-        if (i === index) {
-          indicator.classList.remove('bg-white');
-          indicator.classList.add('bg-primary');
-        } else {
-          indicator.classList.remove('bg-primary');
-          indicator.classList.add('bg-white');
-        }
-      });
-    };
+        // Trigger fade in
+        setTimeout(() => {
+          mobileMenu.classList.remove('opacity-0');
+        }, 10);
+      } else {
+        // Close menu
+        mobileMenu.classList.add('opacity-0');
 
-    const nextSlide = () => {
-      currentIndex = (currentIndex + 1) % items.length;
-      showSlide(currentIndex);
-    };
+        if (iconMenu) iconMenu.classList.remove('hidden');
+        if (iconClose) iconClose.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
 
-    const prevSlide = () => {
-      currentIndex = (currentIndex - 1 + items.length) % items.length;
-      showSlide(currentIndex);
-    };
-
-    let interval = setInterval(nextSlide, intervalTime);
-
-    indicators.forEach((indicator, i) => {
-      indicator.addEventListener('click', () => {
-        clearInterval(interval);
-        currentIndex = i;
-        showSlide(currentIndex);
-        interval = setInterval(nextSlide, intervalTime);
-      });
-    });
-
-    // Swipe Support
-    let startX = 0;
-    let isDragging = false;
-
-    // Touch Events
-    carousel.addEventListener('touchstart', (e) => {
-      startX = e.changedTouches[0].screenX;
-      clearInterval(interval);
-    }, { passive: true });
-
-    carousel.addEventListener('touchend', (e) => {
-      const endX = e.changedTouches[0].screenX;
-      handleSwipe(startX, endX);
-      interval = setInterval(nextSlide, intervalTime);
-    });
-
-    // Mouse Events
-    carousel.addEventListener('mousedown', (e) => {
-      startX = e.clientX;
-      isDragging = true;
-      clearInterval(interval);
-      e.preventDefault();
-    });
-
-    carousel.addEventListener('mouseup', (e) => {
-      if (!isDragging) return;
-      isDragging = false;
-      const endX = e.clientX;
-      handleSwipe(startX, endX);
-      interval = setInterval(nextSlide, intervalTime);
-    });
-
-    carousel.addEventListener('mouseleave', () => {
-      if (isDragging) {
-        isDragging = false;
-        interval = setInterval(nextSlide, intervalTime);
+        // Wait for transition to finish before hiding
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
       }
-    });
+    }
 
-    const handleSwipe = (start, end) => {
-      const threshold = 50;
-      if (start - end > threshold) {
-        nextSlide();
-      } else if (end - start > threshold) {
-        prevSlide();
-      }
-    };
+    mobileMenuBtn.addEventListener('click', toggleMenu);
   }
 });

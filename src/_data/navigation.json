@@ -2,21 +2,33 @@
   {
     "label": "Giới thiệu",
     "url": "/about/",
-    "icon": "about"
+    "icon": "icn-home"
   },
   {
     "label": "Dịch vụ",
     "url": "/services/",
-    "icon": "services"
+    "icon": "icn-outpatient"
   },
   {
     "label": "Đội ngũ",
     "url": "/doctors/",
-    "icon": "doctors"
+    "icon": "icn-medical"
   },
   {
     "label": "Liên hệ",
     "url": "/contact/",
-    "icon": "location"
+    "icon": "icn-access"
+  },
+  {
+    "label": "Tin tức",
+    "url": "/news/",
+    "icon": "calendar",
+    "hideInHeader": true
+  },
+  {
+    "label": "Bảng giá",
+    "url": "/price/",
+    "icon": "services",
+    "hideInHeader": true
   }
 ]

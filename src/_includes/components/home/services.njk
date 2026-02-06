@@ -1,0 +1,47 @@
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-2">Dịch vụ khám chữa bệnh</h2>
+      <p class="text-primary font-semibold tracking-wider text-sm uppercase">Medical Information</p>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Ngoài chuyên khoa Tiêu hóa và Ngoại khoa, chúng tôi còn cung cấp dịch vụ Nội khoa tổng quát, Hậu môn trực tràng, Nội soi, Tiêm chủng và Khám sức khỏe định kỳ.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+      {% set services = [
+        { name: "Tiêu hóa", icon: "services", url: "#" },
+        { name: "Nội soi", icon: "doctors", url: "#" },
+        { name: "Ngoại khoa", icon: "home", url: "#" },
+        { name: "Nội khoa", icon: "about", url: "#" },
+        { name: "Hậu môn trực tràng", icon: "location", url: "#" },
+        { name: "Tiêm chủng", icon: "calendar", url: "#" }
+      ] %}
+
+      {% for service in services %}
+      <a href="{{ service.url }}" class="group flex items-center p-6 bg-gray-50 border border-gray-100 rounded-xl hover:bg-white hover:shadow-lg hover:border-primary/20 transition-all duration-300">
+        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
+          {{ icon(service.icon, "h-6 w-6") }}
+        </div>
+        <span class="ml-4 text-lg font-bold text-gray-800 group-hover:text-primary transition-colors">
+          {{ service.name }}
+        </span>
+        <div class="ml-auto opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300 text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/services/" class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-primary rounded-lg hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all">
+        Xem chi tiết dịch vụ
+        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

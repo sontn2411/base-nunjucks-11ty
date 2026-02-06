@@ -1,21 +1,63 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@import './fonts.css';
+@import "./fonts.css";
 
 :root {
   --color-primary: #349f87;
 }
 
 @theme {
-  --font-display: 'Montserrat', 'sans-serif';
-  --font-body: 'Montserrat', 'sans-serif';
+  --font-display: "Montserrat", "sans-serif";
+  --font-body: "Montserrat", "sans-serif";
 
   --color-primary: var(--color-primary);
   --color-color-2: #f5f5ee;
   --color-color-3: #c4c2be;
   --color-color-4: #f5f5ee;
+  --color-color-5: #efa661;
+  --color-color-6: #ffb5a7;
+  --color-color-7: #e6e6d3;
 }
 
 body {
   background-color: #f5f5ee;
+}
+
+.cloud {
+  background-image: url(/assets/images/img-cloud01.png);
+  position: absolute;
+  z-index: 0;
+  height: 161px;
+  width: 100%;
+  left: 0;
+  background-size: 1440px 161px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  animation-name: moveCloud;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cloud-about01 {
+  top: 100px;
+}
+
+.cloud-about02 {
+  background-image: url(/assets/images/img-cloud02.png);
+  top: 243px;
+}
+
+.cloud-about03 {
+  background-image: url(/assets/images/img-cloud03.png);
+  top: 400px;
+}
+
+@keyframes moveCloud {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1440px 0;
+  }
 }
