@@ -11,17 +11,42 @@ permalink: /
   {# section banner #}
   {% include "components/home/banner.njk" %}
 
+
+
   {# section news #}
   {% include "components/home/news.njk" %}
+
 
   {# section about #}
   {% include "components/home/about.njk" %}
 
+ 
+
   {# section features #}
+
   {% include "components/home/features.njk" %}
 
+ {# section medical info #}
+  {% include "components/home/medical-info.njk" %}
 
+  {# section partners #}
+  {% include "components/home/partners.njk" %}
 
+  {# section testimonials #}
+  {% include "components/home/testimonials.njk" %}
 
-  
+  <div class="relative">
+    <div class="topFooter_bg"></div>
+    <div class="cloud cloud-about01 pointer-events-none select-none"></div>
+    <div class="cloud cloud-about02 pointer-events-none select-none"></div>
+    <div class="cloud cloud-about03 pointer-events-none select-none"></div>
+
+    {# section gallery #}
+    {% include "components/home/gallery.njk" %}
+
+    {% include "components/footer.njk" %}
+  </div>
+   
+ 
+
 </main>

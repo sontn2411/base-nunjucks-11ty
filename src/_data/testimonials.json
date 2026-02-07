@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Nguyễn Văn A",
+        "role": "Bệnh nhân",
+        "avatar": "https://i.pravatar.cc/150?img=68",
+        "rating": 5,
+        "content": "Dịch vụ tuyệt vời, bác sĩ rất tận tâm và chu đáo. Tôi cảm thấy rất yên tâm khi khám chữa bệnh tại đây."
+    },
+    {
+        "name": "Trần Thị B",
+        "role": "Bệnh nhân",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 5,
+        "content": "Cơ sở vật chất hiện đại, sạch sẽ. Quy trình khám nhanh chóng, không phải chờ đợi lâu. Rất hài lòng!"
+    },
+    {
+        "name": "Lê Văn C",
+        "role": "Bệnh nhân",
+        "avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 4,
+        "content": "Đội ngũ y tá nhiệt tình, hướng dẫn chi tiết. Bác sĩ tư vấn kỹ càng, giải thích rõ ràng bệnh tình."
+    }
+]
