@@ -1,52 +1,57 @@
 <section class="py-12 md:py-24 relative  overflow-hidden animate-on-scroll">
   <div class="mb-12 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-primary mb-2">Thư viện hình ảnh</h2>
-      <p class="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase">GALLERY</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-2">
+      Thư viện hình ảnh
+    </h2>
+    <p class="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase">
+      GALLERY
+    </p>
   </div>
 
   <div class="relative w-full">
-    <div class="flex whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+    <div
+      class="flex whitespace-nowrap animate-marquee hover:[animation-play-state:paused]"
+    >
       <!-- Image Set 1 -->
       {% for i in range(0, 5) %}
-      <div class="mx-4 w-[300px] md:w-[400px] h-[200px] md:h-[280px] flex-shrink-0 relative group transform transition-all duration-300">
-        <div class="w-full h-full overflow-hidden rounded-[30px] shadow-md relative">
-           <img src="https://picsum.photos/800/600?random={{ i }}" alt="Gallery Image {{ i }}" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-500">
-           <!-- Overlay on hover -->
-           <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div
+          class="mx-4 w-[300px] md:w-[400px] h-[200px] md:h-[280px] flex-shrink-0 relative group transform transition-all duration-300"
+        >
+          <div
+            class="w-full h-full overflow-hidden rounded-[30px] shadow-md relative"
+          >
+            <img
+              src="https://picsum.photos/800/600?random={{ i }}"
+              alt="Gallery Image {{ i }}"
+              class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-500"
+            />
+            <!-- Overlay on hover -->
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+          </div>
         </div>
-      </div>
       {% endfor %}
 
       <!-- Image Set 2 (Duplicate for infinite scroll) -->
       {% for i in range(0, 5) %}
-      <div class="mx-4 w-[300px] md:w-[400px] h-[200px] md:h-[280px] flex-shrink-0 relative group transform  transition-all duration-300">
-        <div class="w-full h-full overflow-hidden rounded-[30px] shadow-md relative">
-           <img src="https://picsum.photos/800/600?random={{ i + 5 }}" alt="Gallery Image {{ i }}" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-500">
-           <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div
+          class="mx-4 w-[300px] md:w-[400px] h-[200px] md:h-[280px] flex-shrink-0 relative group transform  transition-all duration-300"
+        >
+          <div
+            class="w-full h-full overflow-hidden rounded-[30px] shadow-md relative"
+          >
+            <img
+              src="https://picsum.photos/800/600?random={{ i + 5 }}"
+              alt="Gallery Image {{ i }}"
+              class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+          </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
-
-
-
-  <style>
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); } /* Adjust based on content width, usually -50% if duplicated */
-    }
-    .animate-marquee {
-      animation: marquee 25s linear infinite;
-    }
-    /* Fix for the marquee width: The total width of children is (400px + 32px margin) * 10 = 4320px approx. 
-       translateX(-50%) should work if we have exactly 2 sets. 
-       Wait, if I have 2 sets of 5 images, and I move -100% of the PARENT? No.
-       Usually marquee moves -50% (the width of one set).
-    */
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); } 
-    }
-  </style>
 </section>

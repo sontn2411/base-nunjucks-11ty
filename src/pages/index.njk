@@ -3,30 +3,24 @@ layout: layouts/base.njk
 title: Medicare Clinic - Nơi bạn tìm thấy sự chăm sóc tận tâm
 permalink: /
 ---
+
 {% from "components/card.njk" import card %}
 {% from "components/icons.njk" import icon %}
-
 
 <main class="min-h-[2000px] pt-20 pb-20">
   {# section banner #}
   {% include "components/home/banner.njk" %}
 
-
-
   {# section news #}
   {% include "components/home/news.njk" %}
-
 
   {# section about #}
   {% include "components/home/about.njk" %}
 
- 
-
   {# section features #}
-
   {% include "components/home/features.njk" %}
 
- {# section medical info #}
+  {# section medical info #}
   {% include "components/home/medical-info.njk" %}
 
   {# section partners #}
@@ -43,10 +37,6 @@ permalink: /
 
     {# section gallery #}
     {% include "components/home/gallery.njk" %}
-
     {% include "components/footer.njk" %}
   </div>
-   
- 
-
 </main>

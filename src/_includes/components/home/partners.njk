@@ -1,15 +1,29 @@
 <section class="py-16 md:py-24  animate-on-scroll border-t border-gray-50">
   <div class="container mx-auto px-4 max-w-7xl">
     <div class="text-center mb-12">
-       <span class="text-primary/80 font-bold tracking-widest text-xs uppercase mb-3 block">Đối tác tin cậy</span>
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Liên kết Bảo hiểm & Đối tác Y tế</h2>
+      <span
+        class="text-primary/80 font-bold tracking-widest text-xs uppercase mb-3 block"
+        >Đối tác tin cậy</span
+      >
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+        Liên kết Bảo hiểm & Đối tác Y tế
+      </h2>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-90">
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center opacity-90"
+    >
       {% for partner in partners %}
-      <div class="group w-full h-24 flex items-center justify-center p-4  transition-all duration-500 cursor-pointer hover:bg-gray-50 rounded-xl relative">
-        <img src="{{ partner.logo }}" alt="{{ partner.name }}" class="max-w-[120px] max-h-[60px] w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-110" title="{{ partner.name }}">
-      </div>
+        <div
+          class="group w-full h-24 flex items-center justify-center p-4  transition-all duration-500 cursor-pointer hover:bg-gray-50 rounded-xl relative"
+        >
+          <img
+            src="{{ partner.logo }}"
+            alt="{{ partner.name }}"
+            class="max-w-[120px] max-h-[60px] w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-110"
+            title="{{ partner.name }}"
+          />
+        </div>
       {% endfor %}
     </div>
   </div>

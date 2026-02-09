@@ -1,90 +1,134 @@
-
 {% from "components/icons.njk" import icon %}
 
-<nav id="main-header" class="bg-color-2 min-h-[90px] w-full flex items-center  fixed top-0 left-0 z-50 transition-transform duration-300 -translate-y-full">
-  <div class="container mx-auto px-4 max-w-7xl flex flex-wrap justify-between items-center relative">
+<nav
+  id="main-header"
+  class="bg-color-2 min-h-[90px] w-full flex items-center  fixed top-0 left-0 z-50 transition-transform duration-300 -translate-y-full"
+>
+  <div
+    class="container mx-auto px-4 max-w-7xl flex flex-wrap justify-between items-center relative"
+  >
     <a href="/" class="flex items-center gap-2">
-      <img src="/assets/images/logo-ngang.png" class="h-16 w-auto object-contain rounded" alt="Logo" />
+      <img
+        src="/assets/images/logo-ngang.png"
+        class="h-16 w-auto object-contain rounded"
+        alt="Logo"
+      />
     </a>
-    <ul class="absolute left-1/2 transform -translate-x-1/2  items-center h-full hidden lg:flex">
+    <ul
+      class="absolute left-1/2 transform -translate-x-1/2  items-center h-full hidden lg:flex"
+    >
       {% for item in navigation %}
-      {% if not item.hideInHeader %}
-      <li class="h-full flex items-center">
-        <div class="h-8 w-px bg-color-3"></div>
-        <a href="{{ item.url }}" class="flex flex-col items-center gap-1 text-gray-700 hover:text-primary transition-colors group px-6">
-          {{ icon(item.icon, "h-6 w-6 text-primary group-hover:text-primary/80") }}
-          <span class="text-xs font-semibold uppercase tracking-wide">{{ item.label }}</span>
-        </a>
-        {% if loop.last %}
-        <div class="h-8 w-px bg-color-3"></div>
+        {% if not item.hideInHeader %}
+          <li class="h-full flex items-center">
+            <div class="h-8 w-px bg-color-3"></div>
+            <a
+              href="{{ item.url }}"
+              class="flex flex-col items-center gap-1 text-gray-700 hover:text-primary transition-colors group px-6"
+            >
+              {{ icon(item.icon, "h-6 w-6 text-primary group-hover:text-primary/80") }}
+              <span class="text-xs font-semibold uppercase tracking-wide"
+                >{{ item.label }}</span
+              >
+            </a>
+            {% if loop.last %}
+              <div class="h-8 w-px bg-color-3"></div>
+            {% endif %}
+          </li>
         {% endif %}
-      </li>
-      {% endif %}
       {% endfor %}
     </ul>
     <div class="flex items-center gap-4 lg:gap-6 ml-auto">
-      <a href="/booking/" class="bg-primary hover:bg-primary/90 text-white font-medium rounded-lg text-sm px-4 py-2 lg:px-6 lg:py-2.5 focus:outline-none shadow-lg hover:shadow-xl transition-all hidden sm:block">
+      <a
+        href="/booking/"
+        class="bg-primary hover:bg-primary/90 text-white font-medium rounded-lg text-sm px-4 py-2 lg:px-6 lg:py-2.5 focus:outline-none shadow-lg hover:shadow-xl transition-all hidden sm:block"
+      >
         Đặt lịch ngay
       </a>
-      
+
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 bg-primary rounded-full text-white hover:text-primary transition-colors focus:outline-none">
-        <div id="icon-menu">
-          {{ icon('menu', 'w-8 h-8') }}
-        </div>
-        <div id="icon-close" class="hidden">
-          {{ icon('close', 'w-8 h-8') }}
-        </div>
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 bg-primary rounded-full text-white hover:text-primary transition-colors focus:outline-none"
+      >
+        <div id="icon-menu">{{ icon('menu', 'w-8 h-8') }}</div>
+        <div id="icon-close" class="hidden">{{ icon('close', 'w-8 h-8') }}</div>
       </button>
 
       <div class="items-center gap-2 group cursor-pointer hidden xl:flex">
-        <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <div
+          class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+        >
           {{ icon("phone", "h-5 w-5") }}
         </div>
         <div class="flex flex-col">
-          <span class="text-xs text-gray-500 font-medium group-hover:text-primary transition-colors">Hotline 24/7</span>
-          <a href="tel:0123456789" class="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors">0123 456 789</a>
+          <span
+            class="text-xs text-gray-500 font-medium group-hover:text-primary transition-colors"
+            >Hotline 24/7</span
+          >
+          <a
+            href="tel:0123456789"
+            class="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors"
+            >0123 456 789</a
+          >
         </div>
       </div>
     </div>
   </div>
 
-
-
   <!-- Mobile Menu Content -->
-  <div id="mobile-menu" class="hidden fixed inset-x-0 top-[90px] bg-color-2 z-50  h-screen opacity-0 transition-all duration-300 shadow-xl border-t border-gray-100 flex flex-col max-h-[calc(100vh-90px)] overflow-y-auto">
+  <div
+    id="mobile-menu"
+    class="hidden fixed inset-x-0 top-[90px] bg-color-2 z-50  h-screen opacity-0 transition-all duration-300 shadow-xl border-t border-gray-100 flex flex-col max-h-[calc(100vh-90px)] overflow-y-auto"
+  >
     <ul class="flex flex-col p-6 gap-4">
       {% for item in navigation %}
-      {% if not item.hideInHeader %}
-      <li>
-        <a href="{{ item.url }}" class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group">
-          <div class="p-2 bg-gray-100 rounded-full group-hover:bg-primary/10 transition-colors">
-             {{ icon(item.icon, "h-6 w-6 text-gray-500 group-hover:text-primary") }}
-          </div>
-          <span class="text-base font-semibold uppercase tracking-wide">{{ item.label }}</span>
-        </a>
-      </li>
-      {% endif %}
+        {% if not item.hideInHeader %}
+          <li>
+            <a
+              href="{{ item.url }}"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2 bg-gray-100 rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                {{ icon(item.icon, "h-6 w-6 text-gray-500 group-hover:text-primary") }}
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >{{ item.label }}</span
+              >
+            </a>
+          </li>
+        {% endif %}
       {% endfor %}
-      
+
       <!-- Mobile Extra Links (that were hidden in header) -->
       {% for item in navigation %}
-      {% if item.hideInHeader %}
-      <li>
-        <a href="{{ item.url }}" class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group">
-          <div class="p-2  rounded-full group-hover:bg-primary/10 transition-colors">
-             {{ icon(item.icon, "h-6 w-6 text-gray-500 group-hover:text-primary") }}
-          </div>
-          <span class="text-base font-semibold uppercase tracking-wide">{{ item.label }}</span>
-        </a>
-      </li>
-      {% endif %}
+        {% if item.hideInHeader %}
+          <li>
+            <a
+              href="{{ item.url }}"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2  rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                {{ icon(item.icon, "h-6 w-6 text-gray-500 group-hover:text-primary") }}
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >{{ item.label }}</span
+              >
+            </a>
+          </li>
+        {% endif %}
       {% endfor %}
 
       <li class="mt-4 pt-4 border-t border-gray-100 sm:hidden">
-         <a href="/booking/" class="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-xl text-base px-6 py-3 focus:outline-none shadow-lg hover:shadow-xl transition-all">
-            Đặt lịch ngay
-          </a>
+        <a
+          href="/booking/"
+          class="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-xl text-base px-6 py-3 focus:outline-none shadow-lg hover:shadow-xl transition-all"
+        >
+          Đặt lịch ngay
+        </a>
       </li>
     </ul>
   </div>
