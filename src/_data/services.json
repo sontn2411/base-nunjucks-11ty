@@ -1,0 +1,150 @@
+[
+  {
+    "id": "tieu-hoa",
+    "title": "Nội tiêu hóa",
+    "symptoms": [
+      "Ợ nóng",
+      "Đau bụng",
+      "Nôn ói",
+      "Chán ăn",
+      "Tiêu chảy",
+      "Táo bón",
+      "Đầy bụng",
+      "chướng bụng"
+    ],
+    "desc": "Chúng tôi thăm khám các triệu chứng tiêu hóa như đau dạ dày, đau bụng, ợ nóng, buồn nôn, tiêu chảy, táo bón, chán ăn…\n  Phòng khám thực hiện chẩn đoán và điều trị bằng các phương pháp như X-quang bụng, nội soi dạ dày – đại tràng, siêu âm bụng và các xét nghiệm cần thiết.",
+    "condition": {
+      "title": "Các bệnh lý thường gặp tại khoa Nội tiêu hóa",
+      "list": [
+        "Viêm thực quản",
+        "Trào ngược dạ dày thực quản",
+        "Viêm loét dạ dày tá tràng",
+        "Viêm đại tràng",
+        "Hội chứng ruột kích thích",
+        "Viêm túi thừa",
+        "Viêm ruột thừa",
+        "Polyp đại tràng",
+        "Xuất huyết tiêu hóa",
+        "Viêm gan",
+        "Xơ gan",
+        "Sỏi mật",
+        "Viêm tụy",
+        "Nhiễm khuẩn đường tiêu hóa",
+        "Rối loạn tiêu hóa chức năng"
+      ]
+    },
+    "icon": "medical-endoscopy"
+  },
+  {
+    "id": "ngoai-khoa",
+    "title": "Ngoại khoa",
+    "symptoms": [
+      "Chấn thương",
+      "Đau bụng",
+      "Chảy máu",
+      "Nhiễm trùng",
+      "Bất thường vùng vú",
+      "Đau mạn tính",
+      "Thay đổi thể trạng sau phẫu thuật",
+      "Chăm sóc giảm nhẹ"
+    ],
+    "desc": "Phòng khám tiếp nhận tiểu phẫu dưới gây tê tại chỗ đối với các tổn thương bề mặt, khối u nông và chấn thương. Với các trường hợp cần nhập viện hoặc phẫu thuật lớn, bệnh nhân sẽ được giới thiệu đến bệnh viện liên kết. Chúng tôi đồng hành theo dõi sau phẫu thuật, tư vấn dùng thuốc và phối hợp điều trị như bác sĩ điều trị thứ hai.",
+    "condition": {
+      "title": "Các bệnh lý thường gặp tại khoa Ngoại",
+      "list": [
+        "Ung thư dạ dày",
+        "Ung thư đại tràng",
+        "Ung thư gan",
+        "Ung thư đường mật",
+        "Ung thư tụy",
+        "Sỏi mật",
+        "Thoát vị bẹn",
+        "Thủng loét tá tràng",
+        "Viêm ruột thừa cấp",
+        "Tắc ruột",
+        "Ung thư vú",
+        "Quản lý sức khỏe sau phẫu thuật",
+        "Điều trị ung thư bằng thuốc",
+        "Chăm sóc giảm nhẹ"
+      ]
+    },
+    "icon": "medical-surgery"
+  },
+  {
+    "id": "noi-khoa",
+    "title": "Nội khoa",
+    "symptoms": [
+      "Cảm lạnh",
+      "Sốt",
+      "Chóng mặt",
+      "Buồn nôn",
+      "Đau đầu",
+      "Đau bụng",
+      "Đau ngực",
+      "Cúm",
+      "Ho"
+    ],
+    "desc": "Khám và điều trị các bệnh lý nội khoa thường gặp như cảm lạnh, cúm, sốt, đau đầu, chóng mặt, đau ngực, đau bụng, tiêu chảy và các bệnh dị ứng. Phòng khám cũng tiếp nhận và quản lý các bệnh lý mạn tính như tăng huyết áp, đái tháo đường, rối loạn mỡ máu, gout, loãng xương, đồng thời tư vấn chế độ ăn uống và vận động phù hợp cho từng bệnh nhân.",
+    "condition": {
+      "title": "Các bệnh lý thường gặp tại khoa Nội",
+      "list": [
+        "Cảm lạnh",
+        "Sốt",
+        "Cúm",
+        "Hen phế quản",
+        "Viêm phế quản",
+        "Viêm mũi dị ứng",
+        "Các bệnh da liễu ",
+        "Tiểu nhiều lần",
+        "Viêm bàng quang",
+        "Phì đại tuyến tiền liệt",
+        "Loãng xương",
+        "Mất ngủ"
+      ]
+    },
+    "icon": "medical-internal"
+  },
+  {
+    "id": "hau-mon",
+    "title": "Hậu môn – Trực tràng",
+    "symptoms": [
+      "Đau vùng hậu môn",
+      "Chảy máu hậu môn",
+      "Máu lẫn trong phân",
+      "Cảm giác đi ngoài không hết",
+      "Phân nhỏ, dẹt",
+      "Tiêu chảy"
+    ],
+    "desc": "Việc thăm khám được thực hiện trong phòng khám đảm bảo riêng tư, bệnh nhân được che phủ bằng khăn trong suốt quá trình khám. Với bệnh nhân nữ, luôn có nhân viên nữ hỗ trợ. Trường hợp cần thiết, nội soi có thể được thực hiện ngay trong ngày để chẩn đoán chính xác.",
+    "condition": {
+      "title": "Các bệnh lý thường gặp tại khoa Hậu môn – Trực tràng",
+      "list": [
+        "Trĩ (trĩ nội, trĩ ngoại)",
+        "Rò hậu môn",
+        "Nứt kẽ hậu môn",
+        "Áp xe quanh hậu môn",
+        "Polyp hậu môn",
+        "Sa trực tràng",
+        "Ngứa hậu môn",
+        "Đau hậu môn",
+        "Chảy máu hậu môn"
+      ]
+    },
+    "icon": "medical-proctology"
+  },
+  {
+    "id": "tiem-chung",
+    "title": "Tiêm chủng",
+    "symptoms": [],
+    "desc": "Tiêm chủng giúp cơ thể tạo miễn dịch, phòng ngừa các bệnh truyền nhiễm và giảm mức độ nặng của bệnh nếu mắc phải. Phòng khám cung cấp các loại vắc-xin như vắc-xin cúm, vắc-xin phế cầu và nhiều loại vắc-xin khác. Dịch vụ tiêm chủng cho trẻ em được áp dụng từ giai đoạn tiêm chủng lần 2 trở đi. Chi phí tiêm chủng có thể thay đổi theo mùa và một số loại vắc-xin cần đặt trước.",
+    "condition": {
+      "title": "Các loại vắc-xin được cung cấp",
+      "list": [
+        "Vắc-xin cúm",
+        "Vắc-xin phế cầu",
+        "Các loại vắc-xin phòng bệnh truyền nhiễm khác"
+      ]
+    },
+    "icon": "medical-immunization"
+  }
+]

@@ -13,6 +13,9 @@
 
     {{ content | safe }}
 
+    {% if extraJs %}
+      <script src="{{ extraJs }}"></script>
+    {% endif %}
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite.min.js"></script>
   </body>

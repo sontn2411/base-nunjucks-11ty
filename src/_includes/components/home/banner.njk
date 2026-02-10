@@ -2,11 +2,11 @@
 
 <section
   id="home-banner"
-  class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-14 px-4 lg:px-12 py-6 lg:py-0 h-auto animate-on-scroll"
+  class="grid grid-cols-1 lg:grid-cols-12 gap-6  2xl:gap-14 px-4 2xl:px-12 py-6 lg:py-0 h-auto animate-on-scroll"
 >
   <!-- Left Sidebar -->
   <div
-    class="col-span-1 lg:col-span-3 flex flex-col gap-2 order-2 lg:order-1 px-4 md:px-8 lg:px-12"
+    class="col-span-1 lg:col-span-3 flex flex-col gap-2 order-2 lg:order-1 px-4  2xl:px-12"
   >
     <div class="hidden lg:block">
       <img
@@ -26,15 +26,18 @@
     </ul>
     <ul class="grid grid-cols-2 gap-4 py-2">
       {% for item in navigation %}
-        <li
-          class="flex flex-col group items-center bg-white rounded-xl p-4 shadow-sm transition-shadow cursor-pointer group"
-        >
-          {{ icon(item.icon, "h-10 w-10 group-hover:-translate-y-1 transition-transform duration-300 text-primary group-hover:text-primary/80 transition-colors") }}
+        <li>
           <a
             href="{{ item.url }}"
-            class="text-sm font-medium text-primary mt-1 group-hover:text-primary/80 transition-colors"
-            >{{ item.label }}</a
+            class="flex flex-col group items-center bg-white rounded-xl p-4 shadow-sm transition-shadow cursor-pointer hover:shadow-md h-full w-full"
           >
+            {{ icon(item.icon, "h-10 w-10 group-hover:-translate-y-1 transition-transform duration-300 text-primary group-hover:text-primary/80 transition-colors") }}
+            <span
+              class="text-sm font-medium text-primary mt-1 group-hover:text-primary/80 transition-colors"
+            >
+              {{ item.label }}
+            </span>
+          </a>
         </li>
       {% endfor %}
 

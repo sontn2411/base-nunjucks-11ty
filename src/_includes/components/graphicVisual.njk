@@ -1,0 +1,46 @@
+{% macro graphicVisual(title, description, image) %}
+  <div class="container mx-auto px-6 py-20 max-w-6xl relative">
+    <div class="relative w-full">
+      <div
+        class="absolute top-0 left-0 z-10 pt-4 md:pt-12 lg:pt-10 max-w-md pointer-events-none"
+      >
+        <h1
+          class="text-4xl md:text-2xl lg:text-4xl font-bold text-primary mb-4 leading-tight"
+        >
+          {{ title }}
+        </h1>
+        <p
+          class="text-sm font-bold tracking-[0.2em] text-gray-800 uppercase pl-1"
+        >
+          {{ description }}
+        </p>
+      </div>
+
+      <div class=" w-full" data-animation="after">
+        <svg class=" w-full h-auto" viewBox="0 0 1200 467">
+          <defs>
+            <clipPath id="SvgVisClipPath">
+              <path
+                d="M0,249.02c0-4.38,2.85-8.25,7.04-9.55L778.55.45c.96-.3,1.96-.45,2.96-.45h408.49c5.52,0,10,4.48,10,10v447c0,5.52-4.48,10-10,10H10c-5.52,0-10-4.48-10-10v-207.98Z"
+              ></path>
+            </clipPath>
+          </defs>
+          <rect
+            width="1200"
+            height="467"
+            fill="#eeeee3"
+            clip-path="url(#SvgVisClipPath)"
+          ></rect>
+          <image
+            href="{{ image }}"
+            xlink:href="{{ image }}"
+            width="1200"
+            height="467"
+            clip-path="url(#SvgVisClipPath)"
+            preserveAspectRatio="xMidYMid slice"
+          ></image>
+        </svg>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

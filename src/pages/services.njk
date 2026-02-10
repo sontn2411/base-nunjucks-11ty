@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Dịch vụ - Medicare Clinic
+permalink: /services/
+---
+
+{% from "components/graphicVisual.njk" import graphicVisual %}
+
+{%
+  set data = [
+    {
+      id: 1,
+      name: 'Khoa tiêu hóa',
+      link: '#tieu-hoa'
+
+    },
+    {
+      id: 2,
+      name: 'Ngoại khoa',
+      link: '#ngoai-khoa'
+
+    },
+    {
+      id: 3,
+      name: 'Nội khoa',
+      link: '#noi-khoa'
+
+    },
+    {
+      id: 4,
+      name: 'Hậu môn',
+      link: '#hau-mon'
+
+    },
+    {
+      id: 5,
+      name: 'Tiêm chủng',
+      link: '#tiem-chung'
+    }
+
+  ]
+%}
+{% from "components/menuNavigate.njk" import menuNavigate %}
+
+<main class="pt-20 pb-20 min-h-screen scroll-smooth">
+  <div class="topAbout_bg"></div>
+  {{ graphicVisual('Dịch vụ', 'Chăm sóc sức khỏe', '/assets/images/banner2.png') }}
+
+  {{ menuNavigate(data) }}
+  {% include "components/services/overview.njk" %}
+  {% include "components/services/servicesList.njk" %}
+  {% include "components/footer.njk" %}
+</main>

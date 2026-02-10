@@ -1,0 +1,67 @@
+{%
+  set symptoms =  [
+    "Ợ nóng",
+    "Đau bụng",
+    "Nôn ói",
+    "Chán ăn",
+    "Tiêu chảy",
+    "Táo bón",
+    "Đầy bụng, chướng bụng",
+    "Chấn thương",
+    "Đau bụng",
+    "Chảy máu",
+    "Nhiễm trùng",
+    "Đau mạn tính",
+    "Cảm cúm",
+    "Sốt",
+    "Chóng mặt",
+    "Buồn nôn",
+    "Đau đầu",
+    "Đau ngực",
+    "Cúm",
+    "Ho",
+    "Đau vùng hậu môn",
+    "Chảy máu hậu môn",
+    "Có máu trong phân",
+    "Phân nhỏ, mảnh",
+    "Cảm giác đi tiêu chưa hết"
+  ]
+%}
+
+<section class="py-16 ">
+  <div class="container mx-auto px-6 py-20 max-w-6xl ">
+    <h2 class="text-base md:text-xl font-bold text-primary mb-6 leading-tight">
+      Đáp ứng đa dạng triệu chứng, từ cảm cúm đến bệnh tiêu hóa – hậu môn
+    </h2>
+    <p class="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
+      Chúng tôi tiếp nhận đa dạng các triệu chứng, từ sốt và các biểu hiện cảm
+      cúm, đến khám nội khoa tổng quát như tăng huyết áp, đái tháo đường. Bên
+      cạnh đó, với vai trò bác sĩ chuyên khoa tiêu hóa và nội soi tiêu hóa,
+      phòng khám sở hữu chuyên môn cao cùng hệ thống trang thiết bị hiện đại
+      trong lĩnh vực tiêu hóa. Phòng khám cũng tiếp nhận thăm khám các bệnh lý
+      hậu môn, giúp bệnh nhân có thể trao đổi và tư vấn một cách thoải mái hơn
+      so với việc đến các cơ sở chuyên khoa hậu môn riêng biệt.
+    </p>
+
+    <div class="mt-10 bg-white rounded-lg relative">
+      <div class="py-10 px-14">
+        <div
+          class="absolute top-9 left-0 h-8 w-1 bg-color-5 rounded-full"
+        ></div>
+        <h3 class="text-base md:text-xl font-bold  mb-6 leading-tight">
+          Bạn có đang lo lắng vì những triệu chứng này?
+        </h3>
+
+        <ul class="flex flex-wrap mt-8 gap-x-4 gap-y-3">
+          {% for item in symptoms %}
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              {{ item }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

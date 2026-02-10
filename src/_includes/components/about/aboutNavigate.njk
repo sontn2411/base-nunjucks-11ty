@@ -1,0 +1,17 @@
+{%
+  set data = [{
+  id: 1,
+  name: 'Triết lý',
+  link: '#philosophy'
+  },{id: 2,
+  name: 'Đặc điểm nổi bật',
+  link: '#features'
+  },{
+  id: 3,
+  name: 'Lời giới thiệu',
+  link: '#introduction'
+  }]
+%}
+{% from "components/menuNavigate.njk" import menuNavigate %}
+
+{{ menuNavigate(data) }}

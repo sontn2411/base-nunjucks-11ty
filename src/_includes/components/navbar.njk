@@ -2,7 +2,7 @@
 
 <nav
   id="main-header"
-  class="bg-color-2 min-h-[90px] w-full flex items-center  fixed top-0 left-0 z-50 transition-transform duration-300 -translate-y-full"
+  class="bg-color-2 min-h-[90px] w-full flex items-center  fixed top-0 left-0 z-50 transition-transform duration-300 {% if page.url == '/' or page.url == '/index.html' %}-translate-y-full{% endif %}"
 >
   <div
     class="container mx-auto px-4 max-w-7xl flex flex-wrap justify-between items-center relative"

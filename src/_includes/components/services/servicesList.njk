@@ -1,0 +1,60 @@
+{% from "components/icons.njk" import icon %}
+
+<div class="container mx-auto px-6 py-10  max-w-6xl">
+  <div class="flex flex-col gap-10">
+    {% for item in services %}
+      <div
+        id="{{ item.id }}"
+        class=" relative border-t border-color-8 first:mt-0  mt-30  "
+      >
+        <div
+          class=" absolute top-0 left-0 w-10 rounded-full h-1 bg-color-9"
+        ></div>
+        <h3
+          class="my-8 text-primary text-xl md:text-2xl font-bold  leading-tight"
+        >
+          {{ item.title }}
+        </h3>
+        <div class="flex items-center gap-10">
+          <div
+            class="w-12 h-12 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-primary transition-colors shadow-sm mr-4 md:mr-0 md:mb-4 shrink-0"
+          >
+            {{ icon(item.icon, "w-8 h-8 md:w-20 md:h-20") }}
+          </div>
+          <div class=" flex flex-col gap-4">
+            <ul class="flex gap-2 flex-wrap ">
+              {% for symptom in item.symptoms %}
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  {{ symptom }}
+                </li>
+              {% endfor %}
+            </ul>
+            <p class=" text-sm leading-relaxed text-justify ">
+              {{ item.desc }}
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 ">
+          <div class="border-4 border-color-11 p-10 rounded-md bg-white/20">
+            <h4 class=" text-sm md:text-base font-bold  leading-tight mb-6">
+              {{ item.condition.title }}
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8">
+              {% for symptom in item.condition.list %}
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  {{ symptom }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

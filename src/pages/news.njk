@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Tin tức - Medicare Clinic
+permalink: /news/
+---
+
+{% from "components/graphicVisual.njk" import graphicVisual %}
+
+<main class="pt-20 pb-20 min-h-screen">
+  <div class="topAbout_bg"></div>
+  {{ graphicVisual('Tin tức', 'Hoạt động & Sự kiện', '/assets/images/banner3.png') }}
+
+  <div class="container mx-auto px-6 py-12 max-w-7xl">
+    <div class="bg-white p-8 rounded-2xl shadow-sm">
+      <div class="space-y-6">
+        {% for item in news %}
+          <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+            <div class="text-sm text-primary font-bold mb-1">
+              {{ item.date }}
+              <span class="text-gray-400 mx-2">|</span> {{ item.tag }}
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 hover:text-primary transition-colors cursor-pointer"
+            >
+              {{ item.title }}
+            </h3>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% include "components/footer.njk" %}
+</main>

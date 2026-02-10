@@ -1,0 +1,83 @@
+{% from "components/icons.njk" import icon %}
+
+{%
+  set philosophyItems = [
+    {
+      id: 1,
+      content: 'Là phòng khám gia đình gắn bó mật thiết với cộng đồng, đồng thời không ngừng nâng cao kỹ thuật y khoa và chuyên môn, đạt tiêu chuẩn tương đương các bệnh viện tuyến trên.'
+    },
+    {
+      id: 2,
+      content: 'Luôn đề xuất các phương pháp điều trị phù hợp và tối ưu, đặt sự an tâm, an toàn và thuận tiện của bệnh nhân lên hàng đầu.'
+    },
+    {
+      id: 3,
+      content: 'Toàn thể đội ngũ luôn phục vụ bằng sự chân thành và nụ cười, trân trọng việc xây dựng một không gian ấm áp, để mỗi bệnh nhân đều cảm thấy “thật tốt khi lựa chọn nơi này”.'
+    }
+  ]
+%}
+
+<section id="philosophy" class="py-24 relative ">
+  <div class="cloud cloud-about01 pointer-events-none select-none"></div>
+  <div class="cloud cloud-about02 pointer-events-none select-none"></div>
+  <div class="cloud cloud-about03 pointer-events-none select-none"></div>
+
+  <div class="container mx-auto px-6 max-w-6xl relative z-10">
+    <div class="flex flex-col lg:flex-row gap-12 lg:gap-24">
+      <!-- Left Column: Sticky Title -->
+      <div
+        class="lg:w-1/3 lg:sticky lg:top-32 self-start text-center lg:text-left"
+      >
+        <div class="flex flex-col items-center lg:items-start">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-primary mb-2 tracking-tight"
+          >
+            Triết lý điều trị
+          </h2>
+          <span
+            class="text-sm font-bold tracking-[0.2em] text-gray-600 uppercase"
+          >
+            PHILOSOPHY
+          </span>
+          <div
+            class="h-1 w-20 bg-color-9 mt-6 rounded-full hidden lg:block"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Right Column: Card List -->
+      <div class="lg:w-2/3">
+        <div class="flex items-center gap-3 mb-10">
+          <div class="w-2 h-2 rounded-full bg-primary/60"></div>
+          <h3 class="text-xl md:text-2xl font-bold text-primary/80">
+            3 Triết lý cốt lõi
+          </h3>
+        </div>
+
+        <div class="space-y-6">
+          {% for item in philosophyItems %}
+            <!-- Card {{ item.id }} -->
+            <div
+              class="bg-white rounded-2xl py-6 pr-6 pl-16 md:py-8 md:pr-8 md:pl-20 shadow-sm hover:shadow-md transition-shadow duration-300 relative"
+            >
+              <div class="absolute left-0 top-1/2 -translate-y-1/2 shrink-0">
+                <div
+                  class="w-12 h-12 bg-color-9 rounded-r-lg flex items-center justify-center text-white text-2xl font-bold shadow-sm"
+                >
+                  {{ item.id }}
+                </div>
+              </div>
+              <div>
+                <h4
+                  class="text-base font-bold text-gray-800 mb-2 leading-relaxed"
+                >
+                  {{ item.content }}
+                </h4>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

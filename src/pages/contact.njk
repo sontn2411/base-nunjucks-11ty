@@ -4,10 +4,13 @@ title: Liên hệ - Medicare Clinic
 permalink: /contact/
 ---
 
-<div class="container mx-auto px-4 py-12 max-w-7xl">
-  <h1 class="text-3xl font-bold text-gray-900 mb-6">Liên hệ với chúng tôi</h1>
+{% from "components/graphicVisual.njk" import graphicVisual %}
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<main class="pt-20 pb-20 min-h-screen">
+  <div class="topAbout_bg"></div>
+  {{ graphicVisual('Liên hệ', 'Kết nối với chúng tôi', '/assets/images/banner4.png') }}
+
+  <div class="container mx-auto px-6 py-12 max-w-7xl">
     <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
       <h2 class="text-xl font-semibold mb-4 text-primary">Thông tin liên hệ</h2>
       <div class="space-y-4">
@@ -74,10 +77,11 @@ permalink: /contact/
     </div>
 
     <div
-      class="bg-gray-100 rounded-lg h-64 md:h-auto flex items-center justify-center text-gray-500"
+      class="bg-gray-100 rounded-lg h-64 md:h-auto flex items-center justify-center text-gray-500 mt-8"
     >
       <!-- Placeholder for Map -->
       <p>Bản đồ sẽ được hiển thị ở đây</p>
     </div>
   </div>
-</div>
+  {% include "components/footer.njk" %}
+</main>

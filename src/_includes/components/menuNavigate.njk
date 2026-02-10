@@ -1,0 +1,17 @@
+{% from "components/icons.njk" import icon %}
+
+{% macro menuNavigate(data) %}
+  <div class="container mx-auto px-6 max-w-6xl relative">
+    <div class="flex gap-6">
+      {% for item in data %}
+        <a
+          href="{{ item.link }}"
+          class="text-sm text-gray-800 font-semibold tracking-wide hover:border-primary hover:text-primary border border-gray-300 bg-white rounded-lg px-4 py-4 flex items-center group transition-colors duration-300"
+        >
+          <span>{{ item.name }}</span>
+          {{ icon('arrow-down', 'w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-y-1') }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}

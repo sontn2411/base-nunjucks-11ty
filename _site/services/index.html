@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dịch vụ - Medicare Clinic</title>
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
+    <link rel="stylesheet" href="/assets/scss/main.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 font-body custom-scss">
+    
+
+<nav
+  id="main-header"
+  class="bg-color-2 min-h-[90px] w-full flex items-center  fixed top-0 left-0 z-50 transition-transform duration-300 "
+>
+  <div
+    class="container mx-auto px-4 max-w-7xl flex flex-wrap justify-between items-center relative"
+  >
+    <a href="/" class="flex items-center gap-2">
+      <img
+        src="/assets/images/logo-ngang.png"
+        class="h-16 w-auto object-contain rounded"
+        alt="Logo"
+      />
+    </a>
+    <ul
+      class="absolute left-1/2 transform -translate-x-1/2  items-center h-full hidden lg:flex"
+    >
+      
+        
+          <li class="h-full flex items-center">
+            <div class="h-8 w-px bg-color-3"></div>
+            <a
+              href="/about/"
+              class="flex flex-col items-center gap-1 text-gray-700 hover:text-primary transition-colors group px-6"
+            >
+              
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-primary group-hover:text-primary/80"><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M.84,21.5h23.32"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.87,13.35v6.6"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M4.91,13.35v8.15"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M2.5,13.42L12.39,3.5l9.89,9.92"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M16.88,12.78h-3.07v-3.07h-2.64v3.07h-3.07v2.64h3.07v3.07h2.64v-3.07h3.07v-2.64Z"/></svg>
+
+
+              <span class="text-xs font-semibold uppercase tracking-wide"
+                >Giới thiệu</span
+              >
+            </a>
+            
+          </li>
+        
+      
+        
+          <li class="h-full flex items-center">
+            <div class="h-8 w-px bg-color-3"></div>
+            <a
+              href="/services/"
+              class="flex flex-col items-center gap-1 text-gray-700 hover:text-primary transition-colors group px-6"
+            >
+              
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-primary group-hover:text-primary/80"><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.18,15.88h1.19"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.18,17.58h1.19"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M10.51,6.69c1.08.12,2.6,1.12,4.3-.14,0,0,1.06.91,1.38,1.92"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.16,11.86c-.04-.16-.08-.46-.11-.75l-.07-.76"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M16.19,8.47s.59-.14.57.68c0,0,.02.9-.98,1.18,0,0-.07,1.15-.17,1.53"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M7.71,19.2l-.18,3.3"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.93,12.89l-.41,1.74c-.05.22-.2.41-.41.52-.65.34-1.92.81-2.97,1.2-.95.35-1.62,1.21-1.74,2.21l-.47,3.94"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M14.84,12.89l.41,1.74c.05.22.2.41.41.52.23.12.53.25.87.39"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.05,3.82c.25-.29.56-.55.96-.77,2.7-1.52,4.4.6,4.4.6,1.61-.04,2.19,1.04,2.28,2.29.12,1.28-.49,2.54-.49,2.54"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M15.61,11.86c-.1.38-1.49,2.23-3.22,2.23"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.16,11.86c.1.38,1.49,2.23,3.22,2.23"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.21,15.44s1.08,1.24,3.17,1.24,3.17-1.24,3.17-1.24,3.17-1.24"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M21.06,20.47c0,1.04-.84,1.88-1.88,1.88s-1.88-.84-1.88-1.88c0-.59.27-1.11.69-1.46v-6.75c-.01-.42.33-.76.75-.76h.86c.42,0,.76.34.76.76v6.76c.43.35.69.87.69,1.45Z"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.18,14.17h1.19"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M7.74,4.61s-1.47,1.75-1.47,2.94c0,.82.66,1.49,1.47,1.49s1.47-.67,1.47-1.49c0-1.19-1.47-2.94-1.47-2.94Z"/></svg>
+
+
+              <span class="text-xs font-semibold uppercase tracking-wide"
+                >Dịch vụ</span
+              >
+            </a>
+            
+          </li>
+        
+      
+        
+          <li class="h-full flex items-center">
+            <div class="h-8 w-px bg-color-3"></div>
+            <a
+              href="/doctors/"
+              class="flex flex-col items-center gap-1 text-gray-700 hover:text-primary transition-colors group px-6"
+            >
+              
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-primary group-hover:text-primary/80"><path fill="none" stroke="#354d60" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M5.71,4.71c-.83,0-1.5-.67-1.5-1.49,0-.4.32-.72.72-.72h.78c.4,0,.72.32.72.72v.77c0,.4-.32.72-.72.72Z"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M5.57,14.26c-2.14,0-3.87-1.73-3.87-3.85v-4.8c0-1.11.9-2,2.01-2h.49"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.78,14.26c2.14,0,3.87-1.73,3.87-3.85v-4.8c0-1.11-.9-2-2.01-2h-.49"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.78,14.26h-4.21l1.36,1.82c.37.49,1.11.49,1.48,0l1.36-1.82Z"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M7.68,16.45v1.87c0,2.31,1.88,4.18,4.2,4.18s4.2-1.87,4.2-4.18v-7.21c0-1.57,1.28-2.85,2.86-2.85s2.86,1.27,2.86,2.85v6.88"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.65,4.71c-.4,0-.72-.32-.72-.72v-.77c0-.4.32-.72.72-.72h.77c.4,0,.72.32.72.72,0,.82-.67,1.49-1.5,1.49Z"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M23.27,19.77c.16-.81-.38-1.6-1.19-1.75-.82-.16-1.61.38-1.76,1.19-.16.81.38,1.6,1.19,1.75.82.16,1.61-.38,1.76-1.19Z"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M5.71,4.71c-.83,0-1.5-.67-1.5-1.49,0-.4.32-.72.72-.72h.78c.4,0,.72.32.72.72v.77c0,.4-.32.72-.72.72Z"/></svg>
+
+
+              <span class="text-xs font-semibold uppercase tracking-wide"
+                >Đội ngũ</span
+              >
+            </a>
+            
+          </li>
+        
+      
+        
+          <li class="h-full flex items-center">
+            <div class="h-8 w-px bg-color-3"></div>
+            <a
+              href="/contact/"
+              class="flex flex-col items-center gap-1 text-gray-700 hover:text-primary transition-colors group px-6"
+            >
+              
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-primary group-hover:text-primary/80"><path fill="#002a1d" d="M17.58,22.65h-1.54v-.9h1.54c.1,0,.19,0,.29-.03l.16.89c-.15.03-.3.04-.45.04ZM15.28,22.65h-1.91v-.9h1.91v.9ZM12.6,22.65h-1.91v-.9h1.91v.9ZM9.93,22.65h-1.91v-.9h1.91v.9ZM7.25,22.65h-1.91v-.9h1.91v.9ZM18.9,22.29l-.48-.77c.44-.26.73-.7.79-1.19l.91.11c-.09.76-.55,1.46-1.22,1.85ZM19.17,19.75c-.12-.48-.47-.88-.93-1.08l.37-.82c.72.31,1.26.94,1.45,1.69l-.89.22ZM7.75,18.53v-.9h1.91s0,.9,0,.9h-1.91ZM10.42,18.53v-.9h1.91s0,.9,0,.9h-1.91ZM13.1,18.53v-.9h1.91s0,.9,0,.9h-1.91ZM17.66,18.53s-.06,0-.08,0h-1.8s0-.9,0-.9h1.79s.1,0,.14,0l-.05.9ZM6.87,18.43c-.74-.21-1.37-.72-1.71-1.41l.82-.4c.23.46.64.8,1.14.94l-.25.87ZM4.9,16.16c-.01-.11-.02-.22-.02-.33,0-.65.24-1.27.67-1.76l.69.59c-.29.33-.45.74-.45,1.18,0,.07,0,.15.01.22l-.91.11ZM6.71,14.28l-.46-.78c.42-.24.89-.36,1.38-.36h.71v.9h-.71c-.32,0-.64.08-.91.24ZM11.02,14.04h-1.91v-.9h1.91v.9Z"/><path fill="#349f87" stroke="#349f87" stroke-width=".3px" d="M12.7,16.56h0c.26,0,.49-.12.65-.32h0l3.82-4.99c.72-.93,1.11-2.09,1.11-3.26,0-3.03-2.5-5.49-5.58-5.49s-5.59,2.46-5.59,5.49c0,1.17.39,2.33,1.11,3.26l3.82,4.99c.16.2.4.32.65.32ZM9.09,10.6h0c-.58-.75-.89-1.68-.89-2.62,0-2.43,2.02-4.41,4.5-4.41s4.5,1.98,4.5,4.41c0,.94-.32,1.87-.89,2.62h0l-3.61,4.71-3.61-4.71Z"/><path fill="#349f87" stroke="#349f87" stroke-width=".3px" d="M10.44,7.84c0,1.25,1.03,2.26,2.3,2.26s2.3-1.01,2.3-2.26-1.03-2.26-2.3-2.26-2.3,1.01-2.3,2.26ZM11.53,7.84c0-.65.54-1.19,1.21-1.19s1.21.54,1.21,1.19-.54,1.19-1.21,1.19-1.21-.54-1.21-1.19Z"/></svg>
+
+
+              <span class="text-xs font-semibold uppercase tracking-wide"
+                >Liên hệ</span
+              >
+            </a>
+            
+          </li>
+        
+      
+        
+      
+        
+      
+    </ul>
+    <div class="flex items-center gap-4 lg:gap-6 ml-auto">
+      <a
+        href="/booking/"
+        class="bg-primary hover:bg-primary/90 text-white font-medium rounded-lg text-sm px-4 py-2 lg:px-6 lg:py-2.5 focus:outline-none shadow-lg hover:shadow-xl transition-all hidden sm:block"
+      >
+        Đặt lịch ngay
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 bg-primary rounded-full text-white hover:text-primary transition-colors focus:outline-none"
+      >
+        <div id="icon-menu">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+
+</div>
+        <div id="icon-close" class="hidden">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+
+</div>
+      </button>
+
+      <div class="items-center gap-2 group cursor-pointer hidden xl:flex">
+        <div
+          class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+        >
+          
+
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+</svg>
+
+
+        </div>
+        <div class="flex flex-col">
+          <span
+            class="text-xs text-gray-500 font-medium group-hover:text-primary transition-colors"
+            >Hotline 24/7</span
+          >
+          <a
+            href="tel:0123456789"
+            class="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors"
+            >0123 456 789</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Content -->
+  <div
+    id="mobile-menu"
+    class="hidden fixed inset-x-0 top-[90px] bg-color-2 z-50  h-screen opacity-0 transition-all duration-300 shadow-xl border-t border-gray-100 flex flex-col max-h-[calc(100vh-90px)] overflow-y-auto"
+  >
+    <ul class="flex flex-col p-6 gap-4">
+      
+        
+          <li>
+            <a
+              href="/about/"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2 bg-gray-100 rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-gray-500 group-hover:text-primary"><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M.84,21.5h23.32"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.87,13.35v6.6"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M4.91,13.35v8.15"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M2.5,13.42L12.39,3.5l9.89,9.92"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M16.88,12.78h-3.07v-3.07h-2.64v3.07h-3.07v2.64h3.07v3.07h2.64v-3.07h3.07v-2.64Z"/></svg>
+
+
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >Giới thiệu</span
+              >
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a
+              href="/services/"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2 bg-gray-100 rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-gray-500 group-hover:text-primary"><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.18,15.88h1.19"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.18,17.58h1.19"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M10.51,6.69c1.08.12,2.6,1.12,4.3-.14,0,0,1.06.91,1.38,1.92"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.16,11.86c-.04-.16-.08-.46-.11-.75l-.07-.76"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M16.19,8.47s.59-.14.57.68c0,0,.02.9-.98,1.18,0,0-.07,1.15-.17,1.53"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M7.71,19.2l-.18,3.3"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.93,12.89l-.41,1.74c-.05.22-.2.41-.41.52-.65.34-1.92.81-2.97,1.2-.95.35-1.62,1.21-1.74,2.21l-.47,3.94"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M14.84,12.89l.41,1.74c.05.22.2.41.41.52.23.12.53.25.87.39"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.05,3.82c.25-.29.56-.55.96-.77,2.7-1.52,4.4.6,4.4.6,1.61-.04,2.19,1.04,2.28,2.29.12,1.28-.49,2.54-.49,2.54"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M15.61,11.86c-.1.38-1.49,2.23-3.22,2.23"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.16,11.86c.1.38,1.49,2.23,3.22,2.23"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.21,15.44s1.08,1.24,3.17,1.24,3.17-1.24,3.17-1.24,3.17-1.24"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M21.06,20.47c0,1.04-.84,1.88-1.88,1.88s-1.88-.84-1.88-1.88c0-.59.27-1.11.69-1.46v-6.75c-.01-.42.33-.76.75-.76h.86c.42,0,.76.34.76.76v6.76c.43.35.69.87.69,1.45Z"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M19.18,14.17h1.19"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M7.74,4.61s-1.47,1.75-1.47,2.94c0,.82.66,1.49,1.47,1.49s1.47-.67,1.47-1.49c0-1.19-1.47-2.94-1.47-2.94Z"/></svg>
+
+
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >Dịch vụ</span
+              >
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a
+              href="/doctors/"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2 bg-gray-100 rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-gray-500 group-hover:text-primary"><path fill="none" stroke="#354d60" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M5.71,4.71c-.83,0-1.5-.67-1.5-1.49,0-.4.32-.72.72-.72h.78c.4,0,.72.32.72.72v.77c0,.4-.32.72-.72.72Z"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M5.57,14.26c-2.14,0-3.87-1.73-3.87-3.85v-4.8c0-1.11.9-2,2.01-2h.49"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.78,14.26c2.14,0,3.87-1.73,3.87-3.85v-4.8c0-1.11-.9-2-2.01-2h-.49"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.78,14.26h-4.21l1.36,1.82c.37.49,1.11.49,1.48,0l1.36-1.82Z"/><path fill="none" stroke="#002a1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M7.68,16.45v1.87c0,2.31,1.88,4.18,4.2,4.18s4.2-1.87,4.2-4.18v-7.21c0-1.57,1.28-2.85,2.86-2.85s2.86,1.27,2.86,2.85v6.88"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M9.65,4.71c-.4,0-.72-.32-.72-.72v-.77c0-.4.32-.72.72-.72h.77c.4,0,.72.32.72.72,0,.82-.67,1.49-1.5,1.49Z"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M23.27,19.77c.16-.81-.38-1.6-1.19-1.75-.82-.16-1.61.38-1.76,1.19-.16.81.38,1.6,1.19,1.75.82.16,1.61-.38,1.76-1.19Z"/><path fill="none" stroke="#349f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2px" d="M5.71,4.71c-.83,0-1.5-.67-1.5-1.49,0-.4.32-.72.72-.72h.78c.4,0,.72.32.72.72v.77c0,.4-.32.72-.72.72Z"/></svg>
+
+
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >Đội ngũ</span
+              >
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a
+              href="/contact/"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2 bg-gray-100 rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                
+
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="h-6 w-6 text-gray-500 group-hover:text-primary"><path fill="#002a1d" d="M17.58,22.65h-1.54v-.9h1.54c.1,0,.19,0,.29-.03l.16.89c-.15.03-.3.04-.45.04ZM15.28,22.65h-1.91v-.9h1.91v.9ZM12.6,22.65h-1.91v-.9h1.91v.9ZM9.93,22.65h-1.91v-.9h1.91v.9ZM7.25,22.65h-1.91v-.9h1.91v.9ZM18.9,22.29l-.48-.77c.44-.26.73-.7.79-1.19l.91.11c-.09.76-.55,1.46-1.22,1.85ZM19.17,19.75c-.12-.48-.47-.88-.93-1.08l.37-.82c.72.31,1.26.94,1.45,1.69l-.89.22ZM7.75,18.53v-.9h1.91s0,.9,0,.9h-1.91ZM10.42,18.53v-.9h1.91s0,.9,0,.9h-1.91ZM13.1,18.53v-.9h1.91s0,.9,0,.9h-1.91ZM17.66,18.53s-.06,0-.08,0h-1.8s0-.9,0-.9h1.79s.1,0,.14,0l-.05.9ZM6.87,18.43c-.74-.21-1.37-.72-1.71-1.41l.82-.4c.23.46.64.8,1.14.94l-.25.87ZM4.9,16.16c-.01-.11-.02-.22-.02-.33,0-.65.24-1.27.67-1.76l.69.59c-.29.33-.45.74-.45,1.18,0,.07,0,.15.01.22l-.91.11ZM6.71,14.28l-.46-.78c.42-.24.89-.36,1.38-.36h.71v.9h-.71c-.32,0-.64.08-.91.24ZM11.02,14.04h-1.91v-.9h1.91v.9Z"/><path fill="#349f87" stroke="#349f87" stroke-width=".3px" d="M12.7,16.56h0c.26,0,.49-.12.65-.32h0l3.82-4.99c.72-.93,1.11-2.09,1.11-3.26,0-3.03-2.5-5.49-5.58-5.49s-5.59,2.46-5.59,5.49c0,1.17.39,2.33,1.11,3.26l3.82,4.99c.16.2.4.32.65.32ZM9.09,10.6h0c-.58-.75-.89-1.68-.89-2.62,0-2.43,2.02-4.41,4.5-4.41s4.5,1.98,4.5,4.41c0,.94-.32,1.87-.89,2.62h0l-3.61,4.71-3.61-4.71Z"/><path fill="#349f87" stroke="#349f87" stroke-width=".3px" d="M10.44,7.84c0,1.25,1.03,2.26,2.3,2.26s2.3-1.01,2.3-2.26-1.03-2.26-2.3-2.26-2.3,1.01-2.3,2.26ZM11.53,7.84c0-.65.54-1.19,1.21-1.19s1.21.54,1.21,1.19-.54,1.19-1.21,1.19-1.21-.54-1.21-1.19Z"/></svg>
+
+
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >Liên hệ</span
+              >
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+
+      <!-- Mobile Extra Links (that were hidden in header) -->
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a
+              href="/news/"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2  rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                
+
+<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >Tin tức</span
+              >
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a
+              href="/price/"
+              class="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <div
+                class="p-2  rounded-full group-hover:bg-primary/10 transition-colors"
+              >
+                
+
+<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg>
+
+
+              </div>
+              <span class="text-base font-semibold uppercase tracking-wide"
+                >Bảng giá</span
+              >
+            </a>
+          </li>
+        
+      
+
+      <li class="mt-4 pt-4 border-t border-gray-100 sm:hidden">
+        <a
+          href="/booking/"
+          class="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-xl text-base px-6 py-3 focus:outline-none shadow-lg hover:shadow-xl transition-all"
+        >
+          Đặt lịch ngay
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    
+
+
+
+
+
+<main class="pt-20 pb-20 min-h-screen scroll-smooth">
+  <div class="topAbout_bg"></div>
+  
+  <div class="container mx-auto px-6 py-20 max-w-6xl relative">
+    <div class="relative w-full">
+      <div
+        class="absolute top-0 left-0 z-10 pt-4 md:pt-12 lg:pt-10 max-w-md pointer-events-none"
+      >
+        <h1
+          class="text-4xl md:text-2xl lg:text-4xl font-bold text-primary mb-4 leading-tight"
+        >
+          Dịch vụ
+        </h1>
+        <p
+          class="text-sm font-bold tracking-[0.2em] text-gray-800 uppercase pl-1"
+        >
+          Chăm sóc sức khỏe
+        </p>
+      </div>
+
+      <div class=" w-full" data-animation="after">
+        <svg class=" w-full h-auto" viewBox="0 0 1200 467">
+          <defs>
+            <clipPath id="SvgVisClipPath">
+              <path
+                d="M0,249.02c0-4.38,2.85-8.25,7.04-9.55L778.55.45c.96-.3,1.96-.45,2.96-.45h408.49c5.52,0,10,4.48,10,10v447c0,5.52-4.48,10-10,10H10c-5.52,0-10-4.48-10-10v-207.98Z"
+              ></path>
+            </clipPath>
+          </defs>
+          <rect
+            width="1200"
+            height="467"
+            fill="#eeeee3"
+            clip-path="url(#SvgVisClipPath)"
+          ></rect>
+          <image
+            href="/assets/images/banner2.png"
+            xlink:href="/assets/images/banner2.png"
+            width="1200"
+            height="467"
+            clip-path="url(#SvgVisClipPath)"
+            preserveAspectRatio="xMidYMid slice"
+          ></image>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="container mx-auto px-6 max-w-6xl relative">
+    <div class="flex gap-6">
+      
+        <a
+          href="#tieu-hoa"
+          class="text-sm text-gray-800 font-semibold tracking-wide hover:border-primary hover:text-primary border border-gray-300 bg-white rounded-lg px-4 py-4 flex items-center group transition-colors duration-300"
+        >
+          <span>Khoa tiêu hóa</span>
+          
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-y-1">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+</svg>
+
+
+        </a>
+      
+        <a
+          href="#ngoai-khoa"
+          class="text-sm text-gray-800 font-semibold tracking-wide hover:border-primary hover:text-primary border border-gray-300 bg-white rounded-lg px-4 py-4 flex items-center group transition-colors duration-300"
+        >
+          <span>Ngoại khoa</span>
+          
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-y-1">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+</svg>
+
+
+        </a>
+      
+        <a
+          href="#noi-khoa"
+          class="text-sm text-gray-800 font-semibold tracking-wide hover:border-primary hover:text-primary border border-gray-300 bg-white rounded-lg px-4 py-4 flex items-center group transition-colors duration-300"
+        >
+          <span>Nội khoa</span>
+          
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-y-1">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+</svg>
+
+
+        </a>
+      
+        <a
+          href="#hau-mon"
+          class="text-sm text-gray-800 font-semibold tracking-wide hover:border-primary hover:text-primary border border-gray-300 bg-white rounded-lg px-4 py-4 flex items-center group transition-colors duration-300"
+        >
+          <span>Hậu môn</span>
+          
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-y-1">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+</svg>
+
+
+        </a>
+      
+        <a
+          href="#tiem-chung"
+          class="text-sm text-gray-800 font-semibold tracking-wide hover:border-primary hover:text-primary border border-gray-300 bg-white rounded-lg px-4 py-4 flex items-center group transition-colors duration-300"
+        >
+          <span>Tiêm chủng</span>
+          
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-y-1">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+</svg>
+
+
+        </a>
+      
+    </div>
+  </div>
+
+  
+
+<section class="py-16 ">
+  <div class="container mx-auto px-6 py-20 max-w-6xl ">
+    <h2 class="text-base md:text-xl font-bold text-primary mb-6 leading-tight">
+      Đáp ứng đa dạng triệu chứng, từ cảm cúm đến bệnh tiêu hóa – hậu môn
+    </h2>
+    <p class="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
+      Chúng tôi tiếp nhận đa dạng các triệu chứng, từ sốt và các biểu hiện cảm
+      cúm, đến khám nội khoa tổng quát như tăng huyết áp, đái tháo đường. Bên
+      cạnh đó, với vai trò bác sĩ chuyên khoa tiêu hóa và nội soi tiêu hóa,
+      phòng khám sở hữu chuyên môn cao cùng hệ thống trang thiết bị hiện đại
+      trong lĩnh vực tiêu hóa. Phòng khám cũng tiếp nhận thăm khám các bệnh lý
+      hậu môn, giúp bệnh nhân có thể trao đổi và tư vấn một cách thoải mái hơn
+      so với việc đến các cơ sở chuyên khoa hậu môn riêng biệt.
+    </p>
+
+    <div class="mt-10 bg-white rounded-lg relative">
+      <div class="py-10 px-14">
+        <div
+          class="absolute top-9 left-0 h-8 w-1 bg-color-5 rounded-full"
+        ></div>
+        <h3 class="text-base md:text-xl font-bold  mb-6 leading-tight">
+          Bạn có đang lo lắng vì những triệu chứng này?
+        </h3>
+
+        <ul class="flex flex-wrap mt-8 gap-x-4 gap-y-3">
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Ợ nóng
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đau bụng
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Nôn ói
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Chán ăn
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Tiêu chảy
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Táo bón
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đầy bụng, chướng bụng
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Chấn thương
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đau bụng
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Chảy máu
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Nhiễm trùng
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đau mạn tính
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Cảm cúm
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Sốt
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Chóng mặt
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Buồn nôn
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đau đầu
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đau ngực
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Cúm
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Ho
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Đau vùng hậu môn
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Chảy máu hậu môn
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Có máu trong phân
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Phân nhỏ, mảnh
+            </li>
+          
+            <li
+              class="text-xs border border-color-8 px-2 py-1 rounded-md bg-gray-100 text-black font-medium"
+            >
+              Cảm giác đi tiêu chưa hết
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+<div class="container mx-auto px-6 py-10  max-w-6xl">
+  <div class="flex flex-col gap-10">
+    
+      <div
+        id="tieu-hoa"
+        class=" relative border-t border-color-8 first:mt-0  mt-30  "
+      >
+        <div
+          class=" absolute top-0 left-0 w-10 rounded-full h-1 bg-color-9"
+        ></div>
+        <h3
+          class="my-8 text-primary text-xl md:text-2xl font-bold  leading-tight"
+        >
+          Nội tiêu hóa
+        </h3>
+        <div class="flex items-center gap-10">
+          <div
+            class="w-12 h-12 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-primary transition-colors shadow-sm mr-4 md:mr-0 md:mb-4 shrink-0"
+          >
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-8 h-8 md:w-20 md:h-20" viewBox="0 0 74 74" width="74" height="74"><defs><clipPath id="clip-endoscopy"><rect style="fill:none;" x="6" y="6" width="62" height="62"/></clipPath></defs><g clip-path="url(#clip-endoscopy)"><path style="fill:#002a1d;" d="M22.12,15.04c-3.74,0-7.15,1.54-9.63,4.01-2.47,2.48-4.01,5.89-4.01,9.63v38.08c0,.68-.56,1.24-1.24,1.24s-1.24-.56-1.24-1.24V28.68c0-4.44,1.81-8.47,4.74-11.38,2.91-2.93,6.96-4.74,11.38-4.74h3.42c.57,0,1.08-.22,1.44-.6h.01c.36-.37.6-.88.6-1.45v-3.27c0-.68.56-1.24,1.24-1.24s1.24.56,1.24,1.24v3.27c0,1.24-.51,2.37-1.33,3.2h-.01c-.82.82-1.95,1.33-3.19,1.33h-3.42ZM63.26,17.3c-2.91-2.93-6.96-4.74-11.38-4.74h-3.24c-.57,0-1.08-.24-1.45-.6-.36-.37-.6-.88-.6-1.45v-3.27c0-.68-.56-1.24-1.24-1.24s-1.24.56-1.24,1.24v3.27c0,1.25.51,2.38,1.33,3.2.82.82,1.95,1.33,3.2,1.33h3.24c3.74,0,7.15,1.54,9.63,4.01,2.47,2.48,4.01,5.89,4.01,9.63v38.08c0,.68.56,1.24,1.24,1.24s1.24-.56,1.24-1.24V28.68c0-4.44-1.81-8.47-4.74-11.38ZM55.62,35.76c-.68,0-1.24.56-1.24,1.24v29.76c0,.68.56,1.24,1.24,1.24s1.25-.56,1.25-1.24v-29.76c0-.68-.56-1.24-1.25-1.24ZM18.38,35.75c-.69,0-1.25.56-1.25,1.25v29.76c0,.68.56,1.24,1.25,1.24s1.24-.56,1.24-1.24v-29.76c0-.69-.56-1.25-1.24-1.25Z"/><path style="fill:#349f87;" d="M51.99,56.34c0-1.25-.5-2.41-1.3-3.25l-.07-.07c-.86-.86-2.03-1.39-3.32-1.39h-1.16c.11-.09.22-.17.33-.26,2.24-1.82,3.96-4.4,4.81-7.14.58-1.88.83-3.91.68-5.91-.15-1.95-.64-3.88-1.53-5.7l-.04-.05c-.6-1.23-1.53-2.27-2.67-2.99-1.13-.72-2.47-1.13-3.89-1.13s-2.84.43-4.04,1.23c-.93.6-1.71,1.4-2.26,2.37h-1.91v-13c0-.87.55-.86,1.07-.86.27.01.11.01.31.01.79,0,1.64-.35,2.23-.99.52-.55.87-1.3.87-2.23v-7.74c0-.68-.55-1.24-1.24-1.24s-1.24.56-1.24,1.24v7.74c0,.24-.07.42-.19.55-.12.12-.29.2-.43.2h-.29c-1.76-.02-3.57-.05-3.57,3.32v13.02c0,.67.27,1.29.72,1.72.45.45,1.07.73,1.74.73h2.72c.5-.01.95-.31,1.15-.79.31-.82.92-1.5,1.66-1.98.81-.52,1.76-.82,2.7-.82s1.82.27,2.57.74c.76.47,1.38,1.15,1.76,1.96l.04.07c.74,1.53,1.17,3.16,1.29,4.79.12,1.7-.09,3.41-.58,5-.72,2.31-2.13,4.45-4.01,5.98-1.67,1.35-3.71,2.19-5.93,2.17-.74,0-1.49-.11-2.26-.32-.76-.21-1.51-.52-2.27-.94-.52-.3-1.15-.79-1.67-1.45-.36-.47-.67-1.02-.82-1.64-.04-.58-.27-1.1-.63-1.5-.02-.04-.06-.06-.09-.1-.45-.45-1.07-.72-1.74-.72h-1.31c-.67,0-1.28.27-1.72.72h-.01c-.43.45-.72,1.07-.72,1.74v5.46c0,.68.56,1.24,1.24,1.24h20.32c.61,0,1.17.25,1.57.66l.05.05c.37.4.6.94.6,1.53,0,.62-.25,1.18-.64,1.57s-.97.66-1.57.66c-.69,0-1.24.56-1.24,1.24s.55,1.24,1.24,1.24c.61,0,1.17.25,1.57.64.4.41.64.97.64,1.59s-.25,1.17-.64,1.57c-.41.41-.97.66-1.57.66h-14.88c-.68,0-1.24.55-1.24,1.24s.56,1.24,1.24,1.24h14.88c1.29,0,2.47-.53,3.32-1.39s1.38-2.03,1.38-3.32-.52-2.47-1.38-3.32c-.05-.05-.1-.1-.16-.15.05-.05.11-.1.16-.15.86-.86,1.38-2.03,1.38-3.32ZM28.21,51.63v-4.19h1.26c0,.12.02.25.06.36.25,1.02.72,1.9,1.29,2.63.36.46.75.86,1.16,1.2h-3.77Z"/><path style="fill:#002a1d;" d="M26.71,65.52c-.61,0-1.17-.25-1.57-.66-.4-.41-.64-.97-.64-1.57s.25-1.18.64-1.57l.06-.06c.4-.37.93-.6,1.51-.6h15.12c.68,0,1.24-.56,1.24-1.24s-.56-1.24-1.24-1.24h-15.12c-.61,0-1.17-.25-1.57-.66-.4-.41-.64-.97-.64-1.57v-10.14c0-.68.27-1.3.73-1.76.45-.45,1.07-.73,1.75-.73h3.73c.53,0,.94.21,1.34.41.69.35,1.4.71,2.59.71.73,0,1.33-.11,1.86-.31.53-.2.95-.48,1.36-.82.77-.64,1.15-1.35,1.34-2.33.15-.82.16-1.76.16-3.06v-1.3h-.01c0-.68-.55-1.24-1.23-1.24h-3.73s0,0,0,0c-.68,0-1.3-.27-1.76-.72-.45-.46-.73-1.08-.73-1.76v-16.41c0-.69.15-1.07.37-1.25.24-.19.62-.24,1-.24.88,0,1.69-.31,2.27-.93.52-.56.84-1.33.84-2.28v-4.94c0-.68-.56-1.24-1.24-1.24s-1.24.56-1.24,1.24v4.94c0,.29-.06.47-.17.58-.09.1-.26.15-.46.15-.84,0-1.76.17-2.53.77-.78.62-1.33,1.61-1.33,3.2v8.83c0,.05,0,.11,0,.16v7.42h.01c0,1.36.56,2.6,1.45,3.5s2.15,1.46,3.51,1.46h2.49v.06c0,1.18,0,2.02-.11,2.59-.07.4-.22.68-.5.91-.2.17-.41.31-.66.4-.25.1-.56.15-.98.15-.62,0-1.05-.22-1.48-.43-.68-.33-1.34-.68-2.46-.68h-3.73c-1.36,0-2.6.57-3.51,1.46-.89.91-1.45,2.15-1.45,3.51v10.14c0,1.3.52,2.48,1.38,3.32h.01s.1.1.15.14c-.03.03-.06.05-.09.08-.02.01-.05.04-.07.06-.86.86-1.38,2.03-1.38,3.34s.52,2.47,1.38,3.32c.86.86,2.03,1.39,3.32,1.39.69,0,1.24-.56,1.24-1.24s-.55-1.24-1.24-1.24Z"/></g></svg></svg>
+
+
+          </div>
+          <div class=" flex flex-col gap-4">
+            <ul class="flex gap-2 flex-wrap ">
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Ợ nóng
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau bụng
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Nôn ói
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Chán ăn
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Tiêu chảy
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Táo bón
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đầy bụng
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  chướng bụng
+                </li>
+              
+            </ul>
+            <p class=" text-sm leading-relaxed text-justify ">
+              Chúng tôi thăm khám các triệu chứng tiêu hóa như đau dạ dày, đau bụng, ợ nóng, buồn nôn, tiêu chảy, táo bón, chán ăn…
+  Phòng khám thực hiện chẩn đoán và điều trị bằng các phương pháp như X-quang bụng, nội soi dạ dày – đại tràng, siêu âm bụng và các xét nghiệm cần thiết.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 ">
+          <div class="border-4 border-color-11 p-10 rounded-md bg-white/20">
+            <h4 class=" text-sm md:text-base font-bold  leading-tight mb-6">
+              Các bệnh lý thường gặp tại khoa Nội tiêu hóa
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8">
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm thực quản
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Trào ngược dạ dày thực quản
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm loét dạ dày tá tràng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm đại tràng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Hội chứng ruột kích thích
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm túi thừa
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm ruột thừa
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Polyp đại tràng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Xuất huyết tiêu hóa
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm gan
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Xơ gan
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Sỏi mật
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm tụy
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Nhiễm khuẩn đường tiêu hóa
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Rối loạn tiêu hóa chức năng
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div
+        id="ngoai-khoa"
+        class=" relative border-t border-color-8 first:mt-0  mt-30  "
+      >
+        <div
+          class=" absolute top-0 left-0 w-10 rounded-full h-1 bg-color-9"
+        ></div>
+        <h3
+          class="my-8 text-primary text-xl md:text-2xl font-bold  leading-tight"
+        >
+          Ngoại khoa
+        </h3>
+        <div class="flex items-center gap-10">
+          <div
+            class="w-12 h-12 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-primary transition-colors shadow-sm mr-4 md:mr-0 md:mb-4 shrink-0"
+          >
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-20 md:h-20" viewBox="0 0 74 74" width="74" height="74"><path style="fill:none;" d="M52.05,55.66c-.12-.05-.24-.11-.36-.18-1.33-.44-2.43-.5-3.35-.18-.8.29-1.58.89-2.46,1.89.11,1.65-.16,3.43-.79,5.23h6.96v-6.76Z"/><path style="fill:none;" d="M26.57,12.35c-.72,0-1.3-.57-1.3-1.26s.58-1.3,1.3-1.3h18.66v-3.58h-22.99v4.88c0,1.26-.52,2.5-1.42,3.4-.9.9-2.14,1.42-3.4,1.42s-2.48-.5-3.4-1.42c-.59-.56-1.02-1.29-1.25-2.13h-1.91v50.14l20.13-.03,12.88-12.88c-.03-.16-.05-.32-.05-.49,0-.45.13-.92.37-1.31h0s.05-.12.05-.12c.08-.13.21-.25.29-.34l.21.21h0l-.21-.21,7.5-7.5V12.35h-25.48ZM27.95,57.72h-10.52c-.73,0-1.3-.55-1.3-1.26s.57-1.26,1.3-1.26h10.52c.72,0,1.26.54,1.26,1.26s-.54,1.26-1.26,1.26ZM32.09,52.06h-14.67c-.72,0-1.3-.58-1.3-1.3s.58-1.26,1.3-1.26h14.67c.72,0,1.3.57,1.3,1.26s-.58,1.3-1.3,1.3ZM35.39,46.35h-17.96c-.72,0-1.3-.57-1.3-1.26s.58-1.3,1.3-1.3h17.96c.7,0,1.26.58,1.26,1.3s-.58,1.26-1.26,1.26ZM42.02,30.65c0,.57-.23,1.14-.64,1.54l-.12.09c-.38.36-.89.56-1.46.56h-3.7v3.7c0,.58-.2,1.09-.56,1.47l-.08.11c-.41.41-.97.64-1.55.64h-4.89c-.57,0-1.14-.23-1.55-.64-.42-.42-.64-.97-.64-1.58v-3.7h-3.7c-.61,0-1.16-.22-1.58-.64-.41-.41-.64-.97-.64-1.54v-4.89c0-.57.23-1.14.64-1.54.42-.42.97-.64,1.58-.64h3.7v-3.7c0-.61.22-1.16.64-1.58.41-.41.97-.64,1.54-.64h4.89c.57,0,1.14.23,1.55.64s.64.97.64,1.58v3.7h3.7c.61,0,1.16.22,1.58.64h0c.41.41.64.97.64,1.54v4.89Z"/><path style="fill:none;" d="M69.94,34.72c0-1-.4-1.98-1.1-2.68-.73-.73-1.69-1.13-2.71-1.13s-1.94.4-2.68,1.13l-16.92,16.93,6.04,4.03.32.21s.07.05.11.07l15.85-15.88c.7-.7,1.1-1.67,1.1-2.68ZM54.75,50.55c-.18.29-.46.49-.8.56-.09.02-.18.03-.27.03-.25,0-.5-.07-.71-.21l-3.19-2.15c-.29-.18-.49-.46-.56-.79-.07-.33,0-.67.19-.96.39-.59,1.21-.76,1.79-.38l3.19,2.15c.28.19.48.47.55.79.08.33.02.67-.17.96ZM57.38,47.92c-.18.28-.48.48-.81.55-.1.02-.19.03-.29.03-.24,0-.48-.07-.68-.2l-3.19-2.15c-.29-.2-.49-.51-.55-.86-.06-.34.02-.67.22-.94.18-.27.46-.46.79-.52.33-.06.66,0,.95.19l3.22,2.15c.58.38.73,1.17.34,1.75Z"/><path style="fill:none;" d="M47.47,52.88c.07-.02.13-.03.19-.05l-1.86-1.24-.18-.12-19.06,19.06c1.58.58,3.17.8,4.73.67,2.18-.21,4.34-1.08,6.25-2.53,1.85-1.45,3.38-3.31,4.43-5.38,1.04-2.08,1.51-4.29,1.34-6.25,0-.18,0-.36.04-.54l.04-.13c.04-.18.17-.36.3-.53,1.36-1.63,2.49-2.51,3.77-2.96Z"/><polygon style="fill:none;" points="33.53 36.2 33.53 30.27 39.46 30.27 39.46 26.13 33.53 26.13 33.53 20.21 29.39 20.21 29.39 26.13 23.47 26.13 23.47 30.27 29.39 30.27 29.39 36.2 33.53 36.2"/><path style="fill:#002a1d;" d="M27.95,55.2h-10.52c-.73,0-1.3.55-1.3,1.26s.57,1.26,1.3,1.26h10.52c.72,0,1.26-.54,1.26-1.26s-.54-1.26-1.26-1.26Z"/><path style="fill:#002a1d;" d="M35.39,43.79h-17.96c-.72,0-1.3.58-1.3,1.3s.58,1.26,1.3,1.26h17.96c.68,0,1.26-.58,1.26-1.26s-.57-1.3-1.26-1.3Z"/><path style="fill:#002a1d;" d="M32.09,49.49h-14.67c-.72,0-1.3.57-1.3,1.26s.58,1.3,1.3,1.3h14.67c.72,0,1.3-.58,1.3-1.3s-.58-1.26-1.3-1.26Z"/><path style="fill:#002a1d;" d="M53.05,55.87c-.33,0-.67-.08-1-.21v6.76h-6.96c-.23.67-.51,1.35-.84,2.03-.09.19-.21.36-.31.54h8.45c.56,0,1.12-.22,1.59-.65.42-.47.63-1,.63-1.57v-7.52c-.44.42-.96.63-1.56.63Z"/><path style="fill:#002a1d;" d="M31,62.46l-20.13.03V12.35h1.91c.23.84.65,1.58,1.25,2.13.92.92,2.12,1.42,3.4,1.42s2.49-.52,3.4-1.42c.9-.9,1.42-2.14,1.42-3.4v-4.88h22.99v3.58h-18.66c-.72,0-1.3.58-1.3,1.3s.58,1.26,1.3,1.26h25.48v27.46l2.56-2.56V12.02c0-.58-.21-1.1-.65-1.59-.45-.41-1.01-.63-1.57-.63h-4.59v-3.92c0-.57-.23-1.14-.64-1.54-.42-.42-.97-.64-1.58-.64h-23.51c-.25-.79-.68-1.5-1.23-2.06-.9-.9-2.14-1.42-3.4-1.42s-2.48.5-3.39,1.42c-.92.88-1.43,2.1-1.43,3.44v.85c0,.71.55,1.26,1.26,1.26s1.26-.55,1.26-1.26v-.85c0-.6.25-1.2.7-1.61.39-.43.99-.68,1.59-.68s1.15.24,1.6.69c.42.42.65.95.65,1.53v6.11c0,.62-.23,1.18-.64,1.59-.94.87-2.41.81-3.21,0-.45-.45-.69-1.01-.69-1.6,0-.73-.55-1.3-1.26-1.3h-3.33c-.56,0-1.12.22-1.59.66-.42.47-.63,1-.63,1.57v45.18h-4.25V6.21h6.63c.71,0,1.26-.55,1.26-1.26s-.55-1.26-1.26-1.26H3.72c-.61,0-1.16.22-1.58.64-.41.41-.64.97-.64,1.54v51.7c0,.57.23,1.14.65,1.56.47.42,1,.63,1.57.63h4.59v3.07c0,.57.23,1.14.64,1.54.42.42.94.65,1.46.65.04,0,.08,0,.13,0h17.9l2.56-2.56Z"/><path style="fill:#349f87;" d="M70.64,30.21c-1.18-1.18-2.78-1.83-4.51-1.83s-3.29.65-4.47,1.83l-7.04,7.04-2.56,2.56-7.5,7.5.21.21h0l-.21-.21c-.09.08-.21.21-.29.34l-.05.11h0c-.24.39-.37.86-.37,1.31,0,.17.02.33.05.49l-12.88,12.88-2.56,2.56-4.6,4.6c-.17.17-.3.38-.4.62l-.02.1c-.07.21-.08.45-.03.73.06.33.17.58.3.7.14.23.37.43.6.52,1.99,1.01,4.05,1.52,6.14,1.52.35,0,.71-.01,1.06-.04,2.69-.25,5.31-1.33,7.6-3.1,1.97-1.5,3.62-3.46,4.85-5.68.1-.18.22-.35.31-.54.33-.67.61-1.35.84-2.03.62-1.8.9-3.57.79-5.23.87-1,1.66-1.61,2.46-1.89.92-.32,2.02-.26,3.35.18.12.07.24.13.36.18.33.14.67.21,1,.21.6,0,1.12-.22,1.56-.63.02-.02.04-.03.06-.05l15.96-15.96c1.2-1.2,1.87-2.8,1.87-4.51s-.66-3.3-1.87-4.51ZM53,53.28s-.08-.05-.11-.07l-.32-.21-6.04-4.03,16.92-16.93c.73-.73,1.68-1.13,2.68-1.13s1.98.4,2.71,1.13c.7.7,1.1,1.67,1.1,2.68s-.4,1.98-1.1,2.68l-15.85,15.88ZM43.4,56.36l-.04.13c-.05.18-.05.36-.04.54.17,1.95-.3,4.17-1.34,6.25-1.05,2.07-2.59,3.93-4.43,5.38-1.91,1.45-4.07,2.33-6.25,2.53-1.57.13-3.16-.09-4.73-.67l19.06-19.06.18.12,1.86,1.24c-.06.02-.12.03-.19.05-1.29.45-2.41,1.33-3.77,2.96-.13.17-.26.34-.3.53Z"/><path style="fill:#349f87;" d="M54.37,48.8l-3.19-2.15c-.58-.38-1.39-.21-1.79.38-.19.29-.26.63-.19.96.07.33.28.61.56.79l3.19,2.15c.21.14.46.21.71.21.09,0,.18,0,.27-.03.34-.07.63-.28.8-.56.19-.28.25-.62.17-.96-.07-.32-.27-.6-.55-.79Z"/><path style="fill:#349f87;" d="M53.81,44.03c-.28-.19-.62-.26-.95-.19-.33.06-.62.25-.79.52-.2.27-.28.6-.22.94.06.35.26.66.55.86l3.19,2.15c.2.13.44.2.68.2.1,0,.19,0,.29-.03.33-.07.63-.28.81-.55.39-.58.23-1.36-.34-1.75l-3.22-2.15Z"/><path style="fill:#349f87;" d="M41.38,24.21c-.42-.42-.97-.64-1.58-.64h-3.7v-3.7c0-.61-.22-1.16-.64-1.58s-.97-.64-1.55-.64h-4.89c-.57,0-1.14.23-1.54.64-.42.42-.64.97-.64,1.58v3.7h-3.7c-.62,0-1.16.22-1.58.64-.41.41-.64.97-.64,1.54v4.89c0,.57.23,1.14.64,1.54.42.42.97.64,1.58.64h3.7v3.7c0,.61.22,1.16.64,1.58.41.41.97.64,1.55.64h4.89c.57,0,1.14-.23,1.55-.64l.08-.11c.36-.38.56-.89.56-1.47v-3.7h3.7c.57,0,1.08-.2,1.46-.56l.12-.09c.41-.41.64-.97.64-1.54v-4.89c0-.57-.23-1.14-.64-1.54h0ZM23.47,30.27v-4.14h5.93v-5.93h4.14v5.93h5.93v4.14h-5.93v5.92h-4.14v-5.92h-5.93Z"/></svg>
+
+
+
+          </div>
+          <div class=" flex flex-col gap-4">
+            <ul class="flex gap-2 flex-wrap ">
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Chấn thương
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau bụng
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Chảy máu
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Nhiễm trùng
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Bất thường vùng vú
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau mạn tính
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Thay đổi thể trạng sau phẫu thuật
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Chăm sóc giảm nhẹ
+                </li>
+              
+            </ul>
+            <p class=" text-sm leading-relaxed text-justify ">
+              Phòng khám tiếp nhận tiểu phẫu dưới gây tê tại chỗ đối với các tổn thương bề mặt, khối u nông và chấn thương. Với các trường hợp cần nhập viện hoặc phẫu thuật lớn, bệnh nhân sẽ được giới thiệu đến bệnh viện liên kết. Chúng tôi đồng hành theo dõi sau phẫu thuật, tư vấn dùng thuốc và phối hợp điều trị như bác sĩ điều trị thứ hai.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 ">
+          <div class="border-4 border-color-11 p-10 rounded-md bg-white/20">
+            <h4 class=" text-sm md:text-base font-bold  leading-tight mb-6">
+              Các bệnh lý thường gặp tại khoa Ngoại
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8">
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ung thư dạ dày
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ung thư đại tràng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ung thư gan
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ung thư đường mật
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ung thư tụy
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Sỏi mật
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Thoát vị bẹn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Thủng loét tá tràng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm ruột thừa cấp
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Tắc ruột
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ung thư vú
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Quản lý sức khỏe sau phẫu thuật
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Điều trị ung thư bằng thuốc
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Chăm sóc giảm nhẹ
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div
+        id="noi-khoa"
+        class=" relative border-t border-color-8 first:mt-0  mt-30  "
+      >
+        <div
+          class=" absolute top-0 left-0 w-10 rounded-full h-1 bg-color-9"
+        ></div>
+        <h3
+          class="my-8 text-primary text-xl md:text-2xl font-bold  leading-tight"
+        >
+          Nội khoa
+        </h3>
+        <div class="flex items-center gap-10">
+          <div
+            class="w-12 h-12 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-primary transition-colors shadow-sm mr-4 md:mr-0 md:mb-4 shrink-0"
+          >
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-20 md:h-20" viewBox="0 0 74 74" width="74" height="74"><path style="fill:none;" d="M15.2,35.17c0,.28.11.55.28.73.21.21.48.33.76.33h4.81c.29,0,.55-.11.76-.33.18-.18.28-.45.28-.73s-.11-.6-.28-.77c-.21-.21-.48-.33-.76-.33h-4.81c-.29,0-.55.11-.76.33-.17.17-.28.48-.28.77Z"/><path style="fill:none;" d="M13.53,13.15c.23-.23.37-.59.37-.94s-.14-.71-.38-1c-.26-.26-.61-.4-.96-.4s-.71.15-.98.41c-.24.24-.37.58-.37.98s.13.73.35.92c.58.58,1.45.56,1.98.02Z"/><path style="fill:none;" d="M50.37,31.3c1.7,0,3.35-.69,4.54-1.88,1.21-1.21,1.87-2.83,1.87-4.57s-.68-3.37-1.87-4.57c-1.19-1.19-2.84-1.88-4.54-1.88s-3.35.69-4.54,1.88c-1.19,1.2-1.87,2.86-1.87,4.57s.68,3.37,1.87,4.57c1.19,1.2,2.84,1.88,4.54,1.88Z"/><path style="fill:none;" d="M24.74,10.81c-.36,0-.71.15-.98.41-.23.26-.37.63-.37.98s.14.71.37.94c.53.53,1.42.53,1.95,0,.24-.22.37-.55.37-.94s-.13-.74-.37-.98h0c-.27-.27-.61-.41-.98-.41Z"/><path style="fill:none;" d="M51.33,45.47c-.26-.26-.61-.4-.96-.4s-.71.15-.97.41c-.25.25-.37.56-.37.94s.13.74.37.98c.53.54,1.42.53,1.95,0,.23-.26.37-.63.37-.99,0-.34-.13-.66-.38-.95Z"/><path style="fill:#002a1d;" d="M67.59,38.28c-.56-.75-1.24-1.47-1.99-2.08-.91-.7-1.68-1.17-2.42-1.48-2.45-1.11-4.78-1.1-6.41,0-.94.64-1.93,1.13-2.95,1.44-2.21.66-4.72.66-6.92,0-1.02-.32-2.02-.8-2.96-1.45-1.62-1.1-3.96-1.1-6.4,0-.75.32-1.52.79-2.44,1.5-.73.6-1.41,1.32-1.98,2.09-1.28,1.85-1.56,3.83-.77,5.58,1.58,3.45,4.11,6.35,7.31,8.41,2.64,1.71,5.64,2.73,8.76,3.04-.54,1.68-1.46,3.24-2.75,4.56-2.17,2.13-4.98,3.31-7.93,3.31h-6.48c-2.95,0-5.77-1.17-7.93-3.3-2.12-2.18-3.29-5.01-3.29-7.98v-12.88h-2.8v12.88c0,3.73,1.45,7.27,4.09,9.97,2.64,2.66,6.17,4.12,9.93,4.12h6.48c3.76,0,7.29-1.46,9.93-4.12,2.64-2.7,4.09-6.24,4.09-9.97v-1.52c-.44.15-.91.25-1.4.25s-.96-.09-1.4-.25v1.52c0,.22-.02.43-.03.64-2.74-.23-5.4-1.12-7.78-2.61-2.73-1.77-4.88-4.28-6.21-7.25-.46-1,.03-2.07.51-2.79.38-.55.86-1.06,1.4-1.49.49-.38,1.09-.75,1.87-1.15,1.47-.67,2.82-.75,3.62-.22,1.05.76,2.31,1.36,3.76,1.8,2.84.83,5.68.83,8.53,0,1.44-.44,2.71-1.04,3.74-1.79.81-.54,2.17-.46,3.62.2.8.4,1.4.77,1.88,1.14.42.36,1.01.91,1.41,1.5.49.72.97,1.79.52,2.79-1.33,2.97-3.48,5.47-6.21,7.25-1.82,1.16-3.87,1.97-6.11,2.39-.6.13-1.05.62-1.12,1.21v.14c0,.44.14.78.44,1.09.29.29.71.42,1.18.35,2.52-.48,4.97-1.46,7.09-2.83,3.2-2.05,5.73-4.96,7.31-8.41h0c.78-1.75.51-3.73-.78-5.6Z"/><path style="fill:#349f87;" d="M50.37,34.11c2.35,0,4.65-.93,6.34-2.55l.2-.15c1.72-1.78,2.67-4.11,2.67-6.56s-.98-4.81-2.68-6.52c-1.75-1.76-4.08-2.74-6.54-2.74s-4.78.97-6.54,2.74c-1.7,1.71-2.68,4.09-2.68,6.52s.95,4.78,2.68,6.57c1.77,1.73,4.09,2.69,6.53,2.69ZM43.96,24.85c0-1.71.68-3.37,1.87-4.57,1.19-1.19,2.84-1.88,4.54-1.88s3.35.69,4.54,1.88c1.19,1.2,1.87,2.86,1.87,4.57s-.66,3.35-1.87,4.57c-1.19,1.2-2.84,1.88-4.54,1.88s-3.35-.69-4.54-1.88c-1.19-1.2-1.87-2.86-1.87-4.57Z"/><path style="fill:#349f87;" d="M16.24,31.26h4.81c1.01,0,1.96.39,2.75,1.13.1.1.17.21.25.31,1.52-.67,2.92-1.6,4.09-2.79,2.56-2.57,3.97-5.98,3.97-9.59v-5.96c0-.95-.36-1.82-1.05-2.51-.64-.64-1.5-1.01-2.38-1.04.16.45.25.91.25,1.39s-.1.96-.27,1.42c.16.02.29.07.37.15.18.22.27.41.27.59v5.96c0,2.84-1.12,5.54-3.16,7.59-2.01,2.02-4.67,3.13-7.5,3.13s-5.49-1.11-7.5-3.13c-2.04-2.05-3.16-4.74-3.16-7.59v-5.96c0-.17.09-.37.24-.55.11-.11.25-.16.41-.18-.17-.46-.27-.94-.27-1.42s.09-.95.25-1.39c-.88.03-1.74.4-2.38,1.04-.69.69-1.05,1.56-1.05,2.51v5.96c0,3.61,1.41,7.02,3.97,9.59,1.18,1.19,2.59,2.13,4.11,2.8.09-.11.17-.22.28-.32.71-.71,1.7-1.13,2.7-1.13Z"/><path style="fill:#349f87;" d="M20.05,39.03h1c1.01,0,1.96-.39,2.76-1.14.72-.72,1.13-1.72,1.13-2.73,0-.9-.33-1.77-.89-2.47-.08-.1-.16-.22-.25-.31-.79-.74-1.74-1.13-2.75-1.13h-4.81c-1,0-1.99.42-2.7,1.13-.1.1-.19.21-.28.32-.57.68-.91,1.55-.91,2.46,0,1.03.43,2.03,1.18,2.73.72.72,1.71,1.14,2.72,1.14h3.81ZM21.05,34.07c.29,0,.55.11.76.33.17.17.28.48.28.77s-.11.55-.28.73c-.21.21-.48.33-.76.33h-4.81c-.29,0-.55-.11-.76-.33-.18-.18-.28-.45-.28-.73s.11-.6.28-.77c.21-.21.48-.33.76-.33h4.81Z"/><path style="fill:#349f87;" d="M28.93,12.21c0-.48-.09-.95-.25-1.39-.2-.57-.52-1.11-.98-1.6-.84-.79-1.87-1.21-2.96-1.21s-2.14.44-2.93,1.23c-.83.83-1.26,1.86-1.26,2.98s.46,2.19,1.25,2.93c.77.83,1.81,1.28,2.94,1.28s2.15-.44,2.97-1.27c.42-.42.74-.95.95-1.52.17-.46.27-.94.27-1.42ZM26.09,12.21c0,.39-.13.73-.37.94-.53.53-1.42.53-1.95,0-.23-.23-.37-.59-.37-.94s.14-.72.37-.98c.27-.27.61-.41.98-.41s.71.15.98.41h0c.24.24.37.58.37.98Z"/><path style="fill:#349f87;" d="M8.36,12.21c0,.48.1.96.27,1.42.21.57.52,1.09.95,1.52.83.83,1.85,1.27,2.97,1.27s2.15-.44,2.97-1.27c.76-.77,1.22-1.87,1.22-2.94s-.42-2.13-1.23-3c-1.69-1.59-4.21-1.61-5.94.02-.44.47-.75,1.01-.96,1.58-.16.45-.25.91-.25,1.39ZM11.21,12.21c0-.4.13-.74.37-.98.27-.27.61-.41.98-.41s.7.14.96.4c.24.28.38.65.38,1s-.14.71-.37.94c-.53.53-1.4.56-1.98-.02-.22-.19-.35-.53-.35-.92Z"/><path style="fill:#349f87;" d="M50.37,50.64c.49,0,.96-.09,1.4-.25.58-.2,1.12-.53,1.58-.99.79-.85,1.21-1.88,1.21-2.97s-.46-2.17-1.22-2.94c-.8-.8-1.83-1.23-2.97-1.23s-2.18.42-2.97,1.23c-.76.77-1.22,1.87-1.22,2.94s.42,2.13,1.22,2.99c.45.46.99.78,1.57.98.44.15.91.25,1.4.25ZM49.39,47.41c-.24-.24-.37-.58-.37-.98s.12-.69.37-.94c.26-.27.61-.41.97-.41s.7.14.96.4c.25.3.38.62.38.95,0,.36-.14.72-.37.99-.53.53-1.42.53-1.95,0Z"/></svg>
+
+
+
+          </div>
+          <div class=" flex flex-col gap-4">
+            <ul class="flex gap-2 flex-wrap ">
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Cảm lạnh
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Sốt
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Chóng mặt
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Buồn nôn
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau đầu
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau bụng
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau ngực
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Cúm
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Ho
+                </li>
+              
+            </ul>
+            <p class=" text-sm leading-relaxed text-justify ">
+              Khám và điều trị các bệnh lý nội khoa thường gặp như cảm lạnh, cúm, sốt, đau đầu, chóng mặt, đau ngực, đau bụng, tiêu chảy và các bệnh dị ứng. Phòng khám cũng tiếp nhận và quản lý các bệnh lý mạn tính như tăng huyết áp, đái tháo đường, rối loạn mỡ máu, gout, loãng xương, đồng thời tư vấn chế độ ăn uống và vận động phù hợp cho từng bệnh nhân.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 ">
+          <div class="border-4 border-color-11 p-10 rounded-md bg-white/20">
+            <h4 class=" text-sm md:text-base font-bold  leading-tight mb-6">
+              Các bệnh lý thường gặp tại khoa Nội
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8">
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Cảm lạnh
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Sốt
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Cúm
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Hen phế quản
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm phế quản
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm mũi dị ứng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Các bệnh da liễu 
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Tiểu nhiều lần
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Viêm bàng quang
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Phì đại tuyến tiền liệt
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Loãng xương
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Mất ngủ
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div
+        id="hau-mon"
+        class=" relative border-t border-color-8 first:mt-0  mt-30  "
+      >
+        <div
+          class=" absolute top-0 left-0 w-10 rounded-full h-1 bg-color-9"
+        ></div>
+        <h3
+          class="my-8 text-primary text-xl md:text-2xl font-bold  leading-tight"
+        >
+          Hậu môn – Trực tràng
+        </h3>
+        <div class="flex items-center gap-10">
+          <div
+            class="w-12 h-12 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-primary transition-colors shadow-sm mr-4 md:mr-0 md:mb-4 shrink-0"
+          >
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-20 md:h-20" viewBox="0 0 74 74" width="74" height="74"><path style="fill:#002a1d;" d="M48.87,62.5c-4.63,0-9.29-1.71-11.87-3.62-2.58,1.9-7.24,3.62-11.87,3.62-3.52,0-21.08-1.14-21.08-23.68,0-17.37,12.01-27.32,32.94-27.32s32.94,9.96,32.94,27.32c0,22.53-17.56,23.68-21.08,23.68ZM37,55.41c.41,0,.8.17,1.08.46,1.45,1.52,6.01,3.63,10.78,3.63,4.24,0,18.08-1.49,18.08-20.68,0-21.16-18.76-24.32-29.94-24.32s-29.94,3.16-29.94,24.32c0,19.18,13.83,20.68,18.08,20.68,4.77,0,9.33-2.11,10.78-3.63.28-.3.68-.46,1.08-.46Z"/><path style="fill:#002a1d;" d="M37,48.22c-.83,0-1.5-.67-1.5-1.5v-18.59c0-.83.67-1.5,1.5-1.5s1.5.67,1.5,1.5v18.59c0,.83-.67,1.5-1.5,1.5Z"/><path style="fill:#349f87;" d="M54.04,55c-.65,0-1.25-.42-1.44-1.08-.23-.79.22-1.63,1.02-1.86,1.89-.56,3.67-2.36,4.64-4.71.32-.77,1.19-1.13,1.96-.81.77.32,1.13,1.19.81,1.96-1.33,3.22-3.79,5.63-6.57,6.44-.14.04-.28.06-.42.06Z"/></svg>
+
+
+          </div>
+          <div class=" flex flex-col gap-4">
+            <ul class="flex gap-2 flex-wrap ">
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Đau vùng hậu môn
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Chảy máu hậu môn
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Máu lẫn trong phân
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Cảm giác đi ngoài không hết
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Phân nhỏ, dẹt
+                </li>
+              
+                <li class="text-sm  rounded-md bg-color-11  px-2 py-1">
+                  Tiêu chảy
+                </li>
+              
+            </ul>
+            <p class=" text-sm leading-relaxed text-justify ">
+              Việc thăm khám được thực hiện trong phòng khám đảm bảo riêng tư, bệnh nhân được che phủ bằng khăn trong suốt quá trình khám. Với bệnh nhân nữ, luôn có nhân viên nữ hỗ trợ. Trường hợp cần thiết, nội soi có thể được thực hiện ngay trong ngày để chẩn đoán chính xác.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 ">
+          <div class="border-4 border-color-11 p-10 rounded-md bg-white/20">
+            <h4 class=" text-sm md:text-base font-bold  leading-tight mb-6">
+              Các bệnh lý thường gặp tại khoa Hậu môn – Trực tràng
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8">
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Trĩ (trĩ nội, trĩ ngoại)
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Rò hậu môn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Nứt kẽ hậu môn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Áp xe quanh hậu môn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Polyp hậu môn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Sa trực tràng
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Ngứa hậu môn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Đau hậu môn
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Chảy máu hậu môn
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div
+        id="tiem-chung"
+        class=" relative border-t border-color-8 first:mt-0  mt-30  "
+      >
+        <div
+          class=" absolute top-0 left-0 w-10 rounded-full h-1 bg-color-9"
+        ></div>
+        <h3
+          class="my-8 text-primary text-xl md:text-2xl font-bold  leading-tight"
+        >
+          Tiêm chủng
+        </h3>
+        <div class="flex items-center gap-10">
+          <div
+            class="w-12 h-12 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-primary group-hover:text-primary transition-colors shadow-sm mr-4 md:mr-0 md:mb-4 shrink-0"
+          >
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-8 h-8 md:w-20 md:h-20" viewBox="0 0 74 74" width="74" height="74"><defs><clipPath id="clip-immunization"><rect style="fill:none;" x="7.5" y="5.5" width="59" height="63"/></clipPath></defs><g clip-path="url(#clip-immunization)"><path style="fill:#002a1d;" d="M31.22,21.92l3.35,1.52c1.44.66,2.38,2.09,2.38,3.65v2.62l2.57-2.52v-.1c0-2.52-1.52-4.85-3.87-5.93l-3.35-1.52c-1.44-.65-2.38-2.08-2.38-3.65v-.27h2.33c.71,0,1.28-.57,1.28-1.26v-4.69c0-2.35-1.95-4.27-4.35-4.27h-11.36c-2.4,0-4.35,1.91-4.35,4.27v4.69c0,.69.58,1.26,1.28,1.26h2.33v.27c0,1.56-.93,2.99-2.38,3.65l-3.35,1.52c-2.35,1.08-3.86,3.41-3.86,5.93v16.03c0,3.03,2.51,5.5,5.61,5.5h7.34c.05-.87.24-1.72.59-2.52h-7.93c-1.67,0-3.04-1.34-3.04-2.98v-16.03c0-1.55.93-2.99,2.38-3.65l3.35-1.52c2.35-1.05,3.87-3.38,3.87-5.93v-.27h7.7v.27c0,2.54,1.52,4.87,3.86,5.93ZM16.05,13.2v-3.43c0-.96.8-1.75,1.78-1.75h11.36c.98,0,1.78.78,1.78,1.75v3.43h-14.92Z"/><path style="fill:#002a1d;" d="M61.93,29.11l.08.08,2.3,2.25c.24.24.56.37.91.37s.67-.13.91-.37c.5-.49.5-1.29,0-1.78l-11.12-10.91c-.5-.49-1.32-.49-1.82,0-.5.49-.5,1.29,0,1.78l2.38,2.33-5.7,5.61-.08-.08-3.95-3.87c-.24-.24-.56-.37-.91-.37s-.67.13-.91.37c-.5.49-.5,1.29,0,1.78l.66.65-.08.08-19.43,19.07c-1.54,1.51-1.66,3.91-.28,5.58l.06.08-.07.07-3.05,3c-.5.49-.5,1.27,0,1.78l1.95,1.9-.08.08-7.91,7.76c-.5.49-.5,1.29,0,1.78.24.24.56.37.91.37s.67-.13.91-.37l7.99-7.84,1.95,1.91c.24.24.57.37.91.37s.67-.13.91-.37l3.11-3.06.08.06c.78.62,1.7.95,2.67.95,1.14,0,2.21-.44,3.02-1.23l19.51-19.15.66.65c.24.24.56.37.91.37s.67-.13.91-.37c.5-.49.5-1.29,0-1.78l-4.01-3.94.08-.08,5.63-5.52ZM28.46,59.52l-3.9-3.81,2.19-2.15.08.08,3.81,3.74-2.18,2.14ZM55.87,38.08l-19.43,19.07c-.32.31-.76.47-1.2.47s-.88-.16-1.2-.47l-7.05-6.92c-.32-.31-.5-.73-.5-1.18s.18-.86.5-1.18l2.86-2.8.08.08,3.51,3.45c.24.24.56.37.91.37s.67-.13.91-.37c.5-.49.5-1.29,0-1.78l-3.59-3.52.08-.08,3.5-3.43.08.08,3.51,3.45c.24.24.56.37.91.37s.67-.13.91-.37c.5-.49.5-1.29,0-1.78l-3.59-3.52.08-.08,3.5-3.43.08.08,3.51,3.45c.24.24.56.37.91.37s.67-.13.91-.37c.5-.49.5-1.29,0-1.78l-3.59-3.52.08-.08,3.98-3.9.08.08,9.37,9.19-.08.08ZM54.41,32.92l-.08-.08-2.65-2.6,5.7-5.61.08.08,2.66,2.61-.08.08-5.63,5.52Z"/><path style="fill:#349f87;" d="M23.51,36.83c.71,0,1.28-.57,1.28-1.26v-3.48h3.55c.71,0,1.28-.57,1.28-1.26s-.58-1.26-1.28-1.26h-3.55v-3.49c0-.69-.58-1.26-1.28-1.26s-1.28.57-1.28,1.26v3.49h-3.55c-.71,0-1.28.57-1.28,1.26s.58,1.26,1.28,1.26h3.55v3.48c0,.69.58,1.26,1.28,1.26Z"/></g></svg>
+
+
+          </div>
+          <div class=" flex flex-col gap-4">
+            <ul class="flex gap-2 flex-wrap ">
+              
+            </ul>
+            <p class=" text-sm leading-relaxed text-justify ">
+              Tiêm chủng giúp cơ thể tạo miễn dịch, phòng ngừa các bệnh truyền nhiễm và giảm mức độ nặng của bệnh nếu mắc phải. Phòng khám cung cấp các loại vắc-xin như vắc-xin cúm, vắc-xin phế cầu và nhiều loại vắc-xin khác. Dịch vụ tiêm chủng cho trẻ em được áp dụng từ giai đoạn tiêm chủng lần 2 trở đi. Chi phí tiêm chủng có thể thay đổi theo mùa và một số loại vắc-xin cần đặt trước.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 ">
+          <div class="border-4 border-color-11 p-10 rounded-md bg-white/20">
+            <h4 class=" text-sm md:text-base font-bold  leading-tight mb-6">
+              Các loại vắc-xin được cung cấp
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8">
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Vắc-xin cúm
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Vắc-xin phế cầu
+                </li>
+              
+                <li
+                  class="text-sm py-3 border-b border-dashed border-color-8 flex items-center text-gray-600"
+                >
+                  <span
+                    class="w-2 h-2 bg-primary rounded-full mr-3 shrink-0"
+                  ></span>
+                  Các loại vắc-xin phòng bệnh truyền nhiễm khác
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+  <footer class="pt-16 pb-8 text-gray-700 font-sans relative overflow-hidden">
+  <div class="container mx-auto px-4 max-w-7xl relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+      <!-- Left Column: Info & Schedule -->
+      <div>
+        <!-- Logo & Title -->
+        <div class="flex items-center gap-4 mb-6">
+          <div class=" rounded p-2 flex items-center justify-center ">
+            <img
+              src="/assets/images/logo-ngang.png"
+              alt="Logo Phòng khám"
+              class="h-[100px] object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mb-8">
+          <span class="bg-[#e8e6dc] text-gray-700 text-xs px-3 py-1 rounded-sm"
+            >Tiêu hóa</span
+          >
+          <span class="bg-[#e8e6dc] text-gray-700 text-xs px-3 py-1 rounded-sm"
+            >Nội soi</span
+          >
+          <span class="bg-[#e8e6dc] text-gray-700 text-xs px-3 py-1 rounded-sm"
+            >Ngoại khoa</span
+          >
+          <span class="bg-[#e8e6dc] text-gray-700 text-xs px-3 py-1 rounded-sm"
+            >Nội khoa</span
+          >
+          <span class="bg-[#e8e6dc] text-gray-700 text-xs px-3 py-1 rounded-sm"
+            >Hậu môn - Trực tràng</span
+          >
+        </div>
+
+        <!-- Address & Phone -->
+        <div class="mb-8">
+          <p class="mb-2 text-sm">Hà Nội, Việt Nam</p>
+          <a
+            href="tel:0123456789"
+            class="text-3xl md:text-4xl font-bold text-primary hover:opacity-80 transition-opacity"
+            >0123 456 789</a
+          >
+        </div>
+
+        <!-- Schedule Table -->
+        <div class=" rounded-xl border border-gray-300 overflow-hidden mb-4">
+          <table class="w-full text-center text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-gray-300 text-gray-600">
+                <th
+                  class="py-3 px-2 font-normal w-1/5 border-r border-gray-300"
+                >
+                  Giờ khám
+                </th>
+                <th class="py-3 px-2 font-normal border-r border-gray-300">
+                  T2
+                </th>
+                <th class="py-3 px-2 font-normal border-r border-gray-300">
+                  T3
+                </th>
+                <th class="py-3 px-2 font-normal border-r border-gray-300">
+                  T4
+                </th>
+                <th class="py-3 px-2 font-normal border-r border-gray-300">
+                  T5
+                </th>
+                <th class="py-3 px-2 font-normal border-r border-gray-300">
+                  T6
+                </th>
+                <th class="py-3 px-2 font-normal border-r border-gray-300">
+                  T7
+                </th>
+                <th class="py-3 px-2 font-normal w-16">CN</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-500">
+              <tr class="border-b border-gray-300">
+                <td class="py-3 px-2 border-r border-gray-300">9:00 - 12:30</td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td>－</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-2 border-r border-gray-300">
+                  14:30 - 18:00
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td class="text-primary border-r border-gray-300 text-2xl">
+                  ●
+                </td>
+                <td>－</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-2 gap-4">
+          <a
+            href="/booking/"
+            class="bg-primary hover:bg-primary-hover text-white py-4 rounded-lg text-center font-bold transition-colors flex items-center justify-center gap-2 group"
+          >
+            Đặt lịch Web
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="bg-[#2c9d7e] hover:bg-[#25856b] text-white py-4 rounded-lg text-center font-bold transition-colors flex items-center justify-center gap-2 group"
+          >
+            Tư vấn Zalo
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Navigation & Map -->
+      <div>
+        <div class="grid grid-cols-3 gap-8 mb-12 text-sm">
+          <!-- Col 1 -->
+          <div>
+            <h3 class="font-bold text-primary mb-4">Danh mục</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="/" class="hover:text-primary transition-colors"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="/news/" class="hover:text-primary transition-colors"
+                  >Tin tức</a
+                >
+              </li>
+              <li>
+                <a href="/price/" class="hover:text-primary transition-colors"
+                  >Bảng giá</a
+                >
+              </li>
+              <li>
+                <a href="/contact/" class="hover:text-primary transition-colors"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="border-l border-gray-200 pl-8">
+            <h3 class="font-bold text-gray-500 mb-4">Về chúng tôi</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="/about/" class="hover:text-primary transition-colors"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="/doctors/" class="hover:text-primary transition-colors"
+                  >Đội ngũ bác sĩ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/services/"
+                  class="hover:text-primary transition-colors"
+                  >Dịch vụ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="border-l border-gray-200 pl-8">
+            <h3 class="font-bold text-gray-500 mb-4">Chuyên khoa</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="hover:text-primary transition-colors"
+                  >Tiêu hóa</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary transition-colors"
+                  >Nội soi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary transition-colors"
+                  >Tổng quát</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div
+          class="w-full h-[300px] bg-gray-200 rounded-2xl overflow-hidden shadow-sm relative group"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12809.529528090747!2d136.6855!3d36.545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbKwzMyJzQyLjAiTiAxMzbKwzQxJzA3LjgiRQ!5e0!3m2!1sen!2sjp!4v1600000000000!5m2!1sen!2sjp"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            class="grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+          >
+          </iframe>
+
+          <!-- Overlay Card -->
+          <div
+            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg max-w-[200px] text-xs pointer-events-none"
+          >
+            <p class="font-bold text-gray-800 mb-1">Clinic Morinosato</p>
+            <p class="text-gray-500">Hà Nội, Việt Nam</p>
+            <div class="mt-2 flex text-yellow-500">
+              ★★★★☆ <span class="text-gray-400 ml-1">28 đánh giá</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+
+    
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/flowbite.min.js"></script>
+  </body>
+</html>
