@@ -9,6 +9,20 @@
   </head>
 
   <body class="bg-gray-50 text-gray-900 font-body custom-scss">
+    <div
+  id="global-loader"
+  class="fixed inset-0 z-[9999] bg-white flex items-center justify-center transition-opacity duration-500"
+>
+  <div class="flex flex-col items-center gap-4">
+    <div
+      class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"
+    ></div>
+    <span class="text-primary font-medium tracking-widest text-sm uppercase"
+      >Loading...</span
+    >
+  </div>
+</div>
+
     
 
 <nav
@@ -345,98 +359,131 @@
     
 
 
-<main class="pt-20 pb-20 min-h-screen">
-  <div class="topAbout_bg"></div>
-  
-  <div class="container mx-auto px-6 py-20 max-w-6xl relative">
-    <div class="relative w-full">
-      <div
-        class="absolute top-0 left-0 z-10 pt-4 md:pt-12 lg:pt-10 max-w-md pointer-events-none"
+<main class=" min-h-screen relative ">
+  <div class="relative py-20">
+    <div class="cloud cloud-about01 pointer-events-none select-none"></div>
+    <div class="cloud cloud-about02 pointer-events-none select-none"></div>
+    <div class="cloud cloud-about03 pointer-events-none select-none"></div>
+    <div
+      class="bg-linear-to-b from-color-10 via-color-10 to-transparent absolute top-0 left-0 right-0 w-full -z-10 h-screen"
+    ></div>
+    <div class="container mx-auto px-6 py-20 max-w-7xl  ">
+      <h1
+        class="text-4xl md:text-2xl lg:text-4xl font-bold text-primary mb-4 leading-tight relative"
       >
-        <h1
-          class="text-4xl md:text-2xl lg:text-4xl font-bold text-primary mb-4 leading-tight"
-        >
-          Tin tức
-        </h1>
-        <p
-          class="text-sm font-bold tracking-[0.2em] text-gray-800 uppercase pl-1"
-        >
-          Hoạt động &amp; Sự kiện
-        </p>
-      </div>
+        Tin tức
+      </h1>
+      <p
+        class="text-sm font-bold tracking-[0.2em] text-gray-800 uppercase pl-1 relative mb-12"
+      >
+        Hoạt động & Sự kiện
+      </p>
 
-      <div class=" w-full" data-animation="after">
-        <svg class=" w-full h-auto" viewBox="0 0 1200 467">
-          <defs>
-            <clipPath id="SvgVisClipPath">
-              <path
-                d="M0,249.02c0-4.38,2.85-8.25,7.04-9.55L778.55.45c.96-.3,1.96-.45,2.96-.45h408.49c5.52,0,10,4.48,10,10v447c0,5.52-4.48,10-10,10H10c-5.52,0-10-4.48-10-10v-207.98Z"
-              ></path>
-            </clipPath>
-          </defs>
-          <rect
-            width="1200"
-            height="467"
-            fill="#eeeee3"
-            clip-path="url(#SvgVisClipPath)"
-          ></rect>
-          <image
-            href="/assets/images/banner3.png"
-            xlink:href="/assets/images/banner3.png"
-            width="1200"
-            height="467"
-            clip-path="url(#SvgVisClipPath)"
-            preserveAspectRatio="xMidYMid slice"
-          ></image>
-        </svg>
+      <!-- News List -->
+      <div class="md:w-3/4 py-10 animate-on-scroll">
+        <div class="flex flex-col gap-6">
+          
+          
+            
+  <a
+    href="#"
+    class="group flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-dashed border-gray-400 pb-6 last:border-0 last:pb-0 transition-colors p-3 -mx-3"
+  >
+    <time class="text-gray-500 font-medium min-w-[100px]">2026.02.05</time>
+    <span
+      class="inline-block border px-3 py-1 bg-white group-hover:bg-primary group-hover:text-white text-primary text-xs font-semibold rounded-lg min-w-[100px] text-center w-fit transition-colors"
+    >
+      Thông báo
+    </span>
+    <h3
+      class="text-gray-800 font-medium group-hover:text-primary transition-colors flex-1"
+    >
+      Lịch nghỉ tết Nguyên Đán 2026
+    </h3>
+  </a>
+
+          
+            
+  <a
+    href="#"
+    class="group flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-dashed border-gray-400 pb-6 last:border-0 last:pb-0 transition-colors p-3 -mx-3"
+  >
+    <time class="text-gray-500 font-medium min-w-[100px]">2026.01.20</time>
+    <span
+      class="inline-block border px-3 py-1 bg-white group-hover:bg-primary group-hover:text-white text-primary text-xs font-semibold rounded-lg min-w-[100px] text-center w-fit transition-colors"
+    >
+      Tin y tế
+    </span>
+    <h3
+      class="text-gray-800 font-medium group-hover:text-primary transition-colors flex-1"
+    >
+      Cập nhật vắc-xin cúm mùa mới nhất
+    </h3>
+  </a>
+
+          
+            
+  <a
+    href="#"
+    class="group flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-dashed border-gray-400 pb-6 last:border-0 last:pb-0 transition-colors p-3 -mx-3"
+  >
+    <time class="text-gray-500 font-medium min-w-[100px]">2026.01.15</time>
+    <span
+      class="inline-block border px-3 py-1 bg-white group-hover:bg-primary group-hover:text-white text-primary text-xs font-semibold rounded-lg min-w-[100px] text-center w-fit transition-colors"
+    >
+      Hoạt động
+    </span>
+    <h3
+      class="text-gray-800 font-medium group-hover:text-primary transition-colors flex-1"
+    >
+      Chương trình khám sức khỏe miễn phí cho người cao tuổi
+    </h3>
+  </a>
+
+          
+            
+  <a
+    href="#"
+    class="group flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-dashed border-gray-400 pb-6 last:border-0 last:pb-0 transition-colors p-3 -mx-3"
+  >
+    <time class="text-gray-500 font-medium min-w-[100px]">2026.01.10</time>
+    <span
+      class="inline-block border px-3 py-1 bg-white group-hover:bg-primary group-hover:text-white text-primary text-xs font-semibold rounded-lg min-w-[100px] text-center w-fit transition-colors"
+    >
+      Kiến thức
+    </span>
+    <h3
+      class="text-gray-800 font-medium group-hover:text-primary transition-colors flex-1"
+    >
+      5 dấu hiệu cảnh báo bệnh tiểu đường bạn không nên bỏ qua
+    </h3>
+  </a>
+
+          
+            
+  <a
+    href="#"
+    class="group flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-dashed border-gray-400 pb-6 last:border-0 last:pb-0 transition-colors p-3 -mx-3"
+  >
+    <time class="text-gray-500 font-medium min-w-[100px]">2026.01.05</time>
+    <span
+      class="inline-block border px-3 py-1 bg-white group-hover:bg-primary group-hover:text-white text-primary text-xs font-semibold rounded-lg min-w-[100px] text-center w-fit transition-colors"
+    >
+      Sự kiện
+    </span>
+    <h3
+      class="text-gray-800 font-medium group-hover:text-primary transition-colors flex-1"
+    >
+      Hội thảo: Chăm sóc sức khỏe xương khớp mùa lạnh
+    </h3>
+  </a>
+
+          
+        </div>
       </div>
     </div>
   </div>
 
-
-  <div class="container mx-auto px-6 py-12 max-w-7xl">
-    <div class="bg-white p-8 rounded-2xl shadow-sm">
-      <div class="space-y-6">
-        
-          <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
-            <div class="text-sm text-primary font-bold mb-1">
-              2026.02.05
-              <span class="text-gray-400 mx-2">|</span> Thông báo
-            </div>
-            <h3
-              class="text-xl font-semibold text-gray-900 hover:text-primary transition-colors cursor-pointer"
-            >
-              Lịch nghỉ tết Nguyên Đán 2026
-            </h3>
-          </div>
-        
-          <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
-            <div class="text-sm text-primary font-bold mb-1">
-              2026.01.20
-              <span class="text-gray-400 mx-2">|</span> Tin y tế
-            </div>
-            <h3
-              class="text-xl font-semibold text-gray-900 hover:text-primary transition-colors cursor-pointer"
-            >
-              Cập nhật vắc-xin cúm mùa mới nhất
-            </h3>
-          </div>
-        
-          <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
-            <div class="text-sm text-primary font-bold mb-1">
-              2026.01.15
-              <span class="text-gray-400 mx-2">|</span> Hoạt động
-            </div>
-            <h3
-              class="text-xl font-semibold text-gray-900 hover:text-primary transition-colors cursor-pointer"
-            >
-              Chương trình khám sức khỏe miễn phí cho người cao tuổi
-            </h3>
-          </div>
-        
-      </div>
-    </div>
-  </div>
   <footer class="pt-16 pb-8 text-gray-700 font-sans relative overflow-hidden">
   <div class="container mx-auto px-4 max-w-7xl relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">

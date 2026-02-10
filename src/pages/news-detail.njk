@@ -1,0 +1,123 @@
+---
+layout: layouts/base.njk
+title: Chi tiết tin tức - Medicare Clinic
+permalink: /news/detail/
+---
+
+{% from "components/graphicVisual.njk" import graphicVisual %}
+{% from "components/icons.njk" import icon %}
+
+<main class="min-h-screen relative">
+  <div class="relative py-20">
+    <div class="cloud cloud-about01 pointer-events-none select-none"></div>
+    <div class="cloud cloud-about02 pointer-events-none select-none"></div>
+    <div class="cloud cloud-about03 pointer-events-none select-none"></div>
+    <div
+      class="bg-linear-to-b from-color-10 via-color-10 to-transparent absolute top-0 left-0 right-0 w-full -z-10 h-screen"
+    ></div>
+
+    <div class="container mx-auto px-6 py-20 max-w-4xl">
+      <!-- Breadcrumb / Back -->
+      <a
+        href="/news/"
+        class="inline-flex items-center text-primary font-bold mb-8 hover:underline"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 mr-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+        Quay lại tin tức
+      </a>
+
+      <!-- Article Header -->
+      <div class="mb-12">
+        <div class="flex items-center gap-4 mb-4">
+          <span
+            class="inline-block border px-3 py-1 bg-white text-primary text-xs font-bold rounded-lg uppercase tracking-wider"
+          >
+            Thông báo
+          </span>
+          <span class="text-gray-500 font-medium text-sm">2026.02.05</span>
+        </div>
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight"
+        >
+          Lịch nghỉ tết Nguyên Đán 2026
+        </h1>
+        <p class="text-xl text-gray-700 font-medium leading-relaxed">
+          Medicare Clinic xin trân trọng thông báo đến Quý khách hàng lịch nghỉ
+          Tết Nguyên Đán năm 2026 để thuận tiện cho việc sắp xếp lịch thăm khám.
+        </p>
+      </div>
+
+      <!-- Article Content -->
+      <div
+        class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 prose prose-lg prose-headings:text-primary max-w-none"
+      >
+        <p>Kính gửi Quý khách hàng,</p>
+        <p>
+          Hòa chung không khí đón chào năm mới Bính Ngọ 2026, Medicare Clinic
+          xin gửi lời chúc sức khỏe, hạnh phúc và thành công đến Quý khách và
+          gia đình.
+        </p>
+
+        <h3>Thời gian nghỉ lễ</h3>
+        <p>Phòng khám sẽ nghỉ tết theo lịch sau:</p>
+        <ul>
+          <li>
+            <strong>Thời gian nghỉ:</strong> Từ ngày 16/02/2026 (29 Tết) đến hết
+            ngày 22/02/2026 (Mùng 5 Tết).
+          </li>
+          <li>
+            <strong>Thời gian làm việc lại:</strong> Ngày 23/02/2026 (Mùng 6
+            Tết).
+          </li>
+        </ul>
+
+        <h3>Hỗ trợ khẩn cấp</h3>
+        <p>
+          Trong thời gian nghỉ lễ, nếu có vấn đề sức khỏe khẩn cấp cần tư vấn,
+          Quý khách vui lòng liên hệ hotline trực tuyến của chúng tôi (hoạt động
+          24/7): <strong>0123 456 789</strong>.
+        </p>
+
+        <div
+          class="not-prose mt-8 p-6 bg-color-10 rounded-xl border border-primary/20 flex items-start gap-4"
+        >
+          <div class="text-primary mt-1">
+            {{ icon('lightbulb', 'w-6 h-6') }}
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 mb-1">Lưu ý</h4>
+            <p class="text-sm text-gray-700">
+              Hệ thống đặt lịch trực tuyến vẫn hoạt động xuyên suốt kỳ nghỉ lễ.
+              Quý khách có thể đặt lịch trước cho ngày Mùng 6 Tết ngay từ bây
+              giờ.
+            </p>
+          </div>
+        </div>
+
+        <p class="mt-8">
+          Cảm ơn Quý khách đã tin tưởng và đồng hành cùng Medicare Clinic trong
+          suốt năm qua. Chúc mừng năm mới!
+        </p>
+
+        <p class="font-bold text-right pt-4">
+          Giám đốc Phòng khám<br />BS.CKII Nguyễn Văn A
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% include "components/footer.njk" %}
+</main>
