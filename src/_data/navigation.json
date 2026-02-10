@@ -15,9 +15,9 @@
     "icon": "icn-medical"
   },
   {
-    "label": "Liên hệ",
-    "url": "/contact/",
-    "icon": "icn-access"
+    "label": "Quy trình",
+    "url": "/guide/",
+    "icon": "icn-guide"
   },
   {
     "label": "Tin tức",

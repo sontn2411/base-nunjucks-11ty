@@ -1,0 +1,182 @@
+[
+  {
+    "id": "nguyen-van-a",
+    "name": "BS.CKII Nguyễn Văn A",
+    "title": "Trưởng khoa Nội Tiêu hóa",
+    "image": "/assets/images/doctor-01.png",
+    "badges": [
+      {
+        "text": "English Available",
+        "type": "language"
+      }
+    ],
+    "quote": "Lắng nghe để thấu hiểu, đưa ra phác đồ tối ưu cho từng thể trạng và lối sống.",
+    "description": "Hơn 20 năm kinh nghiệm Nội tiêu hóa. Bác sĩ A chú trọng kết hợp y học hiện đại và điều chỉnh lối sống, giúp bệnh nhân hồi phục bền vững.",
+    "specialties": [
+      "Nội soi tiêu hóa không đau",
+      "Điều trị viêm loét dạ dày - tá tràng",
+      "Tầm soát ung thư sớm",
+      "Bệnh lý gan mạn tính",
+      "Hội chứng ruột kích thích (IBS)"
+    ],
+    "biography": [
+      {
+        "year": "1998",
+        "event": "Tốt nghiệp ĐH Y Dược TP.HCM"
+      },
+      {
+        "year": "2010",
+        "event": "Tu nghiệp Nội soi can thiệp tại Nhật Bản"
+      },
+      {
+        "year": "2015",
+        "event": "Nhận bằng CKII Nội Tiêu hóa"
+      },
+      {
+        "year": "2020",
+        "event": "Trưởng khoa tại Medicare Clinic"
+      }
+    ]
+  },
+  {
+    "id": "tran-thi-b",
+    "name": "ThS.BS Trần Thị B",
+    "title": "Chuyên gia Nội tiết",
+    "image": "/assets/images/doctor-02.png",
+    "badges": [],
+    "quote": "Đồng hành sát sao để kiểm soát bệnh mạn tính trở nên nhẹ nhàng hơn.",
+    "description": "Chuyên gia điều trị đái tháo đường và tuyến giáp. Bác sĩ B nổi tiếng với sự tận tâm, luôn tìm giải pháp ít xâm lấn và hiệu quả cao.",
+    "specialties": [
+      "Đái tháo đường & biến chứng",
+      "Bệnh lý tuyến giáp",
+      "Rối loạn mỡ máu",
+      "Tư vấn dinh dưỡng",
+      "Điều trị loãng xương"
+    ],
+    "biography": [
+      {
+        "year": "2008",
+        "event": "Tốt nghiệp ĐH Y Phạm Ngọc Thạch"
+      },
+      {
+        "year": "2012",
+        "event": "Tốt nghiệp Thạc sĩ Nội khoa"
+      },
+      {
+        "year": "2013",
+        "event": "Khoa Nội tiết - BV Nhân dân 115"
+      },
+      {
+        "year": "2019",
+        "event": "Gia nhập Medicare Clinic"
+      }
+    ]
+  },
+  {
+    "id": "le-van-c",
+    "name": "TS.BS Lê Văn C",
+    "title": "Chuyên gia Tim mạch",
+    "image": "/assets/images/doctor-03.png",
+    "badges": [
+      {
+        "text": "English Available",
+        "type": "language"
+      }
+    ],
+    "quote": "Trái tim khỏe mạnh bắt nguồn từ sự quan tâm đúng mực mỗi ngày.",
+    "description": "TS.BS Lê Văn C có nhiều năm tu nghiệp tại Pháp về can thiệp tim mạch. Ông chuyên sâu về chẩn đoán và điều trị các bệnh lý tim mạch phức tạp.",
+    "specialties": [
+      "Bệnh lý mạch vành",
+      "Tăng huyết áp & Suy tim",
+      "Rối loạn nhịp tim",
+      "Siêu âm tim màu",
+      "Tư vấn phòng ngừa đột quỵ"
+    ],
+    "biography": [
+      {
+        "year": "2005",
+        "event": "Tốt nghiệp ĐH Y Hà Nội"
+      },
+      {
+        "year": "2012",
+        "event": "Bảo vệ luận án Tiến sĩ tại Pháp"
+      },
+      {
+        "year": "2015",
+        "event": "Viện Tim mạch Quốc gia"
+      },
+      {
+        "year": "2021",
+        "event": "Gia nhập Medicare Clinic"
+      }
+    ]
+  },
+  {
+    "id": "pham-thi-d",
+    "name": "BS.CKI Phạm Thị D",
+    "title": "Chuyên gia Nhi khoa",
+    "image": "/assets/images/doctor-04.png",
+    "badges": [],
+    "quote": "Sự phát triển toàn diện của trẻ là niềm hạnh phúc của gia đình và bác sĩ.",
+    "description": "Bác sĩ D được các bé và phụ huynh yêu mến bởi sự nhẹ nhàng và tận tâm. Bà có nhiều kinh nghiệm trong điều trị bệnh lý hô hấp và tư vấn dinh dưỡng cho trẻ.",
+    "specialties": [
+      "Bệnh lý hô hấp nhi",
+      "Tư vấn dinh dưỡng & Tiêm chủng",
+      "Khám sức khỏe tổng quát cho bé",
+      "Bệnh lý da liễu ở trẻ em",
+      "Theo dõi phát triển thể chất"
+    ],
+    "biography": [
+      {
+        "year": "2010",
+        "event": "Tốt nghiệp ĐH Y Dược TP.HCM"
+      },
+      {
+        "year": "2014",
+        "event": "Hoàn thành CKI Nhi khoa"
+      },
+      {
+        "year": "2015",
+        "event": "Bệnh viện Nhi Đồng 2"
+      },
+      {
+        "year": "2022",
+        "event": "Gia nhập Medicare Clinic"
+      }
+    ]
+  },
+  {
+    "id": "hoang-van-e",
+    "name": "BS.CKII Hoàng Văn E",
+    "title": "Chuyên gia Cơ xương khớp",
+    "image": "/assets/images/doctor-01.png",
+    "badges": [],
+    "quote": "Vận động linh hoạt là chìa khóa cho một cuộc sống năng động và hạnh phúc.",
+    "description": "Bác sĩ E chuyên điều trị các bệnh lý thoái hóa khớp và chấn thương thể thao. Ông áp dụng các phương pháp điều trị bảo tồn kết hợp vật lý trị liệu hiệu quả.",
+    "specialties": [
+      "Thoái hóa khớp & Cột sống",
+      "Viêm khớp dạng thấp",
+      "Loãng xương",
+      "Chấn thương thể thao",
+      "Tiêm khớp & Huyết tương giàu tiểu cầu"
+    ],
+    "biography": [
+      {
+        "year": "2000",
+        "event": "Tốt nghiệp ĐH Y Dược Huế"
+      },
+      {
+        "year": "2010",
+        "event": "CKII Chấn thương chỉnh hình"
+      },
+      {
+        "year": "2012",
+        "event": "Bệnh viện Chợ Rẫy"
+      },
+      {
+        "year": "2023",
+        "event": "Gia nhập Medicare Clinic"
+      }
+    ]
+  }
+]

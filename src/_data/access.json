@@ -1,0 +1,39 @@
+{
+  "address": "123 Nguyễn Văn Linh, Quận Hải Châu, TP. Đà Nẵng",
+  "phone": "0123 456 789",
+  "email": "contact@medicare.vn",
+  "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.823616649234!2d108.21855907577517!3d16.06416628461525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421834193b2a25%3A0x6ec0c5bdab80916c!2zMTIzIMSQLiBOZ3V54buFbiBWxINuIExpbmgsIE5hbSBExrDGoW5nLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1709123456789!5m2!1sen!2s",
+  "hours": [
+    {
+      "day": "Thứ 2 - Thứ 6",
+      "morning": "07:30 - 11:30",
+      "afternoon": "13:30 - 17:00",
+      "evening": "17:00 - 19:00"
+    },
+    {
+      "day": "Thứ 7",
+      "morning": "07:30 - 11:30",
+      "afternoon": "13:30 - 16:00",
+      "evening": "Nghỉ"
+    },
+    {
+      "day": "Chủ nhật",
+      "morning": "Nghỉ",
+      "afternoon": "Nghỉ",
+      "evening": "Nghỉ"
+    }
+  ],
+  "transport": [
+    {
+      "type": "Xe buýt",
+      "icon": "bus",
+      "instruction": "Tuyến số 01, 03, 04 - Trạm dừng Nguyễn Văn Linh (ngay trước phòng khám)"
+    },
+    {
+      "type": "Xe cá nhân",
+      "icon": "car",
+      "instruction": "Có bãi đỗ xe ô tô và xe máy miễn phí cho bệnh nhân tại tầng hầm tòa nhà"
+    }
+  ],
+  "note": "Vui lòng đặt lịch hẹn trước khi đến để được phục vụ tốt nhất."
+}

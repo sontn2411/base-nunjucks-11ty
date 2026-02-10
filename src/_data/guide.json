@@ -1,0 +1,74 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "title": "Đăng ký & Tiếp nhận",
+      "description": "Quý khách vui lòng đến quầy lễ tân để đăng ký khám bệnh. Nếu đã đặt lịch trước, vui lòng thông báo với nhân viên để được ưu tiên.",
+      "icon": "registration"
+    },
+    {
+      "step": 2,
+      "title": "Khám lâm sàng",
+      "description": "Bác sĩ chuyên khoa sẽ thăm khám, kiểm tra các triệu chứng và tư vấn các chỉ định cận lâm sàng cần thiết.",
+      "icon": "examination"
+    },
+    {
+      "step": 3,
+      "title": "Thực hiện cận lâm sàng",
+      "description": "Thực hiện các xét nghiệm, chụp X-quang, siêu âm... theo chỉ định của bác sĩ (nếu có).",
+      "icon": "tests"
+    },
+    {
+      "step": 4,
+      "title": "Chẩn đoán & Tư vấn",
+      "description": "Bác sĩ đọc kết quả, chẩn đoán bệnh, kê đơn thuốc và tư vấn phác đồ điều trị hoặc chế độ dinh dưỡng.",
+      "icon": "diagnosis"
+    },
+    {
+      "step": 5,
+      "title": "Thanh toán & Lấy thuốc",
+      "description": "Thanh toán chi phí tại quầy thu ngân và nhận thuốc tại nhà thuốc phòng khám (nếu có).",
+      "icon": "pharmacy"
+    }
+  ],
+  "documents": [
+    {
+      "title": "Căn cước công dân / CMND",
+      "note": "Bắt buộc đối với người lớn"
+    },
+    {
+      "title": "Thẻ Bảo hiểm y tế",
+      "note": "Nếu có nhu cầu sử dụng BHYT"
+    },
+    {
+      "title": "Sổ khám bệnh / Hồ sơ cũ",
+      "note": "Để bác sĩ nắm rõ tiền sử bệnh lý"
+    },
+    {
+      "title": "Toa thuốc đang sử dụng",
+      "note": "Giúp tránh tương tác thuốc không mong muốn"
+    }
+  ],
+  "notes": {
+    "title": "Lưu ý quan trọng trước khi khám",
+    "description": "Để đảm bảo kết quả thăm khám chính xác nhất, quý khách vui lòng lưu ý:",
+    "list": [
+      {
+        "text": "Nhịn ăn sáng ít nhất 6-8 tiếng nếu quý khách có lịch xét nghiệm máu hoặc nội soi dạ dày.",
+        "highlight": "Nhịn ăn sáng"
+      },
+      {
+        "text": "Mặc trang phục thoải mái, thuận tiện cho việc thăm khám và di chuyển.",
+        "highlight": "Trang phục thoải mái"
+      },
+      {
+        "text": "Mang theo kính mắt hoặc kính áp tròng nếu quý khách khám các bệnh lý về mắt.",
+        "highlight": "Mang theo kính"
+      },
+      {
+        "text": "Vui lòng đến sớm 15 phút trước giờ hẹn để hoàn tất thủ tục đăng ký.",
+        "highlight": "Đến sớm 15 phút"
+      }
+    ]
+  }
+}
