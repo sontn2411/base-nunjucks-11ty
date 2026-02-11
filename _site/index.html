@@ -1,104 +1,832 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Grand Hotel</title>
+    <link rel="stylesheet" href="/assets/styles/tailwind.css" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    
+      <link rel="stylesheet" href="/assets/styles/pages/home.css" />
+    
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eleventy + Tailwind Starter</title>
-  <link rel="stylesheet" href="/assets/css/tailwind.css">
-  <link rel="stylesheet" href="/assets/scss/main.css">
-</head>
+  <body class="bg-background-light  font-display text-white overflow-x-hidden">
+    
 
-<body class="bg-gray-50 text-gray-900 font-body custom-scss">
 
+<header
+  class="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-4 md:py-6 transition-all duration-300"
+>
+  <div
+    class="glass-panel mx-auto max-w-7xl rounded-2xl px-6 py-4 flex items-center justify-between"
+  >
+    <nav class="hidden lg:flex items-center gap-8 w-1/3">
   
-
-<nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700">
-  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-    <a href="#" class="flex items-center">
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">11ty Starter</span>
-    </a>
-    <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
-      <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-        
-        <li>
-          <a href="/"
-            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 text-blue-700 dark:text-white">
-            Home
-          </a>
-        </li>
-        
-        <li>
-          <a href="/about/"
-            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">
-            About
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-    <div class="flex items-center lg:order-2">
-      <a href="#"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get
-        started</a>
-    </div>
-  </div>
+    <a
+      class="text-xs font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase"
+      href="#"
+      >Suites</a
+    >
+  
+    <a
+      class="text-xs font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase"
+      href="#"
+      >Dining</a
+    >
+  
+    <a
+      class="text-xs font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase"
+      href="#"
+      >Spa</a
+    >
+  
+    <a
+      class="text-xs font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase"
+      href="#"
+      >Experiences</a
+    >
+  
 </nav>
 
 
-<section class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+    <div class="flex justify-center grow text-center z-10 w-1/3">
+      
+  <a class="block group " href="#">
     <h1
-      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-      Eleventy + Tailwind CSS 4</h1>
-    <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-      This is a starter template using Eleventy, Tailwind CSS v4, Flowbite components, and Nunjucks!
-    </p>
-    <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-      <a href="#"
-        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-        Learn more
-        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </a>
-    </div>
-
-    <!-- Flowbite Card Example -->
-    <div class="grid gap-8 lg:grid-cols-3 mt-12">
-        
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fast Build Times</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Eleventy is known for its incredible performance and simplicity.</p>
-</div>
-
-        
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tailwind CSS v4</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Utility-first CSS framework for rapid UI development.</p>
-</div>
-
-        
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Open Source</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Built with open source technologies.</p>
-</div>
+      class="font-serif text-3xl font-bold tracking-wider text-white group-hover:text-primary transition-colors duration-300"
+    >
+      LUMINOUS
+    </h1>
+    <span
+      class="block text-[0.55rem] uppercase tracking-[0.4em] text-white/60 group-hover:text-primary/80"
+      >Hotels &amp; Resorts</span
+    >
+  </a>
 
     </div>
 
+    <button
+      id="mobile-menu-toggle"
+      class="lg:hidden  absolute right-4 z-20 text-white hover:text-primary transition-colors "
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      
+  
+  
+  
+    <svg
+      class="text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+    >
+      <path
+        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+      />
+    </svg>
+  
+  
+  
+  
+  
+  
+  
+
+    </button>
+
+    <div class="flex items-center justify-end gap-6 w-1/3">
+      
+
+<div class="relative group hidden sm:flex items-center">
+  <button
+    class="flex items-center gap-1 text-white/70 hover:text-primary transition-colors"
+  >
+    
+  
+  
+    <svg
+      class="w-4 h-4"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+    >
+      <path
+        d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
+      />
+    </svg>
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <span
+      class="text-sm font-bold uppercase tracking-widest group-hover:underline decoration-primary/50 underline-offset-4"
+      >EN</span
+    >
+  </button>
+
+  <!-- Dropdown -->
+  <div
+    class="absolute top-full right-0 mt-4 w-32 py-2 bg-background-dark/95 backdrop-blur-xl border border-white/10 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right translate-y-2 group-hover:translate-y-0"
+  >
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-white hover:text-primary hover:bg-white/5 transition-colors"
+      >English</a
+    >
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-white hover:text-primary hover:bg-white/5 transition-colors"
+      >Tiếng Việt</a
+    >
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-white hover:text-primary hover:bg-white/5 transition-colors"
+      >Français</a
+    >
+  </div>
+</div>
+
+      <div
+        class="hidden xl:flex items-center gap-3 border-l border-white/10 pl-6"
+      >
+        <div class="text-right">
+          <div class="text-xs font-bold text-white tracking-widest">19:42</div>
+          <div class="text-[0.6rem] text-primary uppercase tracking-wider">
+            New York
+          </div>
+        </div>
+        
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="text-primary/80"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+    >
+      <path
+        d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"
+      />
+    </svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-[100] transform translate-x-full transition-transform duration-500 ease-in-out lg:hidden"
+  >
+    <div
+      id="mobile-menu-backdrop"
+      class="absolute inset-0 bg-background-dark/95 backdrop-blur-xl"
+    ></div>
+    <div class="relative h-full flex flex-col p-8">
+      <div class="flex justify-end">
+        <button
+          id="mobile-menu-close"
+          class="text-white/80 hover:text-primary transition-colors"
+        >
+          
+  
+  
+  
+  
+    <svg
+      class="text-2xl text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+    >
+      <path
+        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+      />
+    </svg>
+  
+  
+  
+  
+  
+  
+
+        </button>
+      </div>
+      <nav class="flex flex-col items-center justify-center grow gap-8">
+        
+          <a
+            class="text-2xl font-serif text-white hover:text-primary transition-colors tracking-widest uppercase"
+            href="#"
+            >Suites</a
+          >
+        
+          <a
+            class="text-2xl font-serif text-white hover:text-primary transition-colors tracking-widest uppercase"
+            href="#"
+            >Dining</a
+          >
+        
+          <a
+            class="text-2xl font-serif text-white hover:text-primary transition-colors tracking-widest uppercase"
+            href="#"
+            >Spa</a
+          >
+        
+          <a
+            class="text-2xl font-serif text-white hover:text-primary transition-colors tracking-widest uppercase"
+            href="#"
+            >Experiences</a
+          >
+        
+      </nav>
+      <div class="flex flex-col items-center gap-6 mt-auto">
+        <!-- Mobile Language List -->
+        <div class="flex items-center gap-6">
+          <a
+            href="#"
+            class="text-white hover:text-primary transition-colors font-serif text-lg tracking-widest"
+            >EN</a
+          >
+          <span class="text-white/20">|</span>
+          <a
+            href="#"
+            class="text-white hover:text-primary transition-colors font-serif text-lg tracking-widest"
+            >VI</a
+          >
+          <span class="text-white/20">|</span>
+          <a
+            href="#"
+            class="text-white hover:text-primary transition-colors font-serif text-lg tracking-widest"
+            >FR</a
+          >
+        </div>
+        <button
+          class="w-full bg-primary text-background-dark font-bold uppercase tracking-widest px-8 py-4 rounded-lg hover:bg-white transition-colors duration-300"
+        >
+          Check Availability
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    
+<main class="">
+  <div
+  class="relative w-full h-screen min-h-[800px] flex flex-col justify-between overflow-hidden"
+>
+  
+
+  
+    <div
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out hero-image active"
+    >
+      <img
+        alt="Luxury hotel atmosphere"
+        class="w-full h-full object-cover ken-burns"
+        src="/assets/images/home/banner-hero-1.png"
+      />
+    </div>
+  
+    <div
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out hero-image "
+    >
+      <img
+        alt="Luxury hotel atmosphere"
+        class="w-full h-full object-cover ken-burns"
+        src="/assets/images/home/banner-hero-2.avif"
+      />
+    </div>
+  
+    <div
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out hero-image "
+    >
+      <img
+        alt="Luxury hotel atmosphere"
+        class="w-full h-full object-cover ken-burns"
+        src="/assets/images/home/banner-hero-3.avif"
+      />
+    </div>
+  
+  <div class="absolute inset-0 bg-background-dark/20 hero-gradient z-2"></div>
+
+  <section
+    class="relative z-10 grow flex flex-col justify-center items-center text-center px-4 mt-16 md:mt-0"
+  >
+    <div class="max-w-5xl space-y-8 animate-fade-in-up">
+      <div class="flex items-center justify-center gap-4 mb-2">
+        <div class="h-px w-12 bg-primary/60"></div>
+        <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]"
+          >The Art of Living</span
+        >
+        <div class="h-px w-12 bg-primary/60"></div>
+      </div>
+      <h2
+        class="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-none drop-shadow-2xl opacity-95"
+      >
+        Beyond <br />
+        <span
+          class="italic font-light text-primary bg-clip-text text-transparent bg-linear-to-r from-primary via-white to-primary bg-300% animate-shine"
+          >Expectation</span
+        >
+      </h2>
+      <p
+        class="text-lg md:text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed text-outline-subtle tracking-wide"
+      >
+        A sanctuary of refinement where modern elegance meets timeless service
+        in the heart of the metropolis.
+      </p>
+      <div class="pt-8">
+        <button
+          class="group relative px-8 py-3 overflow-hidden rounded-full bg-transparent border border-white/30 hover:border-primary transition-all duration-300"
+        >
+          <div
+            class="absolute inset-0 w-0 bg-primary transition-all duration-250 ease-out group-hover:w-full opacity-10"
+          ></div>
+          <span
+            class="relative text-sm font-medium tracking-widest uppercase text-white group-hover:text-primary transition-colors"
+            >Explore The Hotel</span
+          >
+        </button>
+      </div>
+    </div>
+  </section>
+
+  
+
+<div class="relative z-20 w-full max-w-6xl mx-auto px-4 pb-12">
+  <div
+    class="glass-panel rounded-xl p-2 md:p-4 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl"
+  >
+    <div class="flex flex-col md:flex-row gap-4 w-full flex-grow">
+      <div
+        id="stay-dates-container"
+        class="bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors cursor-pointer group border border-transparent hover:border-white/10 flex flex-col justify-center relative md:w-3/5"
+      >
+        <label
+          class="block text-[0.6rem] uppercase tracking-wider text-white/50 mb-1 group-hover:text-primary"
+          >Stay Dates</label
+        >
+        <div class="flex items-center gap-2 text-white font-serif text-lg">
+          <span id="stay-dates-display">Select Dates</span>
+        </div>
+        <input
+          type="text"
+          id="stay-dates-input"
+          class="absolute inset-0 opacity-0 cursor-pointer"
+        />
+      </div>
+
+      <div
+        id="guests-container"
+        class="bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors cursor-pointer group border border-transparent hover:border-white/10 relative flex flex-col justify-center md:w-2/5"
+      >
+        <label
+          class="block text-[0.6rem] uppercase tracking-wider text-white/50 mb-1 group-hover:text-primary"
+          >Guests</label
+        >
+        <div
+          id="guests-trigger"
+          class="flex items-center justify-between text-white select-none"
+        >
+          <span id="guests-display" class="font-serif text-lg"
+            >02 Adults, 00 Children</span
+          >
+          
+  
+  
+  
+  
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+      class="text-white/30 text-sm transition-transform duration-300"
+    >
+      <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+    </svg>
+  
+  
+  
+  
+  
+
+        </div>
+
+        <!-- Dropdown -->
+        <div
+          id="guests-dropdown"
+          class="absolute top-full left-0 right-0 mt-2 md:mt-0 md:top-auto md:bottom-full md:mb-2 bg-[#16191e] backdrop-blur-xl border border-white/10 rounded-lg shadow-xl p-4 hidden z-50"
+          style="background-color: rgba(22, 25, 30, 0.95);"
+        >
+          <!-- Adults -->
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-white font-serif">Adults</span>
+            <div class="flex items-center gap-3">
+              <button
+                type="button"
+                class="guest-btn-minus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="adults"
+              >
+                -
+              </button>
+              <span
+                id="adults-count"
+                class="text-white font-serif w-4 text-center"
+                >2</span
+              >
+              <button
+                type="button"
+                class="guest-btn-plus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="adults"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <!-- Children -->
+          <div class="flex items-center justify-between">
+            <span class="text-white font-serif">Children</span>
+            <div class="flex items-center gap-3">
+              <button
+                type="button"
+                class="guest-btn-minus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="children"
+              >
+                -
+              </button>
+              <span
+                id="children-count"
+                class="text-white font-serif w-4 text-center"
+                >0</span
+              >
+              <button
+                type="button"
+                class="guest-btn-plus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="children"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-full md:w-auto bg-primary text-background-dark font-bold uppercase tracking-widest px-8 py-5 rounded-lg hover:bg-white transition-colors duration-300 shadow-[0_0_20px_rgba(198,168,124,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] whitespace-nowrap"
+    >
+      Check Availability
+    </button>
+  </div>
+</div>
+
+</div>
+
+  <div
+  class="bg-surface-dark border-y border-white/5 py-8 relative overflow-hidden "
+>
+  
+
+  <div class="absolute inset-0 awards-ribbon-bg opacity-[0.03]"></div>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div
+      class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+    >
+      <div class="flex flex-col items-center gap-2 group cursor-default ">
+        
+  
+  
+  
+  
+  
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+      class="w-14 h-14 text-primary mb-1"
+    >
+      <path
+        d="m273-176.08 55.62-235.54-182.93-157.84 240.23-19.85L480-810.69l94.08 221.38 240.23 19.85-182.93 157.84L687-176.08 480-300.92 273-176.08Z"
+      />
+    </svg>
+  
+  
+  
+  
+
+        <span
+          class="text-[0.6rem] uppercase tracking-[0.2em] font-bold text-white text-center"
+          >Forbes Travel Guide<br /><span
+            class="text-primary font-serif italic normal-case text-sm"
+            >5 Star Rating 2023</span
+          ></span
+        >
+      </div>
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        
+  
+  
+  
+  
+  
+  
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+      class="w-14 h-14 text-primary mb-1"
+    >
+      <path
+        d="M298.38-128v-66H447v-138.15q-50.85-10.47-90.5-42.7-39.65-32.23-57.58-81.61-73.46-6.46-122.19-60.04Q128-570.08 128-644v-40q0-28.08 18.96-47.04T194-750h92.15v-82h387.7v82H766q28.08 0 47.04 18.96T832-684v40q0 73.92-48.73 127.5t-122.19 60.04q-17.93 49.38-57.58 81.61t-90.5 42.7V-194h148.62v66H298.38Zm-12.23-399.38V-684H194v40q0 42.69 25.96 75t66.19 41.62Zm387.7 0q40.23-9.31 66.19-41.62Q766-601.31 766-644v-40h-92.15v156.62Z"
+      />
+    </svg>
+  
+  
+  
+
+        <span
+          class="text-[0.6rem] uppercase tracking-[0.2em] font-bold text-white text-center"
+          >Condé Nast Traveler<br /><span
+            class="text-primary font-serif italic normal-case text-sm"
+            >Gold List 2023</span
+          ></span
+        >
+      </div>
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+      class="w-14 h-14 text-primary mb-1"
+    >
+      <path
+        d="m346.92-70.77-72.77-124.61-141.07-31.39 14.46-145.08L51.85-480l95.69-108.15-14.46-145.08 141.07-31.39 72.77-124.61L480-832.92l133.08-56.31 72.77 124.61 141.07 31.39-14.46 145.08L908.15-480l-95.69 108.15 14.46 145.08-141.07 31.39-72.77 124.61L480-127.08 346.92-70.77ZM438-345.69 658.31-566 611-611.77l-173 173-87-88.54L303.69-480 438-345.69Z"
+      />
+    </svg>
+  
+  
+
+        <span
+          class="text-[0.6rem] uppercase tracking-[0.2em] font-bold text-white text-center"
+          >Michelin Guide<br /><span
+            class="text-primary font-serif italic normal-case text-sm"
+            >3 Keys Distinction</span
+          ></span
+        >
+      </div>
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="currentColor"
+      class="w-14 h-14 text-primary mb-1"
+    >
+      <path
+        d="M452-96q-41.38 0-80.23-9.19t-71.85-29.35q15.23-103.38 68.54-194.23t132.16-162.46q-91.93 54.61-157.89 137.73-65.96 83.12-93.73 187.35-5.77-5.77-11.65-10.27-5.89-4.5-11.66-10.27-44.07-45.62-67.88-101.19Q134-343.46 134-402q0-65.31 26.04-123.5t71.65-104.81q76-76 194.04-98.92 118.04-22.92 353.35-7.85 18.92 223.77-5.04 346.7-23.96 122.92-100.73 199.69-45.08 46.61-102.16 70.65Q514.08-96 452-96Z"
+      />
+    </svg>
+  
+
+        <span
+          class="text-[0.6rem] uppercase tracking-[0.2em] font-bold text-white text-center"
+          >Green Globe<br /><span
+            class="text-primary font-serif italic normal-case text-sm"
+            >Platinum Certified</span
+          ></span
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="py-24 bg-background-dark relative">
+  <div class="max-w-4xl mx-auto px-6 text-center py-20">
+    <div
+      class="inline-flex items-center gap-4 mb-8 opacity-0 animate-fade-in-up"
+      style="animation-delay: 0.1s; animation-fill-mode: forwards;"
+    >
+      <div class="h-[1px] w-8 bg-primary/40"></div>
+      <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]"
+        >Our Heritage</span
+      >
+      <div class="h-[1px] w-8 bg-primary/40"></div>
+    </div>
+    <h2
+      class="font-serif text-4xl md:text-6xl text-white mb-8 leading-tight opacity-0 animate-fade-in-up"
+      style="animation-delay: 0.2s; animation-fill-mode: forwards;"
+    >
+      Built on a Century of <br />
+      <span class="italic text-white/50">Unspoken Excellence</span>
+    </h2>
+    <div
+      class="space-y-6 text-lg text-white/60 font-light leading-relaxed opacity-0 animate-fade-in-up"
+      style="animation-delay: 0.3s; animation-fill-mode: forwards;"
+    >
+      <p>
+        Founded in 1923, Luminous began not merely as a hotel, but as a
+        promise—a sanctuary for the world's most discerning travelers. For one
+        hundred years, our walls have whispered the stories of poets, statesmen,
+        and artists who found solace in our meticulous care.
+      </p>
+      <p>
+        Our vision remains unchanged: to curate moments that transcend the
+        ordinary. We believe that true luxury lies not in the gold leaf of our
+        ceilings, but in the intuitive anticipation of your every desire before
+        it is even spoken.
+      </p>
+    </div>
   </div>
 </section>
 
+  <section class="relative py-24 px-6 bg-surface-dark overflow-hidden">
+  <div
+    class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-radial from-primary/5 to-transparent opacity-50 blur-3xl pointer-events-none"
+  ></div>
+  <div class="max-w-7xl mx-auto">
+    <div
+      class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
+    >
+      <div>
+        <h3
+          class="text-primary text-xs font-bold uppercase tracking-[0.25em] mb-4"
+        >
+          Curated Experiences
+        </h3>
+        <h2 class="text-4xl md:text-5xl font-serif text-white">
+          Moments of <span class="italic text-primary/80">Wonder</span>
+        </h2>
+      </div>
+      <div class="max-w-md text-white/50 font-light leading-relaxed text-sm">
+        Discover a collection of unique activities designed to immerse you in
+        the local culture, elevated by our signature luxury service.
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer"
+      >
+        <img
+          alt="Spa and wellness"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbBg0XGgI2l1Z6gKS64H1ySuEpr9jLbvd8VpkVeYLCS4Bv_JfASyj7wSjWwq3dVzfPdYNvqrmfXXeMhxUizCwjx11_W-CKPYnQumJ1mq9mk_Tkfyj2Gor27798EflyPnXDFtYhtGO0g9D9Fa-7kI3LNFCYORJeGVeQD1ZXZZPdJPq3L_wL35kECC6kNGHOyIezlxsGqGRcIM-O6GE0op_oNEnrlcA1CHcUxFIRQ-iCA5i9F9JQg8f6iUz2oEX6itAH3EN7ksN1zr1j"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+        >
+          <span
+            class="inline-block px-3 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest text-white border border-white/20 rounded-full bg-white/5 backdrop-blur-sm"
+            >Wellness</span
+          >
+          <h3
+            class="text-2xl font-serif text-white mb-2 group-hover:text-primary transition-colors"
+          >
+            The Royal Spa
+          </h3>
+          <p
+            class="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2"
+          >
+            Rejuvenate your senses with our exclusive treatments using rare
+            botanical ingredients sourced globally.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer md:-mt-12"
+      >
+        <img
+          alt="Fine dining cocktail"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmW7fccew-gb7k860_A3CRF0n82z6fIexE3opgZDomE0BfQiDwKxbJ06DD9MyPsfk-mqPBcgz2n8bZIaFmlX8zeKK8VG3S6cJopUxzk5RvMjofvRhXpmsrF0vi2AAeN39f-3iqmFCVoLDln-wbm2cV9gheywfoIvqxSvoRPOt1Xiip-5vCoRCXmI76A7dFnMbFfMGNiU_L6EJjMCGTJQ_TQAp9DCeiNrMNG4bRaVEhIJK4rmzvRaYXuM2f7kwzkvSYUYwlqzyNAKvM"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+        >
+          <span
+            class="inline-block px-3 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest text-white border border-white/20 rounded-full bg-white/5 backdrop-blur-sm"
+            >Gastronomy</span
+          >
+          <h3
+            class="text-2xl font-serif text-white mb-2 group-hover:text-primary transition-colors"
+          >
+            Mixology Masterclass
+          </h3>
+          <p
+            class="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2"
+          >
+            Learn the secrets of crafting world-class cocktails from our
+            award-winning head bartender.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer"
+      >
+        <div class="absolute inset-0 bg-surface-dark w-full h-full">
+          <img
+            alt="Private city tour"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 mix-blend-overlay"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKesAYmQxOrn26-lKcrKBoFGvjJVatMIHrFqMX6iqrAYl5nv2SEaRnhpbFw7o9O1sCESnhLovChmyGZd2w_Mw5uXlHfm4tDtLYs0E-sHjpaXE5Jd4TjrerP_QFGFrdjfuagKG5fklhHyniVzqnHJHK0bYtrT31UJGSAM5IXFKtsTgG4JJ6AswoBoFECqU1-a4DT23X4xEd-73sEVkbsf7O0ig0L8V1J3vtlQkjY232mmIgAzmD4yk5YWBdYwqn2m8qKSu7oOn6MZ9c"
+          />
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+        >
+          <span
+            class="inline-block px-3 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest text-white border border-white/20 rounded-full bg-white/5 backdrop-blur-sm"
+            >Adventure</span
+          >
+          <h3
+            class="text-2xl font-serif text-white mb-2 group-hover:text-primary transition-colors"
+          >
+            Midnight City Tour
+          </h3>
+          <p
+            class="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2"
+          >
+            Experience the city's hidden gems under the moonlight in our vintage
+            Rolls Royce fleet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="/assets/js/main.js"></script>
-</body>
+</main>
 
+
+    <script src="/assets/js/main.js"></script>
+    
+      
+        <script src="/assets/js/home.js"></script>
+      
+        <script src="/assets/js/litepicker.js"></script>
+      
+    
+  </body>
 </html>

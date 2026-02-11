@@ -1,0 +1,68 @@
+<div
+  class="relative w-full h-screen min-h-[800px] flex flex-col justify-between overflow-hidden"
+>
+  {%
+    set heroImages = [
+      "/assets/images/home/banner-hero-1.png",
+      "/assets/images/home/banner-hero-2.avif",
+      "/assets/images/home/banner-hero-3.avif"
+    ]
+  %}
+
+  {% for image in heroImages %}
+    <div
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out hero-image {% if loop.first %}active{% endif %}"
+    >
+      <img
+        alt="Luxury hotel atmosphere"
+        class="w-full h-full object-cover ken-burns"
+        src="{{ image }}"
+      />
+    </div>
+  {% endfor %}
+  <div class="absolute inset-0 bg-background-dark/20 hero-gradient z-2"></div>
+
+  <section
+    class="relative z-10 grow flex flex-col justify-center items-center text-center px-4 mt-16 md:mt-0"
+  >
+    <div class="max-w-5xl space-y-8 animate-fade-in-up">
+      <div class="flex items-center justify-center gap-4 mb-2">
+        <div class="h-px w-12 bg-primary/60"></div>
+        <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]"
+          >The Art of Living</span
+        >
+        <div class="h-px w-12 bg-primary/60"></div>
+      </div>
+      <h2
+        class="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-none drop-shadow-2xl opacity-95"
+      >
+        Beyond <br />
+        <span
+          class="italic font-light text-primary bg-clip-text text-transparent bg-linear-to-r from-primary via-white to-primary bg-300% animate-shine"
+          >Expectation</span
+        >
+      </h2>
+      <p
+        class="text-lg md:text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed text-outline-subtle tracking-wide"
+      >
+        A sanctuary of refinement where modern elegance meets timeless service
+        in the heart of the metropolis.
+      </p>
+      <div class="pt-8">
+        <button
+          class="group relative px-8 py-3 overflow-hidden rounded-full bg-transparent border border-white/30 hover:border-primary transition-all duration-300"
+        >
+          <div
+            class="absolute inset-0 w-0 bg-primary transition-all duration-250 ease-out group-hover:w-full opacity-10"
+          ></div>
+          <span
+            class="relative text-sm font-medium tracking-widest uppercase text-white group-hover:text-primary transition-colors"
+            >Explore The Hotel</span
+          >
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {% include "components/home/checkAvailab.njk" %}
+</div>

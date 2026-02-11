@@ -5,11 +5,13 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.addPlugin(eleventyPluginTailwindcss, {
-    input: "assets/css/tailwind.css",
-    output: "assets/css/tailwind.css",
+    input: "assets/styles/tailwind.css",
+    output: "assets/styles/tailwind.css",
     minify: false, // Set to true for production if needed
-    watchOutput: true
+    watchOutput: true,
   });
+
+
 
   // Passthrough copy for images or other assets
   // Passthrough copy for images, fonts, and js
@@ -23,6 +25,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "_site",
     },
+    templateFormats: ["html", "njk", "md", "scss"],
   };
-
 };

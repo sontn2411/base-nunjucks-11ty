@@ -1,0 +1,109 @@
+{% from "components/icons.njk" import icon %}
+
+<div class="relative z-20 w-full max-w-6xl mx-auto px-4 pb-12">
+  <div
+    class="glass-panel rounded-xl p-2 md:p-4 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl"
+  >
+    <div class="flex flex-col md:flex-row gap-4 w-full flex-grow">
+      <div
+        id="stay-dates-container"
+        class="bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors cursor-pointer group border border-transparent hover:border-white/10 flex flex-col justify-center relative md:w-3/5"
+      >
+        <label
+          class="block text-[0.6rem] uppercase tracking-wider text-white/50 mb-1 group-hover:text-primary"
+          >Stay Dates</label
+        >
+        <div class="flex items-center gap-2 text-white font-serif text-lg">
+          <span id="stay-dates-display">Select Dates</span>
+        </div>
+        <input
+          type="text"
+          id="stay-dates-input"
+          class="absolute inset-0 opacity-0 cursor-pointer"
+        />
+      </div>
+
+      <div
+        id="guests-container"
+        class="bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors cursor-pointer group border border-transparent hover:border-white/10 relative flex flex-col justify-center md:w-2/5"
+      >
+        <label
+          class="block text-[0.6rem] uppercase tracking-wider text-white/50 mb-1 group-hover:text-primary"
+          >Guests</label
+        >
+        <div
+          id="guests-trigger"
+          class="flex items-center justify-between text-white select-none"
+        >
+          <span id="guests-display" class="font-serif text-lg"
+            >02 Adults, 00 Children</span
+          >
+          {{ icon('expand_more', 'text-white/30 text-sm transition-transform duration-300', 'guests-arrow') }}
+        </div>
+
+        <!-- Dropdown -->
+        <div
+          id="guests-dropdown"
+          class="absolute top-full left-0 right-0 mt-2 md:mt-0 md:top-auto md:bottom-full md:mb-2 bg-[#16191e] backdrop-blur-xl border border-white/10 rounded-lg shadow-xl p-4 hidden z-50"
+          style="background-color: rgba(22, 25, 30, 0.95);"
+        >
+          <!-- Adults -->
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-white font-serif">Adults</span>
+            <div class="flex items-center gap-3">
+              <button
+                type="button"
+                class="guest-btn-minus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="adults"
+              >
+                -
+              </button>
+              <span
+                id="adults-count"
+                class="text-white font-serif w-4 text-center"
+                >2</span
+              >
+              <button
+                type="button"
+                class="guest-btn-plus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="adults"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <!-- Children -->
+          <div class="flex items-center justify-between">
+            <span class="text-white font-serif">Children</span>
+            <div class="flex items-center gap-3">
+              <button
+                type="button"
+                class="guest-btn-minus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="children"
+              >
+                -
+              </button>
+              <span
+                id="children-count"
+                class="text-white font-serif w-4 text-center"
+                >0</span
+              >
+              <button
+                type="button"
+                class="guest-btn-plus w-8 h-8 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+                data-type="children"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-full md:w-auto bg-primary text-background-dark font-bold uppercase tracking-widest px-8 py-5 rounded-lg hover:bg-white transition-colors duration-300 shadow-[0_0_20px_rgba(198,168,124,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] whitespace-nowrap"
+    >
+      Check Availability
+    </button>
+  </div>
+</div>

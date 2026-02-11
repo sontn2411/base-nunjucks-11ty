@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title | default("Eleventy + Tailwind Starter") }}</title>
+    <link rel="stylesheet" href="/assets/styles/tailwind.css" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    {% if extraCss %}
+      <link rel="stylesheet" href="{{ extraCss }}" />
+    {% endif %}
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title | default("Eleventy + Tailwind Starter") }}</title>
-  <link rel="stylesheet" href="/assets/css/tailwind.css">
-  <link rel="stylesheet" href="/assets/scss/main.css">
-</head>
+  <body class="bg-background-light  font-display text-white overflow-x-hidden">
+    {% include "components/header.njk" %}
 
-<body class="bg-gray-50 text-gray-900 font-body custom-scss">
+    {{ content | safe }}
 
-  {{ content | safe }}
-
-  <script src="/assets/js/main.js"></script>
-</body>
-
+    <script src="/assets/js/main.js"></script>
+    {% if extraJs %}
+      {% for js in extraJs %}
+        <script src="{{ js }}"></script>
+      {% endfor %}
+    {% endif %}
+  </body>
 </html>

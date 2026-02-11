@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "./font.scss";
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --font-body: "Inter", "sans-serif";
+
+  --color-primary: #c6a87c;
+  --color-primary-dark: #a88b5e;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #0f1115;
+  --color-surface-dark: #16191e;
+  --color-glass-dark: rgba(15, 17, 21, 0.65);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+
+  --font-display: "PlusJakartaSans", "sans-serif";
+  --font-body: "PlusJakartaSans", "sans-serif";
+
+  /* ===== Border Radius ===== */
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ===== Animations ===== */
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-shine: shine 8s linear infinite;
+
+  /* ===== Background ===== */
+  --background-size-300: 300%;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
