@@ -7,97 +7,1967 @@
   <title>Eleventy + Tailwind Starter</title>
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/scss/main.css">
-</head>
-
-<body class="bg-gray-50 text-gray-900 font-body custom-scss">
 
   
+  
+  <link rel="stylesheet" href="/assets/scss/home.css" />
+  
+  
+</head>
 
-<nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700">
-  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-    <a href="#" class="flex items-center">
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">11ty Starter</span>
+<body class="bg-background-light">
+  <nav class="fixed top-0 z-50 w-full transition-all duration-500 ">
+
+  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-4">
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="/assets/images/logo.webp" class="h-12 md:h-16 w-auto object-cover " alt="Logo" />
     </a>
-    <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
-      <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+    <div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+      <button id="mobile-menu-open" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-white hover:bg-white/10 focus:outline-none md:hidden transition-colors"
+        aria-controls="mobile-sheet" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    </div>
+
+    
+
+    <!-- Desktop Menu -->
+    <div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto" id="navbar-sticky">
+      <ul class="flex flex-col md:flex-row md:space-x-10 font-medium">
         
-        <li>
-          <a href="/"
-            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 text-blue-700 dark:text-white">
-            Home
-          </a>
+        <li class="group relative">
+          
+          <button
+            class="nav-link flex items-center justify-between py-2 text-white hover:text-white/80 transition-colors duration-200"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="text-[15px] uppercase tracking-wider font-semibold">Giới thiệu chung</span>
+            <svg class="w-3 h-3 ms-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 top-full left-0 origin-top"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <a href="/" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Kiến trúc Champa</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="/" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Câu hỏi thường gặp</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="/" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Dịch vụ đưa đón</a>
+        
+      </li>
+      
+    </ul>
+    
+          
         </li>
         
-        <li>
-          <a href="/about/"
-            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 ">
-            About
-          </a>
+        <li class="group relative">
+          
+          <button
+            class="nav-link flex items-center justify-between py-2 text-white hover:text-white/80 transition-colors duration-200"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="text-[15px] uppercase tracking-wider font-semibold">Phòng Nghỉ</span>
+            <svg class="w-3 h-3 ms-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 top-full left-0 origin-top"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <a href="/" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Deluxe King hướng biển</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Deluxe Twin hướng biển</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Junior Suite Hướng Biển</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Deluxe Suite Hướng Biển</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Suite Tổng Thống Hướng Biển</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Biệt thự hướng biển</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Phòng studio</a>
+        
+      </li>
+      
+    </ul>
+    
+          
+        </li>
+        
+        <li class="group relative">
+          
+          <button
+            class="nav-link flex items-center justify-between py-2 text-white hover:text-white/80 transition-colors duration-200"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="text-[15px] uppercase tracking-wider font-semibold">Ẩm Thực</span>
+            <svg class="w-3 h-3 ms-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 top-full left-0 origin-top"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <a href="/dining/tropicana/" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Nhà hàng Tropicana</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="/dining/chubby-bear/" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Chubby Bear Bar</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Tiền sảnh</a>
+        
+      </li>
+      
+    </ul>
+    
+          
+        </li>
+        
+        <li class="group relative">
+          
+          <button
+            class="nav-link flex items-center justify-between py-2 text-white hover:text-white/80 transition-colors duration-200"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="text-[15px] uppercase tracking-wider font-semibold">Dịch vụ</span>
+            <svg class="w-3 h-3 ms-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 top-full left-0 origin-top"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <button
+          class="nav-link w-full text-left flex items-center justify-between px-4 py-2.5 text-sm text-gray-800 hover:text-primary outline-none focus:outline-none"
+          aria-haspopup="true" aria-expanded="false" role="menuitem">
+          <span>Phòng họp</span>
+          <svg class="h-3.5 w-3.5 transition-transform duration-300 group-hover:-rotate-90"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 submenu"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Phòng Yến Tiệc Zurich</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Phòng họp</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Hoạt Động Đội Nhóm</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Gói Hội Nghị</a>
+        
+      </li>
+      
+    </ul>
+    
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <button
+          class="nav-link w-full text-left flex items-center justify-between px-4 py-2.5 text-sm text-gray-800 hover:text-primary outline-none focus:outline-none"
+          aria-haspopup="true" aria-expanded="false" role="menuitem">
+          <span>Tiệc cưới</span>
+          <svg class="h-3.5 w-3.5 transition-transform duration-300 group-hover:-rotate-90"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 submenu"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Địa điểm tiệc cưới</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Ẩm thực tiệc cưới</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Triển lãm ảnh cưới</a>
+        
+      </li>
+      
+    </ul>
+    
+        
+      </li>
+      
+    </ul>
+    
+          
+        </li>
+        
+        <li class="group relative">
+          
+          <button
+            class="nav-link flex items-center justify-between py-2 text-white hover:text-white/80 transition-colors duration-200"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="text-[15px] uppercase tracking-wider font-semibold">Hoạt động giải trí</span>
+            <svg class="w-3 h-3 ms-2 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          
+    <ul
+      class="dropdown-menu absolute transition-all duration-300 top-full left-0 origin-top"
+      role="menu" aria-hidden="true">
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Vui Chơi Dưới Nước</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Công Viên Dây Thừng</a>
+        
+      </li>
+      
+      <li class="group relative" role="none">
+        
+        <a href="" class="nav-link block px-4 py-2.5 text-sm text-gray-800 hover:text-primary"
+          role="menuitem">Câu Lạc Bộ Little Paws</a>
+        
+      </li>
+      
+    </ul>
+    
+          
         </li>
         
       </ul>
     </div>
-    <div class="flex items-center lg:order-2">
-      <a href="#"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get
-        started</a>
-    </div>
   </div>
 </nav>
 
+<!-- Mobile Overlay -->
+<div id="mobile-overlay"
+  class="fixed inset-0 z-60 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+</div>
 
-<section class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-    <h1
-      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-      Eleventy + Tailwind CSS 4</h1>
-    <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-      This is a starter template using Eleventy, Tailwind CSS v4, Flowbite components, and Nunjucks!
-    </p>
-    <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-      <a href="#"
-        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-        Learn more
-        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
+<!-- Mobile Side Menu (Sheet) -->
+<div id="mobile-sheet"
+  class="fixed top-0 right-0 z-70 h-full w-[85%] max-w-[320px] bg-background-light translate-x-full transition-transform duration-400 ease-out md:hidden shadow-2xl flex flex-col">
+  <div class="p-6 flex items-center justify-between border-b border-gray-100">
+    <img src="/assets/images/logo.webp" class="h-10 w-auto object-cover " alt="Logo" />
+    <button id="mobile-menu-close" type="button" class="p-2 text-gray-500 hover:text-primary transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="flex-1 overflow-y-auto py-8 px-6">
+    <nav class="space-y-6">
+      
+
+      
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-xl font-bold text-slate-900 border-b border-gray-100 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Giới thiệu chung</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <a href="/"
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Kiến trúc Champa
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href="/"
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Câu hỏi thường gặp
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href="/"
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Dịch vụ đưa đón
+        </a>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-xl font-bold text-slate-900 border-b border-gray-100 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Phòng Nghỉ</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <a href="/"
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Deluxe King hướng biển
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Deluxe Twin hướng biển
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Junior Suite Hướng Biển
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Deluxe Suite Hướng Biển
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Suite Tổng Thống Hướng Biển
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Biệt thự hướng biển
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Phòng studio
+        </a>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-xl font-bold text-slate-900 border-b border-gray-100 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Ẩm Thực</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <a href="/dining/tropicana/"
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Nhà hàng Tropicana
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href="/dining/chubby-bear/"
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Chubby Bear Bar
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Tiền sảnh
+        </a>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-xl font-bold text-slate-900 border-b border-gray-100 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Dịch vụ</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Phòng họp</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Phòng Yến Tiệc Zurich
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Phòng họp
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Hoạt Động Đội Nhóm
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Gói Hội Nghị
+        </a>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Tiệc cưới</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Địa điểm tiệc cưới
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Ẩm thực tiệc cưới
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Triển lãm ảnh cưới
+        </a>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <button type="button"
+          class="mobile-submenu-toggle flex w-full items-center justify-between py-3 text-xl font-bold text-slate-900 border-b border-gray-100 hover:text-primary transition-colors group"
+          aria-expanded="false">
+          <span>Hoạt động giải trí</span>
+          <svg class="h-5 w-5 transition-transform duration-300 group-[.is-open]:rotate-180"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden overflow-hidden transition-all duration-300">
+          <div class="py-2 space-y-2">
+            
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Vui Chơi Dưới Nước
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Công Viên Dây Thừng
+        </a>
+        
+      </div>
+      
+      <div class="space-y-1">
+        
+        <a href=""
+          class="block py-3 text-lg font-medium text-slate-800 pl-4 hover:text-primary transition-all duration-200">
+          Câu Lạc Bộ Little Paws
+        </a>
+        
+      </div>
+      
+      
+          </div>
+        </div>
+        
+      </div>
+      
+      
+    </nav>
+  </div>
+
+  <div class="p-8 border-t border-gray-100 bg-gray-50/50">
+    <button class="w-full bg-primary text-white py-4 font-bold tracking-wide shadow-lg shadow-primary/20">
+      Đặt phòng ngay
+    </button>
+  </div>
+</div>
+
+  
+
+<main>
+  <section class="hero-section">
+  <div class=' absolute top-0 left-0 bg-linear-to-b w-full h-full from-[#0D1B2A]/60 via-[#0D1B2A]/30 to-[#0D1B2A]/70 '>
+  </div>
+  <div class="hero-video-container">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://movenpickresortcamranh.com/wp-content/uploads/2024/08/Main-video-15s-1-1.mp4"
+        type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+
+  </div>
+
+  <div class="hero-content container mx-auto px-4 text-center relative">
+
+
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0">
+        <div class="flex items-center justify-center gap-4 mb-8"><span
+            class="block w-16 h-px bg-linear-to-r from-transparent to-primary"></span><svg width="20" height="20"
+            viewBox="0 0 20 20" class="text-primary">
+            <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.6"></path>
+          </svg><span class="block w-16 h-px bg-linear-to-l from-transparent to-primary"></span></div>
+        <p class="text-primary text-sm md:text-lg uppercase tracking-[0.4em] mb-6 font-semibold">Khám phá thiên đường
+          nghỉ dưỡng</p>
+        <h1
+          class="font-playfair text-5xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.9] mb-8 tracking-tighter">
+          Cam Ranh<br>
+          <span class="text-primary font-playfair italic font-light text-4xl md:text-6xl lg:text-7xl block mt-2">Nha
+            Trang</span>
+        </h1>
+        <div class="flex justify-center mb-10">
+          <svg width="160" height="12" viewBox="0 0 120 12" class="text-primary/60">
+            <path
+              d="M0 6C10 6 10 2 20 2C30 2 30 10 40 10C50 10 50 2 60 2C70 2 70 10 80 10C90 10 90 2 100 2C110 2 110 6 120 6"
+              stroke="currentColor" stroke-width="2" fill="none"></path>
+          </svg>
+        </div>
+        <p class="text-white text-lg md:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-90">
+          Tuyệt tác nghỉ dưỡng 5 sao bậc nhất bên vịnh biển xanh ngắt
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <a href="#rooms"
+            class="bg-primary text-white text-base font-bold uppercase tracking-[0.2em] px-12 py-5 hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-primary/40">
+            Khám phá ngay
+          </a>
+          <a href="#about"
+            class="border-2 border-white/60 text-white text-base font-bold uppercase tracking-[0.2em] px-12 py-5 hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 backdrop-blur-md">
+            Tìm hiểu thêm
+          </a>
+        </div>
+      </div>
+      <button
+        class="absolute -bottom-20 left-1/2 -translate-x-1/2 text-white/60 hover:text-primary transition-colors duration-300 animate-bounce"><svg
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-chevron-down w-8 h-8">
+          <path d="m6 9 6 6 6-6"></path>
         </svg>
-      </a>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+  
+
+
+<div class="relative overflow-hidden  min-h-screen ">
+  <section class="relative pt-16 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+    <!-- Decorative Background Element -->
+    <div class="absolute top-0 left-0 w-2/3 h-full staggered-bg -z-10 rounded-br-[120px]"></div>
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+        <!-- Text Content (Left) -->
+        <div class="w-full lg:w-5/12 space-y-6 lg:space-y-8 reveal reveal-left">
+          <div class="space-y-4">
+            <div
+              class="flex items-center gap-2 text-primary font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check w-5 h-5">
+  <path
+    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+  <path d="m9 12 2 2 4-4" />
+</svg>
+
+
+              <span>Đẳng cấp 5 sao quốc tế</span>
+            </div>
+            <h2
+              class="serif-heading text-4xl md:text-5xl lg:text-6xl leading-[1.2] lg:leading-[1.1] font-bold text-slate-900 ">
+              Thiên đường nghỉ dưỡng <span class="italic text-primary">Cam Ranh</span>
+            </h2>
+            <div class="flex flex-col gap-4">
+              <p class="text-base md:text-lg text-slate-600  leading-relaxed font-light reveal reveal-up delay-100">
+                Mövenpick Resort Cam Ranh tọa lạc tại Bãi Dài — một trong những bãi biển đẹp nhất Việt Nam với đường bờ
+                biển trải dài
+                hơn 15km cát trắng mịn và làn nước trong xanh ngọc bích.
+              </p>
+              <p class="text-base md:text-lg text-slate-600  leading-relaxed font-light reveal reveal-up delay-200">
+                Được quản lý bởi tập đoàn Accor danh tiếng, resort mang đến trải nghiệm nghỉ dưỡng đẳng cấp quốc tế với
+                kiến trúc hiện
+                đại hòa quyện cùng thiên nhiên nhiệt đới, cùng dịch vụ chăm sóc khách hàng tận tâm theo tiêu chuẩn Thụy
+                Sĩ.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-6 lg:gap-10 reveal reveal-up delay-300">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 border border-primary/20">
+                  
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M720-720q-33 0-56.5-23.5T640-800q0-33 23.5-56.5T720-880q33 0 56.5 23.5T800-800q0 33-23.5 56.5T720-720ZM680-80v-320q0-40-20.5-72T607-522l35-103q8-25 29.5-40t48.5-15q27 0 48.5 15t29.5 40l102 305H800v240H680ZM457.5-517.5Q440-535 440-560t17.5-42.5Q475-620 500-620t42.5 17.5Q560-585 560-560t-17.5 42.5Q525-500 500-500t-42.5-17.5ZM220-720q-33 0-56.5-23.5T140-800q0-33 23.5-56.5T220-880q33 0 56.5 23.5T300-800q0 33-23.5 56.5T220-720ZM140-80v-280H80v-240q0-33 23.5-56.5T160-680h120q33 0 56.5 23.5T360-600v240h-60v280H140Zm300 0v-160h-40v-160q0-25 17.5-42.5T460-460h80q25 0 42.5 17.5T600-400v160h-40v160H440Z" />
+</svg>
+
+
+                </div>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.15em] text-slate-900 ">DÀNH CHO GIA
+                  ĐÌNH</span>
+              </div>
+              <div class="hidden sm:block h-8 w-px bg-slate-200 "></div>
+              <div class="flex flex-row sm:flex-col items-center sm:items-center gap-4">
+                <span class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-50">Quản lý bởi</span>
+                <img alt="Accor Logo" class="h-5 sm:h-6 w-auto object-contain " src="./assets/images/logoAccor.webp">
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 reveal reveal-up delay-400">
+            <button
+              class="bg-primary text-white px-8 py-4  font-bold tracking-wide hover:scale-105 transition-transform shadow-xl shadow-primary/30 flex items-center justify-center gap-2">
+              Khám phá ngay
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg>
+
+
+            </button>
+            <button
+              class="p-4  border border-primary text-primary  hover:scale-105  transition-transform flex items-center justify-center gap-2 font-semibold">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play-circle w-5 h-5">
+  <circle cx="12" cy="12" r="10" />
+  <polygon points="10 8 16 12 10 16 10 8" />
+</svg>
+
+
+              Video thực tế
+            </button>
+          </div>
+        </div>
+        <!-- Overlapping Image (Right) -->
+        <div class="w-full lg:w-7/12 relative reveal reveal-right mt-10 lg:mt-0">
+          <div
+            class="relative z-20 rounded-2xl overflow-hidden shadow-2xl shadow-black/20 aspect-video lg:aspect-4/3 group">
+            <img alt="Luxury resort pool overlooking the ocean"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              data-alt="Luxury infinity pool with turquoise water overlooking the ocean at sunset"
+              src="./assets/images/about.png">
+            <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 lg:bottom-8 lg:left-8 text-white">
+              <p class="text-xs lg:text-sm font-bold tracking-widest uppercase mb-1">Tầm nhìn tuyệt tác</p>
+              <p class="text-xl lg:text-2xl serif-heading italic">Vịnh Cam Ranh xinh đẹp</p>
+            </div>
+          </div>
+          <!-- Staggered Floating Element -->
+          <div
+            class="absolute -bottom-6 -left-4 lg:-bottom-10 lg:-left-10 z-30 bg-white  p-6 lg:p-8 rounded-2xl shadow-2xl hidden sm:block max-w-[240px] lg:max-w-xs border border-slate-100 reveal reveal-up delay-500">
+            <div class="space-y-3">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M786-120 532-374l56-56 254 254-56 56Zm-546-28q-100-98-117.5-230T168-625q3 34 17 76.5t38.5 89.5q24.5 47 58.5 96.5t75 97.5L240-148Zm172-172q-48-48-84-104.5T271.5-534q-20.5-53-23-96.5T267-695q21-22 64.5-20t97 22.5q53.5 20.5 110 57T643-551L412-320Zm286-286q-47-41-96.5-74t-96-58q-46.5-25-89-39.5T340-795q115-60 246.5-41.5T814-722L698-606Z" />
+</svg>
+
+
+              <h4 class="font-bold text-base lg:text-lg">Bãi biển riêng tư</h4>
+              <p class="text-xs lg:text-sm text-slate-500 ">Tận hưởng 500m đường bờ biển cát trắng mịn màng dành
+                riêng cho khách lưu trú.</p>
+            </div>
+          </div>
+          <!-- Accent geometric element -->
+          <div
+            class="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 w-20 h-20 lg:w-32 lg:h-32 border-8 border-primary/20 rounded-full z-10 reveal reveal-down delay-300">
+          </div>
+          <div
+            class="absolute -bottom-10 -right-10 lg:-bottom-20 lg:-right-20 w-40 h-40 lg:w-64 lg:h-64 border border-primary/20 rounded-full z-10 flex items-center justify-center reveal reveal-up delay-300">
+            <div class="w-24 h-24 lg:w-48 lg:h-48 border border-primary/5 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <section id="offers" class="relative py-24 md:py-32 bg-[#0D1B2A] overflow-hidden">
+  <div class="absolute top-0 left-0 right-0"><svg viewBox="0 0 1440 40" fill="none" class="w-full">
+      <path
+        d="M0 0L48 5C96 10 192 20 288 25C384 30 480 30 576 27C672 24 768 18 864 16C960 14 1056 16 1152 20C1248 24 1344 30 1392 33L1440 36V0H0Z"
+        fill="#FAFAF7"></path>
+    </svg></div>
+  <div class="absolute top-1/4 left-8 animate-pulse opacity-15"><svg width="14" height="14" viewBox="0 0 14 14">
+      <path d="M7 0L8.5 5.5L14 7L8.5 8.5L7 14L5.5 8.5L0 7L5.5 5.5Z" fill="#C9A96E"></path>
+    </svg></div>
+  <div class="absolute bottom-1/3 right-12 animate-pulse opacity-10" style="animation-delay: 1.5s;"><svg width="10"
+      height="10" viewBox="0 0 10 10">
+      <path d="M5 0L6 4L10 5L6 6L5 10L4 6L0 5L4 4Z" fill="#C9A96E"></path>
+    </svg></div>
+  <div class="absolute bottom-16 left-12 grid grid-cols-4 gap-3 opacity-[0.06]">
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <div class="flex items-center justify-center gap-3 mb-6"><span
+          class="block w-10 h-[1px] bg-gradient-to-r from-transparent to-primary"></span><svg width="20" height="20"
+          viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="text-primary text-xs uppercase tracking-[0.3em] font-medium">Ưu đãi</span><svg width="20"
+          height="20" viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="block w-10 h-[1px] bg-gradient-to-l from-transparent to-primary"></span></div>
+      <h2
+        class="font-['Playfair_Display',serif] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+        Ưu đãi <span class="text-primary italic font-normal">đặc biệt</span></h2>
+      <div class="flex justify-center mt-3 mb-4"><svg width="100" height="10" viewBox="0 0 100 10"
+          class="text-primary/40">
+          <path d="M0 5C8 5 8 1 16 1C24 1 24 9 32 9C40 9 40 1 48 1C56 1 56 9 64 9C72 9 72 1 80 1C88 1 88 5 100 5"
+            stroke="currentColor" stroke-width="1.2" fill="none"></path>
+        </svg></div>
+      <p class="text-white/60 text-base max-w-2xl mx-auto">Những gói ưu đãi hấp dẫn dành riêng cho kỳ nghỉ đáng nhớ của
+        bạn tại Mövenpick Resort Cam Ranh</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div
+        class="group relative bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden hover:border-primary/40 transition-all duration-500 reveal reveal-up"
+        style="transition-delay: 200ms;">
+        <div class="relative h-56 overflow-hidden"><img src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d622eba7-e867-4c89-b38d-25322e6ed110.png" alt="Spa Retreat Package"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/60 to-transparent"></div>
+          <div
+            class="absolute top-4 left-4 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5">
+            HOT</div>
+          <div
+            class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-bold px-3 py-1.5 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-percent w-3.5 h-3.5 text-primary">
+              <line x1="19" x2="5" y1="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>Giảm 35%
+          </div>
+          <div class="absolute bottom-3 left-3 w-6 h-6 border-b border-l border-primary/40"></div>
+          <div class="absolute bottom-3 right-3 w-6 h-6 border-b border-r border-primary/40"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-white font-['Playfair_Display',serif] text-xl font-semibold mb-3">Spa Retreat Package</h3>
+          <div class="w-8 h-[1px] bg-primary/40 mb-3 group-hover:w-12 transition-all duration-300"></div>
+          <p class="text-white/50 text-sm leading-relaxed mb-6">Trọn gói 3 ngày 2 đêm bao gồm phòng Deluxe Ocean View, 2 buổi spa trị liệu, và bữa tối lãng mạn bên
+    biển.</p>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-white/40 text-xs"><svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3.5 h-3.5 text-primary">
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+              </svg>Đến 30/06/2026</div><button
+              class="flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-wider hover:gap-3 transition-all duration-300">Đặt
+              ngay<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-right w-4 h-4">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 right-0 w-8 h-8 border-t border-r border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+      </div>
+      
+      <div
+        class="group relative bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden hover:border-primary/40 transition-all duration-500 reveal reveal-up"
+        style="transition-delay: 350ms;">
+        <div class="relative h-56 overflow-hidden"><img src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/7fdc8154-0902-4b0b-866c-1e18c95bde07.png" alt="Family Fun Getaway"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/60 to-transparent"></div>
+          <div
+            class="absolute top-4 left-4 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5">
+            MỚI</div>
+          <div
+            class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-bold px-3 py-1.5 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-percent w-3.5 h-3.5 text-primary">
+              <line x1="19" x2="5" y1="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>Giảm 25%
+          </div>
+          <div class="absolute bottom-3 left-3 w-6 h-6 border-b border-l border-primary/40"></div>
+          <div class="absolute bottom-3 right-3 w-6 h-6 border-b border-r border-primary/40"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-white font-['Playfair_Display',serif] text-xl font-semibold mb-3">Family Fun Getaway</h3>
+          <div class="w-8 h-[1px] bg-primary/40 mb-3 group-hover:w-12 transition-all duration-300"></div>
+          <p class="text-white/50 text-sm leading-relaxed mb-6">Kỳ nghỉ gia đình hoàn hảo với Pool Villa, vé Kids Club, buffet sáng cho cả gia đình và hoạt động ngoài
+    trời.</p>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-white/40 text-xs"><svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3.5 h-3.5 text-primary">
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+              </svg>Đến 31/08/2026</div><button
+              class="flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-wider hover:gap-3 transition-all duration-300">Đặt
+              ngay<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-right w-4 h-4">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 right-0 w-8 h-8 border-t border-r border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+      </div>
+      
+      <div
+        class="group relative bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden hover:border-primary/40 transition-all duration-500 reveal reveal-up"
+        style="transition-delay: 500ms;">
+        <div class="relative h-56 overflow-hidden"><img src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/407166b5-c9cc-4af9-8c55-5c4a2083dd84.png" alt="Honeymoon Paradise"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/60 to-transparent"></div>
+          <div
+            class="absolute top-4 left-4 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5">
+            ĐỘC QUYỀN</div>
+          <div
+            class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-bold px-3 py-1.5 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-percent w-3.5 h-3.5 text-primary">
+              <line x1="19" x2="5" y1="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>Giảm 20%
+          </div>
+          <div class="absolute bottom-3 left-3 w-6 h-6 border-b border-l border-primary/40"></div>
+          <div class="absolute bottom-3 right-3 w-6 h-6 border-b border-r border-primary/40"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-white font-['Playfair_Display',serif] text-xl font-semibold mb-3">Honeymoon Paradise</h3>
+          <div class="w-8 h-[1px] bg-primary/40 mb-3 group-hover:w-12 transition-all duration-300"></div>
+          <p class="text-white/50 text-sm leading-relaxed mb-6">Gói trăng mật lãng mạn với Presidential Suite, champagne chào đón, dinner cruise và dịch vụ butler
+    riêng.</p>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-white/40 text-xs"><svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3.5 h-3.5 text-primary">
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+              </svg>Đến 31/12/2026</div><button
+              class="flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-wider hover:gap-3 transition-all duration-300">Đặt
+              ngay<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-right w-4 h-4">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 right-0 w-8 h-8 border-t border-r border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+      </div>
+      
     </div>
 
-    <!-- Flowbite Card Example -->
-    <div class="grid gap-8 lg:grid-cols-3 mt-12">
-        
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fast Build Times</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Eleventy is known for its incredible performance and simplicity.</p>
-</div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0"><svg viewBox="0 0 1440 50" fill="none" class="w-full">
+      <path
+        d="M0 50L60 45C120 40 240 30 360 25C480 20 600 20 720 23C840 26 960 32 1080 35C1200 38 1320 38 1380 38L1440 38V50H0Z"
+        fill="#FAFAF7"></path>
+    </svg></div>
+</section>
 
-        
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tailwind CSS v4</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Utility-first CSS framework for rapid UI development.</p>
-</div>
+  
 
-        
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Open Source</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Built with open source technologies.</p>
-</div>
-
+<section id="services" class="relative py-24 md:py-32 bg-[#FAFAF7] overflow-hidden">
+  <div class="absolute -top-16 -left-16 opacity-[0.04]"><svg width="200" height="200" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="90" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+      <circle cx="100" cy="100" r="70" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+      <circle cx="100" cy="100" r="50" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+      <circle cx="100" cy="100" r="30" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+    </svg></div>
+  <div class="absolute top-1/2 -translate-y-1/2 right-4 opacity-[0.06]"><svg width="40" height="200"
+      viewBox="0 0 40 200">
+      <path d="M20 0C20 0 5 20 5 40C5 60 35 60 35 80C35 100 5 100 5 120C5 140 35 140 35 160C35 180 20 200 20 200"
+        stroke="#C9A96E" stroke-width="1" fill="none"></path>
+    </svg></div>
+  <div class="absolute bottom-12 right-16 grid grid-cols-5 gap-2.5 opacity-[0.05]">
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <div class="flex items-center justify-center gap-3 mb-6"><span
+          class="block w-10 h-[1px] bg-gradient-to-r from-transparent to-primary"></span><svg width="20" height="20"
+          viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="text-primary text-xs uppercase tracking-[0.3em] font-medium">Dịch vụ</span><svg width="20"
+          height="20" viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="block w-10 h-[1px] bg-gradient-to-l from-transparent to-primary"></span></div>
+      <h2
+        class="font-['Playfair_Display',serif] text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B3A4B] leading-tight mb-4">
+        Dịch vụ <span class="text-primary italic font-normal">trải nghiệm</span></h2>
+      <div class="flex justify-center mt-3 mb-4"><svg width="100" height="10" viewBox="0 0 100 10"
+          class="text-primary/40">
+          <path d="M0 5C8 5 8 1 16 1C24 1 24 9 32 9C40 9 40 1 48 1C56 1 56 9 64 9C72 9 72 1 80 1C88 1 88 5 100 5"
+            stroke="currentColor" stroke-width="1.2" fill="none"></path>
+        </svg></div>
+      <p class="text-[#7A8B99] text-base max-w-2xl mx-auto">Đa dạng dịch vụ cao cấp giúp kỳ nghỉ của bạn trở nên trọn
+        vẹn và đáng nhớ hơn bao giờ hết</p>
     </div>
+    <!-- service section -->
+    
 
+    <div class="space-y-32 pb-20">
+      
+      <section
+        class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <div class="flex-1 w-full relative reveal reveal-left">
+          <div
+            class="absolute -inset-4 border border-primary/20  z-10 group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-[4/3]  overflow-hidden shadow-2xl">
+            <img alt="Luxury Spa Treatment"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              data-alt="Calm luxury spa room with massage candles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeE7csGv5rPPTvRHsvs0b-V4amUL1jlOyOYpl6FOOe8DrFfN01yrMbp92J6a9MCP-OmFXsP0Cmp7ejxOD0ypPh329OPttBBEQfxyOHCCgSRyguzXTJ3iztRwywYeivpi2fYSOsvMX52Zu4CsGQ4477FJCErM8AS1HRwqoXwDtbSoo3TWLObWEiJnnjfZuadIOr050bG7phTCHTE6ThN7oV3wren-dzH4HZkzDqTKzfPmv52EoovObYdDYqidfGm6w_0GNoCoi0whI">
+          </div>
+        </div>
+        <div class="flex-1 space-y-6 reveal reveal-right">
+          <div class="inline-flex items-center gap-2 text-primary">
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M480-80q-94-12-168-48t-125.5-94Q135-280 108-356.5T81-526q110 11 186 40t123.5 82Q438-351 459-271.5T480-80Zm0-337q-23-35-62.5-69T326-548q6-42 20-87t34-88.5q20-43.5 45.5-83.5t54.5-73q29 33 54.5 73t45.5 83.5q20 43.5 34 88.5t20 87q-52 27-91.5 61T480-417Zm80 321q-2-70-10.5-129.5T523-338q47-81 129.5-132T879-526q1 158-84.5 272.5T560-96Z" />
+</svg>
+
+
+            <span class="text-sm font-bold tracking-widest uppercase">Thư giãn</span>
+          </div>
+          <h3 class=" font-display text-3xl md:text-4xl  leading-tight">Chăm sóc Sức khỏe &amp; Spa chuẩn quốc tế</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            Trải nghiệm sự yên bình tại khu spa đẳng cấp thế giới của chúng tôi với các liệu pháp truyền thống kết
+    hợp hiện đại. Mỗi liệu trình được cá nhân hóa để mang lại sự tái tạo hoàn hảo cho cả cơ thể và tâm hồn.
+          </p>
+
+          
+          <ul class="space-y-3 pb-4">
+            
+            <li class="flex items-center gap-3 text-slate-700">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+</svg>
+
+
+              Trị liệu tinh dầu cao cấp
+            </li>
+            
+            <li class="flex items-center gap-3 text-slate-700">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+</svg>
+
+
+              Xông hơi đá muối Himalaya
+            </li>
+            
+          </ul>
+          
+
+          
+
+          
+
+          <a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+            XEM THỰC ĐƠN SPA
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="group-hover/link:translate-x-1 transition-transform"
+  fill="currentColor">
+  <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+</svg>
+
+
+          </a>
+        </div>
+      </section>
+      
+      <section
+        class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-24">
+        <div class="flex-1 w-full relative reveal reveal-right">
+          <div
+            class="absolute -inset-4 border border-primary/20  z-10 group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-[4/3]  overflow-hidden shadow-2xl">
+            <img alt="Fine Dining Experience"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              data-alt="Exquisite fine dining table set with wine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWU68GhhDG8c8-8nk01uJ94gzk-kl3eiP7QCHplzM5KB5Y9T_wiYLvBskFRg231AY_ENLD_wJZkzxZWf77EZN4NkBZaQoYGSpotNtEDxsOKtGK-khu0u6m3ELiehqSYc0w7xFJgpa0XUnyeRVb4HN7gNrz02NNiX8dwNB8SR2e-NBNo5FisWkiPxoOXJvAZyk84cdG3imTeYvqvdUdo7RFqH5_KjcgtjsFaxhdP0kpmEAxuA8pquDjIZ1-fQ3LWL6j3TZFB6s6p1Q">
+          </div>
+        </div>
+        <div class="flex-1 space-y-6 reveal reveal-left">
+          <div class="inline-flex items-center gap-2 text-primary">
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M280-80v-366q-51-14-85.5-56T160-600v-280h80v280h40v-280h80v280h40v-280h80v280q0 56-34.5 98T360-446v366h-80Zm400 0v-320H560v-280q0-83 58.5-141.5T760-880v800h-80Z" />
+</svg>
+
+
+            <span class="text-sm font-bold tracking-widest uppercase">Gastronomy</span>
+          </div>
+          <h3 class=" font-display text-3xl md:text-4xl text-primary leading-tight">Ẩm thực Tinh hoa &amp; Không gian Sang trọng</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            Hành trình ẩm thực độc đáo kết hợp giữa hương vị địa phương đặc sắc và tinh hoa ẩm thực quốc tế.
+    Thưởng thức bữa tối dưới ánh nến bên bờ biển hoặc trong nhà hàng sang trọng với tầm nhìn panorama.
+          </p>
+
+          
+
+          
+          <div class="grid grid-cols-2 gap-4 pb-4">
+            
+            <div class="p-4 bg-primary/5  border border-primary/10">
+              <p class="font-bold text-primary">Michelin Star</p>
+              <p class="text-xs text-slate-500">Đầu bếp danh tiếng</p>
+            </div>
+            
+            <div class="p-4 bg-primary/5  border border-primary/10">
+              <p class="font-bold text-primary">Hầm Rượu</p>
+              <p class="text-xs text-slate-500">Bộ sưu tập quý hiếm</p>
+            </div>
+            
+          </div>
+          
+
+          
+
+          <a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+            ĐẶT BÀN NGAY
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="group-hover/link:translate-x-1 transition-transform"
+  fill="currentColor">
+  <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+</svg>
+
+
+          </a>
+        </div>
+      </section>
+      
+      <section
+        class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <div class="flex-1 w-full relative reveal reveal-left">
+          <div
+            class="absolute -inset-4 border border-primary/20  z-10 group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-[4/3]  overflow-hidden shadow-2xl">
+            <img alt="Water Sports Activity"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              data-alt="Turquoise water and private resort beach" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmYESkO-3FNJA2ZJ7mHdre6csS2yRKW2E_IKPALM1H6pwW-AWGqac84p-yVL7LwD6oF0IHApyrqV3ome6hLl0YILWZRusMIV80J8weesfLxjLRMVAvKN6e0NOm1kthZsCv0VpmxQpr6UrhECJqgO_hCrrCPtoq5c0-etGrXNF77ZN5pyFJkeCRHMzwphX8_SsvlW5x9_pN-e3sfaL57DfsgjbFhaYDsQpc0LhY1WhN-thoTSSd7L14YGPtCWQvlj_-XgwOjYC2jM">
+          </div>
+        </div>
+        <div class="flex-1 space-y-6 reveal reveal-right">
+          <div class="inline-flex items-center gap-2 text-primary">
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="text-primary"
+  fill="currentColor">
+  <path
+    d="M80-40v-80h40q32 0 62-10t58-30q28 20 58 30t62 10q32 0 62.5-10t57.5-30q28 20 58 30t62 10q32 0 62.5-10t57.5-30q27 20 57.5 30t62.5 10h40v80h-40q-31 0-61-7.5T720-70q-29 15-59 22.5T600-40q-31 0-61-7.5T480-70q-29 15-59 22.5T360-40q-31 0-61-7.5T240-70q-29 15-59 22.5T120-40H80Zm280-160q-36 0-67-17t-53-43q-17 18-37.5 32.5T157-205q-41-11-83-26T0-260q54-23 132-47t153-36l54-167q11-34 41.5-45t57.5 3l102 52 113-60 66-148-20-53 53-119 128 57-53 119-53 20-148 334q93 11 186.5 38T960-260q-29 13-73.5 28.5T803-205q-25-7-45.5-21.5T720-260q-22 26-53 43t-67 17q-36 0-67-17t-53-43q-22 26-53 43t-67 17Zm203-157 38-85-61 32-70-36-28 86h38q21 0 42 .5t41 2.5ZM423.5-603.5Q400-627 400-660t23.5-56.5Q447-740 480-740t56.5 23.5Q560-693 560-660t-23.5 56.5Q513-580 480-580t-56.5-23.5Z" />
+</svg>
+
+
+            <span class="text-sm font-bold tracking-widest uppercase">Khám phá</span>
+          </div>
+          <h3 class=" font-display text-3xl md:text-4xl text-primary leading-tight">Thể thao dưới nước &amp; Phiêu lưu kỳ thú</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            Thử thách bản thân với các hoạt động thể thao sôi động trên làn nước trong xanh. Từ chèo thuyền kayak
+    tĩnh lặng đến lướt ván cano đầy phấn khích, chúng tôi mang đến những kỷ niệm khó quên.
+          </p>
+
+          
+          <ul class="space-y-3 pb-4">
+            
+            <li class="flex items-center gap-3 text-slate-700">
+              
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="text-primary"
+  fill="currentColor">
+  <path
+    d="m120-420 320-460v460H120Zm153-80h87v-125l-87 125Zm227 80q12-28 26-98t14-142q0-72-13.5-148T500-920q61 18 121.5 67t109 117q48.5 68 79 149.5T840-420H500Zm104-80h148q-17-77-55.5-141T615-750q2 21 3.5 43.5T620-660q0 47-4.5 87T604-500ZM360-200q-36 0-67-17t-53-43q-14 15-30.5 28T173-211q-35-26-59.5-64.5T80-360h800q-9 46-33.5 84.5T787-211q-20-8-36.5-21T720-260q-23 26-53.5 43T600-200q-36 0-67-17t-53-43q-22 26-53 43t-67 17ZM80-40v-80h40q32 0 62.5-10t57.5-30q27 20 57.5 29.5T360-121q32 0 62-9.5t58-29.5q27 20 57.5 29.5T600-121q32 0 62-9.5t58-29.5q28 20 58 30t62 10h40v80h-40q-31 0-61-7.5T720-70q-29 15-59 22.5T600-40q-31 0-61-7.5T480-70q-29 15-59 22.5T360-40q-31 0-61-7.5T240-70q-29 15-59 22.5T120-40H80Zm280-460Zm244 0Z" />
+</svg>
+
+
+              Du ngoạn ngắm hoàng hôn
+            </li>
+            
+          </ul>
+          
+
+          
+
+          
+
+          <a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+            KHÁM PHÁ HOẠT ĐỘNG
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="group-hover/link:translate-x-1 transition-transform"
+  fill="currentColor">
+  <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+</svg>
+
+
+          </a>
+        </div>
+      </section>
+      
+      <section
+        class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-24">
+        <div class="flex-1 w-full relative reveal reveal-right">
+          <div
+            class="absolute -inset-4 border border-primary/20  z-10 group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-[4/3]  overflow-hidden shadow-2xl">
+            <img alt="Luxury Event Setup"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              data-alt="Elegantly decorated outdoor wedding event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmYESkO-3FNJA2ZJ7mHdre6csS2yRKW2E_IKPALM1H6pwW-AWGqac84p-yVL7LwD6oF0IHApyrqV3ome6hLl0YILWZRusMIV80J8weesfLxjLRMVAvKN6e0NOm1kthZsCv0VpmxQpr6UrhECJqgO_hCrrCPtoq5c0-etGrXNF77ZN5pyFJkeCRHMzwphX8_SsvlW5x9_pN-e3sfaL57DfsgjbFhaYDsQpc0LhY1WhN-thoTSSd7L14YGPtCWQvlj_-XgwOjYC2jM">
+          </div>
+        </div>
+        <div class="flex-1 space-y-6 reveal reveal-left">
+          <div class="inline-flex items-center gap-2 text-primary">
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="text-primary"
+  fill="currentColor">
+  <path
+    d="m80-80 200-560 360 360L80-80Zm132-132 282-100-182-182-100 282Zm370-246-42-42 224-224q32-32 77-32t77 32l24 24-42 42-24-24q-14-14-35-14t-35 14L582-458ZM422-618l-42-42 24-24q14-14 14-34t-14-34l-26-26 42-42 26 26q32 32 32 76t-32 76l-24 24Zm80 80-42-42 144-144q14-14 14-35t-14-35l-64-64 42-42 64 64q32 32 32 77t-32 77L502-538Zm160 160-42-42 64-64q32-32 77-32t77 32l64 64-42 42-64-64q-14-14-35-14t-35 14l-64 64ZM212-212Z" />
+</svg>
+
+
+            <span class="text-sm font-bold tracking-widest uppercase">Sự kiện</span>
+          </div>
+          <h3 class=" font-display text-3xl md:text-4xl text-primary leading-tight">Hội nghị &amp; Tiệc cưới Trong mơ</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            Không gian sự kiện đa năng từ phòng họp công nghệ cao đến lễ đường ngoài trời lãng mạn. Đội ngũ chuyên
+    gia tận tâm sẽ biến mọi ý tưởng của bạn thành hiện thực hoàn hảo nhất.
+          </p>
+
+          
+
+          
+
+          
+          <div class="flex flex-wrap gap-4 pb-4">
+            
+            <span class="px-4 py-2 bg-primary/5 text-primary rounded-full text-xs font-bold border border-primary/10">SỨC CHỨA 500 KHÁCH</span>
+            
+            <span class="px-4 py-2 bg-primary/5 text-primary rounded-full text-xs font-bold border border-primary/10">PLANNER CHUYÊN NGHIỆP</span>
+            
+          </div>
+          
+
+          <a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="#">
+            TỔ CHỨC SỰ KIỆN
+            
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="group-hover/link:translate-x-1 transition-transform"
+  fill="currentColor">
+  <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+</svg>
+
+
+          </a>
+        </div>
+      </section>
+      
+    </div>
+    <div class="flex items-center justify-center gap-4 mt-14 reveal reveal-up duration-1000 delay-700">
+      <span class="block w-20 h-[1px] bg-gradient-to-r from-transparent to-primary/30"></span><svg width="16"
+        height="16" viewBox="0 0 16 16" class="text-primary/30">
+        <path d="M8 0L9.5 6.5L16 8L9.5 9.5L8 16L6.5 9.5L0 8L6.5 6.5Z" fill="currentColor"></path>
+      </svg><span class="block w-20 h-[1px] bg-gradient-to-l from-transparent to-primary/30"></span>
+    </div>
+  </div>
+</section>
+
+  <section id="gallery" class="relative py-24 md:py-32 bg-[#F5EFE0] overflow-hidden">
+  <div class="absolute -top-8 -left-8 opacity-[0.04]"><svg width="200" height="200" viewBox="0 0 200 200">
+      <path d="M0 200C0 200 50 150 80 80C110 10 200 0 200 0" stroke="#e11d48" stroke-width="1.5" fill="none"></path>
+      <path d="M0 200C0 200 70 160 100 100C130 40 200 30 200 30" stroke="#e11d48" stroke-width="1" fill="none"></path>
+      <path d="M0 200C0 200 90 170 120 120C150 70 200 60 200 60" stroke="#e11d48" stroke-width="0.8" fill="none"></path>
+    </svg></div>
+  <div class="absolute bottom-12 right-12 opacity-[0.05]"><svg width="100" height="100" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="45" stroke="#e11d48" stroke-width="0.5" fill="none"></circle>
+      <circle cx="50" cy="50" r="35" stroke="#e11d48" stroke-width="0.5" fill="none"></circle>
+      <circle cx="50" cy="50" r="25" stroke="#e11d48" stroke-width="0.5" fill="none"></circle>
+      <circle cx="50" cy="50" r="15" stroke="#e11d48" stroke-width="0.5" fill="none"></circle>
+      <circle cx="50" cy="50" r="3" fill="#e11d48"></circle>
+    </svg></div>
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <div class="flex items-center justify-center gap-3 mb-6"><span
+          class="block w-10 h-[1px] bg-gradient-to-r from-transparent to-primary"></span><svg width="20" height="20"
+          viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="text-primary text-xs uppercase tracking-[0.3em] font-medium">Thư viện ảnh</span><svg
+          width="20" height="20" viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="block w-10 h-[1px] bg-gradient-to-l from-transparent to-primary"></span></div>
+      <h2
+        class="font-['Playfair_Display',serif] text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B3A4B] leading-tight mb-4">
+        Khoảnh khắc <span class="text-prto-primary italic font-normal">tuyệt đẹp</span></h2>
+      <div class="flex justify-center mt-3 mb-4"><svg width="80" height="8" viewBox="0 0 80 8" class="text-primary/40">
+          <path d="M0 4C7 4 7 1 14 1C21 1 21 7 28 7C35 7 35 1 42 1C49 1 49 7 56 7C63 7 63 1 70 1C77 1 77 4 80 4"
+            stroke="currentColor" stroke-width="1" fill="none"></path>
+        </svg></div>
+      <p class="text-[#7A8B99] text-base max-w-2xl mx-auto">Khám phá vẻ đẹp của Mövenpick Resort Cam Ranh qua bộ sưu tập
+        hình ảnh</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[200px] md:auto-rows-[250px]">
+      <div class="col-span-2 row-span-2 relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: 100ms;"><img
+          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/9e51a241-90a7-4775-ac19-091536556f3b.png"
+          alt="Resort toàn cảnh"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div
+          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <div class="relative inline-block px-6 py-3">
+              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
+              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
+              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
+              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
+                class="text-white text-sm font-medium uppercase tracking-wider">Resort toàn cảnh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: 180ms;"><img
+          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/7fdc8154-0902-4b0b-866c-1e18c95bde07.png"
+          alt="Hồ bơi vô cực"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div
+          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <div class="relative inline-block px-6 py-3">
+              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
+              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
+              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
+              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
+                class="text-white text-sm font-medium uppercase tracking-wider">Hồ bơi vô cực</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: 260ms;"><img
+          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d622eba7-e867-4c89-b38d-25322e6ed110.png"
+          alt="Spa &amp; Wellness"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div
+          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <div class="relative inline-block px-6 py-3">
+              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
+              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
+              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
+              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
+                class="text-white text-sm font-medium uppercase tracking-wider">Spa &amp; Wellness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: 340ms;"><img
+          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d7b1cd3e-03ee-4e10-98dd-5e8b590766f5.png"
+          alt="Nội thất Villa"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div
+          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <div class="relative inline-block px-6 py-3">
+              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
+              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
+              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
+              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
+                class="text-white text-sm font-medium uppercase tracking-wider">Nội thất Villa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: 420ms;"><img
+          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d1be92fe-3cc9-47d2-92c9-ebcf0f8bea6b.png"
+          alt="Nhà hàng" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div
+          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <div class="relative inline-block px-6 py-3">
+              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
+              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
+              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
+              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
+                class="text-white text-sm font-medium uppercase tracking-wider">Nhà hàng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-2 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: 500ms;"><img
+          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/407166b5-c9cc-4af9-8c55-5c4a2083dd84.png"
+          alt="Hoàng hôn biển"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div
+          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <div class="relative inline-block px-6 py-3">
+              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
+              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
+              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
+              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
+                class="text-white text-sm font-medium uppercase tracking-wider">Hoàng hôn biển</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="relative py-24 md:py-32 overflow-hidden">
+  <div class="absolute inset-0"><img
+      src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/407166b5-c9cc-4af9-8c55-5c4a2083dd84.png"
+      alt="Beach background" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-[#0D1B2A]/90"></div>
+  </div>
+  <div class="absolute top-8 left-8 w-20 h-20 border-t border-l border-primary/20 z-10"></div>
+  <div class="absolute top-8 right-8 w-20 h-20 border-t border-r border-primary/20 z-10"></div>
+  <div class="absolute bottom-8 left-8 w-20 h-20 border-b border-l border-primary/20 z-10"></div>
+  <div class="absolute bottom-8 right-8 w-20 h-20 border-b border-r border-primary/20 z-10"></div>
+  <div class="absolute top-1/4 right-1/4 animate-pulse opacity-15 z-10"><svg width="16" height="16" viewBox="0 0 16 16">
+      <path d="M8 0L9.5 6.5L16 8L9.5 9.5L8 16L6.5 9.5L0 8L6.5 6.5Z" fill="#e11d48"></path>
+    </svg></div>
+  <div class="absolute bottom-1/3 left-1/4 animate-pulse opacity-10 z-10" style="animation-delay: 2s;"><svg width="12"
+      height="12" viewBox="0 0 12 12">
+      <path d="M6 0L7 5L12 6L7 7L6 12L5 7L0 6L5 5Z" fill="#e11d48"></path>
+    </svg></div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12 z-10">
+    <div class="text-center mb-16 reveal reveal-up">
+      <div class="flex items-center justify-center gap-3 mb-6"><span
+          class="block w-10 h-px bg-linear-to-r from-transparent to-primary"></span><svg width="20" height="20"
+          viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="text-primary text-xs uppercase tracking-[0.3em] font-medium">Liên hệ</span><svg width="20"
+          height="20" viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="block w-10 h-px bg-linear-to-l from-transparent to-primary"></span></div>
+      <h2
+        class="font-['Playfair_Display',serif] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+        Liên hệ <span class="text-primary italic font-normal">với chúng tôi</span></h2>
+      <div class="flex justify-center mt-3 mb-4"><svg width="80" height="8" viewBox="0 0 80 8" class="text-primary/40">
+          <path d="M0 4C7 4 7 1 14 1C21 1 21 7 28 7C35 7 35 1 42 1C49 1 49 7 56 7C63 7 63 1 70 1C77 1 77 4 80 4"
+            stroke="currentColor" stroke-width="1" fill="none"></path>
+        </svg></div>
+      <p class="text-white/60 text-base max-w-2xl mx-auto">Hãy để lại thông tin, đội ngũ tư vấn sẽ liên hệ bạn trong
+        thời gian sớm nhất</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div class="reveal reveal-left">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label class="text-white/60 text-xs uppercase tracking-wider mb-2 block">Họ và tên</label><input
+                type="text"
+                class="w-full bg-transparent border-b border-white/20 text-white py-3 focus:border-primary outline-none transition-colors placeholder:text-white/30"
+                placeholder="Nguyễn Văn A" required="" value=""></div>
+            <div><label class="text-white/60 text-xs uppercase tracking-wider mb-2 block">Số điện thoại</label><input
+                type="tel"
+                class="w-full bg-transparent border-b border-white/20 text-white py-3 focus:border-primary outline-none transition-colors placeholder:text-white/30"
+                placeholder="0901 234 567" required="" value=""></div>
+          </div>
+          <div><label class="text-white/60 text-xs uppercase tracking-wider mb-2 block">Email</label><input type="email"
+              class="w-full bg-transparent border-b border-white/20 text-white py-3 focus:border-primary outline-none transition-colors placeholder:text-white/30"
+              placeholder="email@example.com" required="" value=""></div>
+          <div><label class="text-white/60 text-xs uppercase tracking-wider mb-2 block">Lời nhắn</label><textarea
+              rows="4"
+              class="w-full bg-transparent border-b border-white/20 text-white py-3 focus:border-primary outline-none transition-colors placeholder:text-white/30 resize-none"
+              placeholder="Tôi muốn tìm hiểu thêm về..."></textarea></div><button type="submit"
+            class="relative bg-primary text-white text-sm font-semibold uppercase tracking-[0.15em] px-10 py-4 hover:bg-[#B8944F] transition-colors duration-300 w-full sm:w-auto group overflow-hidden"><span
+              class="relative z-10">Gửi yêu cầu</span>
+            <div
+              class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/20 to-transparent">
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class="reveal reveal-right">
+        <div class="space-y-8">
+          <div class="flex items-start gap-4 group">
+            <div class="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div
+                class="absolute inset-0 border border-primary/50 rotate-45 group-hover:rotate-[135deg] transition-transform duration-500">
+              </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-map-pin w-5 h-5 text-primary relative z-10">
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                </path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div><span class="text-white/50 text-xs uppercase tracking-wider block mb-1">Địa chỉ</span><span
+                class="text-white text-base">Bãi Dài, Cam Ranh, Khánh Hòa, Việt Nam</span></div>
+          </div>
+          <div class="flex items-start gap-4 group">
+            <div class="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div
+                class="absolute inset-0 border border-primary/50 rotate-45 group-hover:rotate-[135deg] transition-transform duration-500">
+              </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone w-5 h-5 text-primary relative z-10">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div><span class="text-white/50 text-xs uppercase tracking-wider block mb-1">Hotline</span><span
+                class="text-white text-base">+84 258 399 8888</span></div>
+          </div>
+          <div class="flex items-start gap-4 group">
+            <div class="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div
+                class="absolute inset-0 border border-primary/50 rotate-45 group-hover:rotate-[135deg] transition-transform duration-500">
+              </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-mail w-5 h-5 text-primary relative z-10">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <div><span class="text-white/50 text-xs uppercase tracking-wider block mb-1">Email</span><span
+                class="text-white text-base">info@movenpick-camranh.com</span></div>
+          </div>
+          <div class="flex items-start gap-4 group">
+            <div class="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div
+                class="absolute inset-0 border border-primary/50 rotate-45 group-hover:rotate-[135deg] transition-transform duration-500">
+              </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-clock w-5 h-5 text-primary relative z-10">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div><span class="text-white/50 text-xs uppercase tracking-wider block mb-1">Giờ làm việc</span><span
+                class="text-white text-base">24/7 — Luôn sẵn sàng</span></div>
+          </div>
+        </div>
+        <div class="mt-10 h-48 bg-white/5 border border-white/10 overflow-hidden relative">
+          <div class="absolute top-0 left-0 w-6 h-6 border-t border-l border-primary/40 z-10"></div>
+          <div class="absolute top-0 right-0 w-6 h-6 border-t border-r border-primary/40 z-10"></div>
+          <div class="absolute bottom-0 left-0 w-6 h-6 border-b border-l border-primary/40 z-10"></div>
+          <div class="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-primary/40 z-10"></div><iframe
+            title="Movenpick Cam Ranh Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.0!2d109.1!3d11.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU3JzAwLjAiTiAxMDnCsDA2JzAwLjAiRQ!5e0!3m2!1svi!2svn!4v1"
+            width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            style="border: 0px;"></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 
+
+
+  <!-- 
+
+
+<section class="bg-white  py-12 border-y border-slate-100 ">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="flex items-center gap-4">
+      
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M80-120v-80q38 0 57-20t75-20q56 0 77 20t57 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 57-20t77-20q56 0 75 20t57 20v80q-59 0-77.5-20T748-160q-36 0-57 20t-77 20q-56 0-77-20t-57-20q-36 0-57 20t-77 20q-56 0-77-20t-57-20q-36 0-54.5 20T80-120Zm0-180v-80q38 0 57-20t75-20q56 0 77.5 20t56.5 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 57-20t77-20q56 0 75 20t57 20v80q-59 0-77.5-20T748-340q-36 0-55.5 20T614-300q-57 0-77.5-20T480-340q-38 0-56.5 20T346-300q-59 0-78.5-20T212-340q-36 0-54.5 20T80-300Zm196-204 133-133-40-40q-33-33-70-48t-91-15v-100q75 0 124 16.5t96 63.5l256 256q-17 11-33 17.5t-37 6.5q-36 0-57-20t-77-20q-56 0-77 20t-57 20q-21 0-37-6.5T276-504Zm463-306.5q29 29.5 29 70.5 0 42-29 71t-71 29q-42 0-71-29t-29-71q0-41 29-70.5t71-29.5q42 0 71 29.5Z" />
+</svg>
+
+
+      <div>
+        <p class="font-bold text-lg leading-none"> Hồ bơi</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Tràn bờ &amp; trẻ em</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+
+      
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M280-80v-366q-51-14-85.5-56T160-600v-280h80v280h40v-280h80v280h40v-280h80v280q0 56-34.5 98T360-446v366h-80Zm400 0v-320H560v-280q0-83 58.5-141.5T760-880v800h-80Z" />
+</svg>
+
+
+      <div>
+        <p class="font-bold text-lg leading-none"> Nhà hàng</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Ẩm thực đa quốc gia</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M480-80q-94-12-168-48t-125.5-94Q135-280 108-356.5T81-526q110 11 186 40t123.5 82Q438-351 459-271.5T480-80Zm0-337q-23-35-62.5-69T326-548q6-42 20-87t34-88.5q20-43.5 45.5-83.5t54.5-73q29 33 54.5 73t45.5 83.5q20 43.5 34 88.5t20 87q-52 27-91.5 61T480-417Zm80 321q-2-70-10.5-129.5T523-338q47-81 129.5-132T879-526q1 158-84.5 272.5T560-96Z" />
+</svg>
+
+
+      <div>
+        <p class="font-bold text-lg leading-none">Serenity Spa</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Trị liệu cao cấp</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"
+  class="text-primary">
+  <path
+    d="M615.5-504.5Q630-519 630-540t-14.5-35.5Q601-590 580-590t-35.5 14.5Q530-561 530-540t14.5 35.5Q559-490 580-490t35.5-14.5Zm-200 0Q430-519 430-540t-14.5-35.5Q401-590 380-590t-35.5 14.5Q330-561 330-540t14.5 35.5Q359-490 380-490t35.5-14.5Zm173 191.5q48.5-33 71.5-87H300q23 54 71.5 87T480-280q60 0 108.5-33Zm-249 164.5q-65.5-28.5-114-77t-77-114Q120-405 120-480t28.5-140.5q28.5-65.5 77-114t114-77Q405-840 480-840t140.5 28.5q65.5 28.5 114 77t77 114Q840-555 840-480t-28.5 140.5q-28.5 65.5-77 114t-114 77Q555-120 480-120t-140.5-28.5ZM496-620q17 0 38.5-6.5T556-656q0-12-8-21t-20-9q-8 0-15.5 3t-16.5 3q-21 0-35.5-14.5T446-730q0-11 3.5-18.5T460-759q-19 2-37 5t-35 10q-1 3-1.5 7t-.5 7q0 45 32.5 77.5T496-620Z" />
+</svg>
+
+
+      <div>
+        <p class="font-bold text-lg leading-none">Kids Club</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Vui chơi sáng tạo</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+</main>
+
+  <footer class="relative bg-[#0A1520] py-12 overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 opacity-[0.06]"><svg width="100%" height="30" viewBox="0 0 1440 30"
+      preserveAspectRatio="none">
+      <path
+        d="M0 15C120 15 120 5 240 5C360 5 360 25 480 25C600 25 600 5 720 5C840 5 840 25 960 25C1080 25 1080 5 1200 5C1320 5 1320 15 1440 15"
+        stroke="#C9A96E" stroke-width="1" fill="none"></path>
+    </svg></div>
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="flex items-center gap-3"><img src="/assets/images/logo.webp" alt="Movenpick Logo"
+          class="h-10 w-auto object-contain "></div>
+      <div class="flex items-center gap-6 text-white/40 text-sm"><a href="#about"
+          class="hover:text-primary transition-colors">Giới thiệu</a><span
+          class="w-1 h-1 rounded-full bg-primary/30"></span><a href="#amenities"
+          class="hover:text-primary transition-colors">Tiện ích</a><span
+          class="w-1 h-1 rounded-full bg-primary/30"></span><a href="#rooms"
+          class="hover:text-primary transition-colors">Phòng</a><span
+          class="w-1 h-1 rounded-full bg-primary/30"></span><a href="#gallery"
+          class="hover:text-primary transition-colors">Thư viện</a><span
+          class="w-1 h-1 rounded-full bg-primary/30"></span><a href="#contact"
+          class="hover:text-primary transition-colors">Liên hệ</a></div>
+      <div class="flex items-center gap-4"><a href="#"
+          class="relative w-10 h-10 flex items-center justify-center text-white/40 hover:text-primary transition-colors group">
+          <div
+            class="absolute inset-0 border border-white/10 rotate-45 group-hover:border-primary/40 group-hover:rotate-[135deg] transition-all duration-500">
+          </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-facebook w-4 h-4 relative z-10">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a><a href="#"
+          class="relative w-10 h-10 flex items-center justify-center text-white/40 hover:text-primary transition-colors group">
+          <div
+            class="absolute inset-0 border border-white/10 rotate-45 group-hover:border-primary/40 group-hover:rotate-[135deg] transition-all duration-500">
+          </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-instagram w-4 h-4 relative z-10">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+        </a></div>
+    </div>
+    <div class="flex items-center gap-4 mt-8 mb-8">
+      <div class="flex-1 h-[1px] bg-white/5"></div><svg width="20" height="20" viewBox="0 0 20 20"
+        class="text-primary/20">
+        <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor"></path>
+      </svg>
+      <div class="flex-1 h-[1px] bg-white/5"></div>
+    </div>
+    <p class="text-white/30 text-xs text-center">© 2026 Mövenpick Resort Cam Ranh. All rights reserved. Managed by
+      Accor.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="/assets/js/main.js"></script>
 </body>
 

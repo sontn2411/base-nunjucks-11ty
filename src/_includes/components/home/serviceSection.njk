@@ -1,0 +1,206 @@
+{% from 'components/icons.njk' import icon %}
+
+<section id="services" class="relative py-24 md:py-32 bg-[#FAFAF7] overflow-hidden">
+  <div class="absolute -top-16 -left-16 opacity-[0.04]"><svg width="200" height="200" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="90" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+      <circle cx="100" cy="100" r="70" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+      <circle cx="100" cy="100" r="50" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+      <circle cx="100" cy="100" r="30" stroke="#C9A96E" stroke-width="0.5" fill="none"></circle>
+    </svg></div>
+  <div class="absolute top-1/2 -translate-y-1/2 right-4 opacity-[0.06]"><svg width="40" height="200"
+      viewBox="0 0 40 200">
+      <path d="M20 0C20 0 5 20 5 40C5 60 35 60 35 80C35 100 5 100 5 120C5 140 35 140 35 160C35 180 20 200 20 200"
+        stroke="#C9A96E" stroke-width="1" fill="none"></path>
+    </svg></div>
+  <div class="absolute bottom-12 right-16 grid grid-cols-5 gap-2.5 opacity-[0.05]">
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <div class="flex items-center justify-center gap-3 mb-6"><span
+          class="block w-10 h-[1px] bg-gradient-to-r from-transparent to-primary"></span><svg width="20" height="20"
+          viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="text-primary text-xs uppercase tracking-[0.3em] font-medium">Dịch vụ</span><svg width="20"
+          height="20" viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="block w-10 h-[1px] bg-gradient-to-l from-transparent to-primary"></span></div>
+      <h2
+        class="font-['Playfair_Display',serif] text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B3A4B] leading-tight mb-4">
+        Dịch vụ <span class="text-primary italic font-normal">trải nghiệm</span></h2>
+      <div class="flex justify-center mt-3 mb-4"><svg width="100" height="10" viewBox="0 0 100 10"
+          class="text-primary/40">
+          <path d="M0 5C8 5 8 1 16 1C24 1 24 9 32 9C40 9 40 1 48 1C56 1 56 9 64 9C72 9 72 1 80 1C88 1 88 5 100 5"
+            stroke="currentColor" stroke-width="1.2" fill="none"></path>
+        </svg></div>
+      <p class="text-[#7A8B99] text-base max-w-2xl mx-auto">Đa dạng dịch vụ cao cấp giúp kỳ nghỉ của bạn trở nên trọn
+        vẹn và đáng nhớ hơn bao giờ hết</p>
+    </div>
+    <!-- service section -->
+    {% set services = [
+    {
+    icon: 'spa',
+    tag: 'Thư giãn',
+    title: 'Chăm sóc Sức khỏe & Spa chuẩn quốc tế',
+    description: 'Trải nghiệm sự yên bình tại khu spa đẳng cấp thế giới của chúng tôi với các liệu pháp truyền thống kết
+    hợp hiện đại. Mỗi liệu trình được cá nhân hóa để mang lại sự tái tạo hoàn hảo cho cả cơ thể và tâm hồn.',
+    image:
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCeE7csGv5rPPTvRHsvs0b-V4amUL1jlOyOYpl6FOOe8DrFfN01yrMbp92J6a9MCP-OmFXsP0Cmp7ejxOD0ypPh329OPttBBEQfxyOHCCgSRyguzXTJ3iztRwywYeivpi2fYSOsvMX52Zu4CsGQ4477FJCErM8AS1HRwqoXwDtbSoo3TWLObWEiJnnjfZuadIOr050bG7phTCHTE6ThN7oV3wren-dzH4HZkzDqTKzfPmv52EoovObYdDYqidfGm6w_0GNoCoi0whI',
+    imageAlt: 'Luxury Spa Treatment',
+    imageDataAlt: 'Calm luxury spa room with massage candles',
+    features: [
+    'Trị liệu tinh dầu cao cấp',
+    'Xông hơi đá muối Himalaya'
+    ],
+    linkText: 'XEM THỰC ĐƠN SPA',
+    linkUrl: '#'
+    },
+    {
+    icon: 'restaurant',
+    tag: 'Gastronomy',
+    title: 'Ẩm thực Tinh hoa & Không gian Sang trọng',
+    description: 'Hành trình ẩm thực độc đáo kết hợp giữa hương vị địa phương đặc sắc và tinh hoa ẩm thực quốc tế.
+    Thưởng thức bữa tối dưới ánh nến bên bờ biển hoặc trong nhà hàng sang trọng với tầm nhìn panorama.',
+    image:
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCWU68GhhDG8c8-8nk01uJ94gzk-kl3eiP7QCHplzM5KB5Y9T_wiYLvBskFRg231AY_ENLD_wJZkzxZWf77EZN4NkBZaQoYGSpotNtEDxsOKtGK-khu0u6m3ELiehqSYc0w7xFJgpa0XUnyeRVb4HN7gNrz02NNiX8dwNB8SR2e-NBNo5FisWkiPxoOXJvAZyk84cdG3imTeYvqvdUdo7RFqH5_KjcgtjsFaxhdP0kpmEAxuA8pquDjIZ1-fQ3LWL6j3TZFB6s6p1Q',
+    imageAlt: 'Fine Dining Experience',
+    imageDataAlt: 'Exquisite fine dining table set with wine',
+    highlights: [
+    { label: 'Michelin Star', sub: 'Đầu bếp danh tiếng' },
+    { label: 'Hầm Rượu', sub: 'Bộ sưu tập quý hiếm' }
+    ],
+    linkText: 'ĐẶT BÀN NGAY',
+    linkUrl: '#'
+    },
+    {
+    icon: 'kayaking',
+    tag: 'Khám phá',
+    title: 'Thể thao dưới nước & Phiêu lưu kỳ thú',
+    description: 'Thử thách bản thân với các hoạt động thể thao sôi động trên làn nước trong xanh. Từ chèo thuyền kayak
+    tĩnh lặng đến lướt ván cano đầy phấn khích, chúng tôi mang đến những kỷ niệm khó quên.',
+    image:
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCRmYESkO-3FNJA2ZJ7mHdre6csS2yRKW2E_IKPALM1H6pwW-AWGqac84p-yVL7LwD6oF0IHApyrqV3ome6hLl0YILWZRusMIV80J8weesfLxjLRMVAvKN6e0NOm1kthZsCv0VpmxQpr6UrhECJqgO_hCrrCPtoq5c0-etGrXNF77ZN5pyFJkeCRHMzwphX8_SsvlW5x9_pN-e3sfaL57DfsgjbFhaYDsQpc0LhY1WhN-thoTSSd7L14YGPtCWQvlj_-XgwOjYC2jM',
+    imageAlt: 'Water Sports Activity',
+    imageDataAlt: 'Turquoise water and private resort beach',
+    features: [
+    'Du ngoạn ngắm hoàng hôn'
+    ],
+    featureIcon: 'sailing',
+    linkText: 'KHÁM PHÁ HOẠT ĐỘNG',
+    linkUrl: '#'
+    },
+    {
+    icon: 'celebration',
+    tag: 'Sự kiện',
+    title: 'Hội nghị & Tiệc cưới Trong mơ',
+    description: 'Không gian sự kiện đa năng từ phòng họp công nghệ cao đến lễ đường ngoài trời lãng mạn. Đội ngũ chuyên
+    gia tận tâm sẽ biến mọi ý tưởng của bạn thành hiện thực hoàn hảo nhất.',
+    image:
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCRmYESkO-3FNJA2ZJ7mHdre6csS2yRKW2E_IKPALM1H6pwW-AWGqac84p-yVL7LwD6oF0IHApyrqV3ome6hLl0YILWZRusMIV80J8weesfLxjLRMVAvKN6e0NOm1kthZsCv0VpmxQpr6UrhECJqgO_hCrrCPtoq5c0-etGrXNF77ZN5pyFJkeCRHMzwphX8_SsvlW5x9_pN-e3sfaL57DfsgjbFhaYDsQpc0LhY1WhN-thoTSSd7L14YGPtCWQvlj_-XgwOjYC2jM',
+    imageAlt: 'Luxury Event Setup',
+    imageDataAlt: 'Elegantly decorated outdoor wedding event',
+    badges: [
+    'SỨC CHỨA 500 KHÁCH',
+    'PLANNER CHUYÊN NGHIỆP'
+    ],
+    linkText: 'TỔ CHỨC SỰ KIỆN',
+    linkUrl: '#'
+    }
+    ] %}
+
+    <div class="space-y-32 pb-20">
+      {% for service in services %}
+      <section
+        class="group flex flex-col {{ 'lg:flex-row-reverse' if loop.index0 % 2 !== 0 else 'lg:flex-row' }} items-center gap-12 lg:gap-24">
+        <div class="flex-1 w-full relative reveal {{ 'reveal-right' if loop.index0 % 2 !== 0 else 'reveal-left' }}">
+          <div
+            class="absolute -inset-4 border border-primary/20  z-10 group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-[4/3]  overflow-hidden shadow-2xl">
+            <img alt="{{ service.imageAlt }}"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              data-alt="{{ service.imageDataAlt }}" src="{{ service.image }}">
+          </div>
+        </div>
+        <div class="flex-1 space-y-6 reveal {{ 'reveal-left' if loop.index0 % 2 !== 0 else 'reveal-right' }}">
+          <div class="inline-flex items-center gap-2 text-primary">
+            {{ icon(service.icon , 'text-primary') }}
+            <span class="text-sm font-bold tracking-widest uppercase">{{ service.tag }}</span>
+          </div>
+          <h3 class=" font-display text-3xl md:text-4xl {{ 'text-primary' if loop.index0 > 0 }} leading-tight">{{
+            service.title }}</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            {{ service.description }}
+          </p>
+
+          {% if service.features %}
+          <ul class="space-y-3 pb-4">
+            {% for feature in service.features %}
+            <li class="flex items-center gap-3 text-slate-700">
+              {{ icon(service.featureIcon if service.featureIcon else 'check-circle' , 'text-primary') }}
+              {{ feature }}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          {% if service.highlights %}
+          <div class="grid grid-cols-2 gap-4 pb-4">
+            {% for highlight in service.highlights %}
+            <div class="p-4 bg-primary/5  border border-primary/10">
+              <p class="font-bold text-primary">{{ highlight.label }}</p>
+              <p class="text-xs text-slate-500">{{ highlight.sub }}</p>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          {% if service.badges %}
+          <div class="flex flex-wrap gap-4 pb-4">
+            {% for badge in service.badges %}
+            <span class="px-4 py-2 bg-primary/5 text-primary rounded-full text-xs font-bold border border-primary/10">{{
+              badge }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <a class="inline-flex items-center gap-2 text-primary font-bold group/link" href="{{ service.linkUrl }}">
+            {{ service.linkText }}
+            {{ icon('arrow_forward' , 'group-hover/link:translate-x-1 transition-transform') }}
+          </a>
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+    <div class="flex items-center justify-center gap-4 mt-14 reveal reveal-up duration-1000 delay-700">
+      <span class="block w-20 h-[1px] bg-gradient-to-r from-transparent to-primary/30"></span><svg width="16"
+        height="16" viewBox="0 0 16 16" class="text-primary/30">
+        <path d="M8 0L9.5 6.5L16 8L9.5 9.5L8 16L6.5 9.5L0 8L6.5 6.5Z" fill="currentColor"></path>
+      </svg><span class="block w-20 h-[1px] bg-gradient-to-l from-transparent to-primary/30"></span>
+    </div>
+  </div>
+</section>

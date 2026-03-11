@@ -1,0 +1,161 @@
+@use 'variables' as *;
+
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  min-width: 15rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 0;
+  transition: $transition-smooth;
+  z-index: 50;
+
+  &.submenu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.25rem;
+    margin-top: -0.5rem;
+  }
+}
+
+.group {
+  position: relative;
+
+  // Show ONLY immediate child dropdown on hover
+  &:hover > .dropdown-menu {
+    display: block !important;
+    opacity: 1;
+    animation: fadeInDown 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+}
+
+.nav-link {
+  transition: $transition-smooth;
+
+  &:hover {
+    // Top-level hover handled via inline classes for color-flexibility
+    background: rgba($primary-color, 0.05);
+  }
+
+  &[aria-current='page'] {
+    color: $primary-color !important;
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $primary-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+// Mobile Overlay
+#mobile-overlay {
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+// Mobile Side Menu (Sheet)
+#mobile-sheet {
+  &.is-open {
+    transform: translateX(-100%) !important;
+  }
+
+  .nav-link {
+    @apply transition-colors duration-200;
+  }
+
+  .mobile-submenu-toggle {
+    &.is-open {
+      color: $primary-color;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .mobile-submenu {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block !important; // Override the 'hidden' class from tailwind for JS transition
+    pointer-events: none;
+
+    &.is-open {
+      max-height: 500px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+// Scrolled Navbar Styles
+nav {
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease;
+
+  .nav-link {
+    transition: color 0.4s ease;
+  }
+}
+
+.navbar-scrolled {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); // More transparent for better blur effect
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%); // Safari support
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+  .nav-link {
+    color: #1a1a1a !important; // Dark text when scrolled
+
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+
+  // Handle burger menu icon color when scrolled
+  #mobile-menu-open {
+    color: #1a1a1a !important;
+  }
+}
+
+// Ensure dropdown links have consistent hover colors
+.dropdown-menu .nav-link {
+  &:hover {
+    color: $primary-color !important;
+    background: rgba($primary-color, 0.04);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

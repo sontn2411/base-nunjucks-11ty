@@ -1,0 +1,36 @@
+{% from 'components/icons.njk' import icon %}
+
+
+<section class="bg-white  py-12 border-y border-slate-100 ">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="flex items-center gap-4">
+      {{ icon('pool', 'text-primary') }}
+      <div>
+        <p class="font-bold text-lg leading-none"> Hồ bơi</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Tràn bờ &amp; trẻ em</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+
+      {{ icon('restaurant', 'text-primary') }}
+      <div>
+        <p class="font-bold text-lg leading-none"> Nhà hàng</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Ẩm thực đa quốc gia</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      {{ icon('spa', 'text-primary')}}
+      <div>
+        <p class="font-bold text-lg leading-none">Serenity Spa</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Trị liệu cao cấp</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      {{ icon('child_care', 'text-primary') }}
+      <div>
+        <p class="font-bold text-lg leading-none">Kids Club</p>
+        <p class="text-xs text-slate-500 uppercase tracking-tighter">Vui chơi sáng tạo</p>
+      </div>
+    </div>
+  </div>
+</section>

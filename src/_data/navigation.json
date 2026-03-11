@@ -1,10 +1,136 @@
 [
   {
-    "label": "Home",
-    "url": "/"
+    "label": "Giới thiệu chung",
+    "url": "/",
+    "children": [
+      {
+        "label": "Kiến trúc Champa",
+        "url": "/"
+      },
+      {
+        "label": "Câu hỏi thường gặp",
+        "url": "/"
+      },
+      {
+        "label": "Dịch vụ đưa đón",
+        "url": "/"
+      }
+    ]
   },
   {
-    "label": "About",
-    "url": "/about/"
+    "label": "Phòng Nghỉ",
+    "url": "/rooms/",
+    "children": [
+      {
+        "label": "Deluxe King hướng biển",
+        "url": "/"
+      },
+      {
+        "label": "Deluxe Twin hướng biển",
+        "url": ""
+      },
+      {
+        "label": "Junior Suite Hướng Biển",
+        "url": ""
+      },
+      {
+        "label": "Deluxe Suite Hướng Biển",
+        "url": ""
+      },
+      {
+        "label": "Suite Tổng Thống Hướng Biển",
+        "url": ""
+      },
+      {
+        "label": "Biệt thự hướng biển",
+        "url": ""
+      },
+      {
+        "label": "Phòng studio",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "label": "Ẩm Thực",
+    "url": "/dining/",
+    "children": [
+      {
+        "label": "Nhà hàng Tropicana",
+        "url": "/dining/tropicana/"
+      },
+      {
+        "label": "Chubby Bear Bar",
+        "url": "/dining/chubby-bear/"
+      },
+      {
+        "label": "Tiền sảnh",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "label": "Dịch vụ",
+    "url": "",
+    "children": [
+      {
+        "label": "Phòng họp",
+        "url": "",
+        "children": [
+          {
+            "label": "Phòng Yến Tiệc Zurich",
+            "url": ""
+          },
+          {
+            "label": "Phòng họp",
+            "url": ""
+          },
+          {
+            "label": "Hoạt Động Đội Nhóm",
+            "url": ""
+          },
+          {
+            "label": "Gói Hội Nghị",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "label": "Tiệc cưới",
+        "url": "",
+        "children": [
+          {
+            "label": "Địa điểm tiệc cưới",
+            "url": ""
+          },
+          {
+            "label": "Ẩm thực tiệc cưới",
+            "url": ""
+          },
+          {
+            "label": "Triển lãm ảnh cưới",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Hoạt động giải trí",
+    "url": "",
+    "children": [
+      {
+        "label": "Vui Chơi Dưới Nước",
+        "url": ""
+      },
+      {
+        "label": "Công Viên Dây Thừng",
+        "url": ""
+      },
+      {
+        "label": "Câu Lạc Bộ Little Paws",
+        "url": ""
+      }
+    ]
   }
 ]

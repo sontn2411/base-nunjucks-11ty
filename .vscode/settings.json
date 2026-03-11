@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.njk": "html"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSave": true
+}

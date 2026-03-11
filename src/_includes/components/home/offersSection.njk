@@ -1,0 +1,151 @@
+<section id="offers" class="relative py-24 md:py-32 bg-[#0D1B2A] overflow-hidden">
+  <div class="absolute top-0 left-0 right-0"><svg viewBox="0 0 1440 40" fill="none" class="w-full">
+      <path
+        d="M0 0L48 5C96 10 192 20 288 25C384 30 480 30 576 27C672 24 768 18 864 16C960 14 1056 16 1152 20C1248 24 1344 30 1392 33L1440 36V0H0Z"
+        fill="#FAFAF7"></path>
+    </svg></div>
+  <div class="absolute top-1/4 left-8 animate-pulse opacity-15"><svg width="14" height="14" viewBox="0 0 14 14">
+      <path d="M7 0L8.5 5.5L14 7L8.5 8.5L7 14L5.5 8.5L0 7L5.5 5.5Z" fill="#C9A96E"></path>
+    </svg></div>
+  <div class="absolute bottom-1/3 right-12 animate-pulse opacity-10" style="animation-delay: 1.5s;"><svg width="10"
+      height="10" viewBox="0 0 10 10">
+      <path d="M5 0L6 4L10 5L6 6L5 10L4 6L0 5L4 4Z" fill="#C9A96E"></path>
+    </svg></div>
+  <div class="absolute bottom-16 left-12 grid grid-cols-4 gap-3 opacity-[0.06]">
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+    <div class="w-1 h-1 rounded-full bg-primary"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <div class="flex items-center justify-center gap-3 mb-6"><span
+          class="block w-10 h-[1px] bg-gradient-to-r from-transparent to-primary"></span><svg width="20" height="20"
+          viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="text-primary text-xs uppercase tracking-[0.3em] font-medium">Ưu đãi</span><svg width="20"
+          height="20" viewBox="0 0 20 20" class="text-primary">
+          <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8Z" fill="currentColor" opacity="0.5"></path>
+        </svg><span class="block w-10 h-[1px] bg-gradient-to-l from-transparent to-primary"></span></div>
+      <h2
+        class="font-['Playfair_Display',serif] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+        Ưu đãi <span class="text-primary italic font-normal">đặc biệt</span></h2>
+      <div class="flex justify-center mt-3 mb-4"><svg width="100" height="10" viewBox="0 0 100 10"
+          class="text-primary/40">
+          <path d="M0 5C8 5 8 1 16 1C24 1 24 9 32 9C40 9 40 1 48 1C56 1 56 9 64 9C72 9 72 1 80 1C88 1 88 5 100 5"
+            stroke="currentColor" stroke-width="1.2" fill="none"></path>
+        </svg></div>
+      <p class="text-white/60 text-base max-w-2xl mx-auto">Những gói ưu đãi hấp dẫn dành riêng cho kỳ nghỉ đáng nhớ của
+        bạn tại Mövenpick Resort Cam Ranh</p>
+    </div>
+    {% set offers = [
+    {
+    title: "Spa Retreat Package",
+    description: "Trọn gói 3 ngày 2 đêm bao gồm phòng Deluxe Ocean View, 2 buổi spa trị liệu, và bữa tối lãng mạn bên
+    biển.",
+    image:
+    "https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d622eba7-e867-4c89-b38d-25322e6ed110.png",
+    badge: "HOT",
+    discount: "35%",
+    expiryDate: "30/06/2026",
+    delay: 200
+    },
+    {
+    title: "Family Fun Getaway",
+    description: "Kỳ nghỉ gia đình hoàn hảo với Pool Villa, vé Kids Club, buffet sáng cho cả gia đình và hoạt động ngoài
+    trời.",
+    image:
+    "https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/7fdc8154-0902-4b0b-866c-1e18c95bde07.png",
+    badge: "MỚI",
+    discount: "25%",
+    expiryDate: "31/08/2026",
+    delay: 350
+    },
+    {
+    title: "Honeymoon Paradise",
+    description: "Gói trăng mật lãng mạn với Presidential Suite, champagne chào đón, dinner cruise và dịch vụ butler
+    riêng.",
+    image:
+    "https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/407166b5-c9cc-4af9-8c55-5c4a2083dd84.png",
+    badge: "ĐỘC QUYỀN",
+    discount: "20%",
+    expiryDate: "31/12/2026",
+    delay: 500
+    }
+    ] %}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {% for offer in offers %}
+      <div
+        class="group relative bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden hover:border-primary/40 transition-all duration-500 reveal reveal-up"
+        style="transition-delay: {{ offer.delay }}ms;">
+        <div class="relative h-56 overflow-hidden"><img src="{{ offer.image }}" alt="{{ offer.title }}"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/60 to-transparent"></div>
+          <div
+            class="absolute top-4 left-4 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5">
+            {{ offer.badge }}</div>
+          <div
+            class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-bold px-3 py-1.5 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-percent w-3.5 h-3.5 text-primary">
+              <line x1="19" x2="5" y1="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>Giảm {{ offer.discount }}
+          </div>
+          <div class="absolute bottom-3 left-3 w-6 h-6 border-b border-l border-primary/40"></div>
+          <div class="absolute bottom-3 right-3 w-6 h-6 border-b border-r border-primary/40"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-white font-['Playfair_Display',serif] text-xl font-semibold mb-3">{{ offer.title }}</h3>
+          <div class="w-8 h-[1px] bg-primary/40 mb-3 group-hover:w-12 transition-all duration-300"></div>
+          <p class="text-white/50 text-sm leading-relaxed mb-6">{{ offer.description }}</p>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-white/40 text-xs"><svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3.5 h-3.5 text-primary">
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+              </svg>Đến {{ offer.expiryDate }}</div><button
+              class="flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-wider hover:gap-3 transition-all duration-300">Đặt
+              ngay<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-right w-4 h-4">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 right-0 w-8 h-8 border-t border-r border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-primary/0 group-hover:border-primary/30 transition-colors duration-300">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+  <div class="absolute bottom-0 left-0 right-0"><svg viewBox="0 0 1440 50" fill="none" class="w-full">
+      <path
+        d="M0 50L60 45C120 40 240 30 360 25C480 20 600 20 720 23C840 26 960 32 1080 35C1200 38 1320 38 1380 38L1440 38V50H0Z"
+        fill="#FAFAF7"></path>
+    </svg></div>
+</section>

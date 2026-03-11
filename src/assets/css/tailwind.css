@@ -3,4 +3,10 @@
 @theme {
   --font-display: 'Satoshi', 'sans-serif';
   --font-body: 'Inter', 'sans-serif';
+  --font-playfair: 'Playfair Display', 'serif';
+
+  --color-primary: #a30047;
+  --color-accent: #ec5b13;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #1e293b;
 }

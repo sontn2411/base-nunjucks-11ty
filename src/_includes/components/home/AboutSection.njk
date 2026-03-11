@@ -1,0 +1,102 @@
+{% from 'components/icons.njk' import icon %}
+
+
+<div class="relative overflow-hidden  min-h-screen ">
+  <section class="relative pt-16 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+    <!-- Decorative Background Element -->
+    <div class="absolute top-0 left-0 w-2/3 h-full staggered-bg -z-10 rounded-br-[120px]"></div>
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+        <!-- Text Content (Left) -->
+        <div class="w-full lg:w-5/12 space-y-6 lg:space-y-8 reveal reveal-left">
+          <div class="space-y-4">
+            <div
+              class="flex items-center gap-2 text-primary font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase">
+              {{ icon('verified') }}
+              <span>Đẳng cấp 5 sao quốc tế</span>
+            </div>
+            <h2
+              class="serif-heading text-4xl md:text-5xl lg:text-6xl leading-[1.2] lg:leading-[1.1] font-bold text-slate-900 ">
+              Thiên đường nghỉ dưỡng <span class="italic text-primary">Cam Ranh</span>
+            </h2>
+            <div class="flex flex-col gap-4">
+              <p class="text-base md:text-lg text-slate-600  leading-relaxed font-light reveal reveal-up delay-100">
+                Mövenpick Resort Cam Ranh tọa lạc tại Bãi Dài — một trong những bãi biển đẹp nhất Việt Nam với đường bờ
+                biển trải dài
+                hơn 15km cát trắng mịn và làn nước trong xanh ngọc bích.
+              </p>
+              <p class="text-base md:text-lg text-slate-600  leading-relaxed font-light reveal reveal-up delay-200">
+                Được quản lý bởi tập đoàn Accor danh tiếng, resort mang đến trải nghiệm nghỉ dưỡng đẳng cấp quốc tế với
+                kiến trúc hiện
+                đại hòa quyện cùng thiên nhiên nhiệt đới, cùng dịch vụ chăm sóc khách hàng tận tâm theo tiêu chuẩn Thụy
+                Sĩ.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-6 lg:gap-10 reveal reveal-up delay-300">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 border border-primary/20">
+                  {{ icon('family', 'text-primary') }}
+                </div>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.15em] text-slate-900 ">DÀNH CHO GIA
+                  ĐÌNH</span>
+              </div>
+              <div class="hidden sm:block h-8 w-px bg-slate-200 "></div>
+              <div class="flex flex-row sm:flex-col items-center sm:items-center gap-4">
+                <span class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-50">Quản lý bởi</span>
+                <img alt="Accor Logo" class="h-5 sm:h-6 w-auto object-contain " src="./assets/images/logoAccor.webp">
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 reveal reveal-up delay-400">
+            <button
+              class="bg-primary text-white px-8 py-4  font-bold tracking-wide hover:scale-105 transition-transform shadow-xl shadow-primary/30 flex items-center justify-center gap-2">
+              Khám phá ngay
+              {{ icon('arrow-right') }}
+            </button>
+            <button
+              class="p-4  border border-primary text-primary  hover:scale-105  transition-transform flex items-center justify-center gap-2 font-semibold">
+              {{ icon('play-circle') }}
+              Video thực tế
+            </button>
+          </div>
+        </div>
+        <!-- Overlapping Image (Right) -->
+        <div class="w-full lg:w-7/12 relative reveal reveal-right mt-10 lg:mt-0">
+          <div
+            class="relative z-20 rounded-2xl overflow-hidden shadow-2xl shadow-black/20 aspect-video lg:aspect-4/3 group">
+            <img alt="Luxury resort pool overlooking the ocean"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              data-alt="Luxury infinity pool with turquoise water overlooking the ocean at sunset"
+              src="./assets/images/about.png">
+            <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 lg:bottom-8 lg:left-8 text-white">
+              <p class="text-xs lg:text-sm font-bold tracking-widest uppercase mb-1">Tầm nhìn tuyệt tác</p>
+              <p class="text-xl lg:text-2xl serif-heading italic">Vịnh Cam Ranh xinh đẹp</p>
+            </div>
+          </div>
+          <!-- Staggered Floating Element -->
+          <div
+            class="absolute -bottom-6 -left-4 lg:-bottom-10 lg:-left-10 z-30 bg-white  p-6 lg:p-8 rounded-2xl shadow-2xl hidden sm:block max-w-[240px] lg:max-w-xs border border-slate-100 reveal reveal-up delay-500">
+            <div class="space-y-3">
+              {{ icon('beach_access' , 'text-primary') }}
+              <h4 class="font-bold text-base lg:text-lg">Bãi biển riêng tư</h4>
+              <p class="text-xs lg:text-sm text-slate-500 ">Tận hưởng 500m đường bờ biển cát trắng mịn màng dành
+                riêng cho khách lưu trú.</p>
+            </div>
+          </div>
+          <!-- Accent geometric element -->
+          <div
+            class="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 w-20 h-20 lg:w-32 lg:h-32 border-8 border-primary/20 rounded-full z-10 reveal reveal-down delay-300">
+          </div>
+          <div
+            class="absolute -bottom-10 -right-10 lg:-bottom-20 lg:-right-20 w-40 h-40 lg:w-64 lg:h-64 border border-primary/20 rounded-full z-10 flex items-center justify-center reveal reveal-up delay-300">
+            <div class="w-24 h-24 lg:w-48 lg:h-48 border border-primary/5 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
