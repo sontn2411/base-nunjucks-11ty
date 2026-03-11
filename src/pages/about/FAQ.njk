@@ -1,0 +1,273 @@
+---
+layout: layouts/base.njk
+title: Câu hỏi thường gặp
+permalink: /cau-hoi-thuong-gap/
+---
+
+{% from 'components/icons.njk' import icon %}
+
+<section class="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
+  <div class="absolute inset-0 z-0">
+    <div
+      class="absolute inset-0 bg-linear-to-b from-background-dark/60 via-background-dark/20 to-background-light  z-10">
+    </div>
+    <div class="w-full h-full bg-cover bg-center" data-alt="Luxury resort pool and beach at Mövenpick Cam Ranh"
+      style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCF_L6rWzzjUJ5np5fvWLqtQnCGsLcUhusoO8_uzVdEE96HWyRpjzXnVKUBcTaPJ3ZIGh96IGbwZz5sB5aGhJHYGmyaY9Ra_u1N_BP5kPnYu2ODxRt10ympfoPb4NgW9-LxbMPWqAUW3kKULPVS46U7O5OSy2q4EBUp3iQ-qX3vgL2moD84qd8qvx3sOVZCOnz0VQDjPJJcO4aokEfYMW2uEFXgul9aZ5ujND81BGRwtAT40KENfavkhFMDQT2DLFOoilFTiqhXEA8')">
+    </div>
+  </div>
+  <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+    <span class="text-primary font-semibold tracking-[0.4em] uppercase mb-4 block text-xs reveal font-body">Hỗ Trợ
+      Khách Hàng</span>
+    <h1
+      class="text-white text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight drop-shadow-2xl reveal delay-100 font-playfair">
+      Câu Hỏi <span class="text-primary drop-shadow-sm font-playfair">Thường Gặp</span>
+    </h1>
+    <p
+      class="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-10 reveal delay-200 font-body">
+      Tìm câu trả lời cho những thắc mắc phổ biến về kỳ nghỉ của bạn tại Mövenpick Resort Cam Ranh.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center font-body">
+    </div>
+  </div>
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+    {{icon('keyboard_double_arrow_down', 'text-white/50 w-16 h-16')}}
+  </div>
+</section>
+
+{# ── FAQ Categories ── #}
+<section class="py-24 px-4 bg-background-light overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="inline-flex items-center gap-2 text-primary font-bold font-body text-xs tracking-widest mb-4">
+        <div class="w-10 h-[2px] bg-primary"></div>
+        <span>CÂU HỎI PHỔ BIẾN</span>
+        <div class="w-10 h-[2px] bg-primary"></div>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight font-playfair mb-4">Chúng Tôi Có
+        Thể<br>Giúp Gì Cho Bạn?</h2>
+      <p class="text-lg text-slate-600 leading-relaxed font-body font-light max-w-2xl mx-auto">
+        Dưới đây là những câu hỏi mà khách hàng thường hỏi chúng tôi. Nếu không tìm thấy câu trả lời bạn cần, hãy
+        liên hệ trực tiếp với chúng tôi.
+      </p>
+    </div>
+
+    {# ── Category grid ── #}
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 reveal">
+      {% set categories = [
+      { icon: 'hotel', label: 'Đặt Phòng' },
+      { icon: 'payments', label: 'Thanh Toán' },
+      { icon: 'pool', label: 'Tiện Nghi' },
+      { icon: 'beach_access', label: 'Trải Nghiệm' }
+      ] %}
+      {% for cat in categories %}
+      <div
+        class="flex flex-col items-center gap-3 p-6 border border-primary/20 hover:border-primary/60 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+        <div
+          class="size-12 flex items-center justify-center border border-primary/30 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+          {{icon(cat.icon)}}
+        </div>
+        <span class="text-xs font-bold uppercase tracking-widest text-slate-700 font-body">{{ cat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ── FAQ Accordion ── #}
+<section class="py-24 bg-primary/5">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-16">
+
+      {# ── Column 1: Đặt Phòng & Thanh Toán ── #}
+      <div class="reveal fade-right">
+        <div
+          class="inline-flex mb-6 px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest font-body">
+          Đặt Phòng & Thanh Toán</div>
+        <div class="space-y-3">
+
+          {% set faq1 = [
+          {
+          q: 'Tôi có thể đặt phòng theo những cách nào?',
+          a: 'Bạn có thể đặt phòng trực tiếp qua website chính thức của resort, gọi điện đến tổng đài đặt phòng, hoặc
+          liên hệ qua email. Chúng tôi cũng hỗ trợ đặt phòng qua các nền tảng OTA lớn như Booking.com, Agoda, và
+          Expedia.'
+          },
+          {
+          q: 'Chính sách hủy phòng như thế nào?',
+          a: 'Hủy miễn phí trước 48 giờ so với ngày nhận phòng. Hủy trong vòng 48 giờ sẽ bị tính phí tương đương 1 đêm
+          lưu trú. Đối với đặt phòng không hoàn tiền, toàn bộ tiền sẽ không được hoàn lại.'
+          },
+          {
+          q: 'Resort chấp nhận những hình thức thanh toán nào?',
+          a: 'Chúng tôi chấp nhận thẻ tín dụng quốc tế (Visa, Mastercard, AmEx), thẻ ghi nợ nội địa, chuyển khoản ngân
+          hàng và tiền mặt (VNĐ & USD). Thanh toán qua ví điện tử như MoMo, ZaloPay cũng được hỗ trợ.'
+          },
+          {
+          q: 'Có yêu cầu đặt cọc khi đặt phòng không?',
+          a: 'Đối với các đặt phòng thông thường, chúng tôi yêu cầu đặt cọc 30% tổng giá trị. Đặt phòng không hoàn tiền
+          cần thanh toán toàn bộ ngay khi đặt. Số tiền còn lại được thanh toán khi check-out.'
+          },
+          {
+          q: 'Trẻ em có phải trả phí lưu trú không?',
+          a: 'Trẻ em dưới 6 tuổi ở miễn phí khi dùng chung giường với bố mẹ. Trẻ từ 6–12 tuổi được giảm 50% giá phòng.
+          Trẻ từ 13 tuổi trở lên tính phí như người lớn.'
+          }
+          ] %}
+
+          {% for item in faq1 %}
+          <div class="faq-item border border-primary/20 bg-white group" x-data="{ open: false }">
+            <button class="w-full flex items-center justify-between p-5 text-left gap-4 focus:outline-none"
+              @click="open = !open" :aria-expanded="open">
+              <span class="font-semibold text-slate-900 font-body text-sm leading-snug">{{ item.q }}</span>
+              <span
+                class="flex-shrink-0 size-6 flex items-center justify-center text-primary transition-transform duration-300"
+                :class="{ 'rotate-45': open }">
+                {{icon('add')}}
+              </span>
+            </button>
+            <div x-show="open" x-collapse class="px-5 pb-5">
+              <p class="text-slate-600 font-body font-light leading-relaxed text-sm">{{ item.a }}</p>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+
+      <div class="reveal fade-left delay-200">
+        <div
+          class="inline-flex mb-6 px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest font-body">
+          Tiện Nghi & Trải Nghiệm</div>
+        <div class="space-y-3">
+
+          {% set faq2 = [
+          {
+          q: 'Giờ check-in và check-out là mấy giờ?',
+          a: 'Check-in tiêu chuẩn từ 14:00 và check-out trước 12:00 trưa. Chúng tôi hỗ trợ early check-in (từ 10:00) và
+          late check-out (đến 16:00) tùy theo tình trạng phòng, với phụ phí áp dụng. Khách Mövenpick Rewards hạng cao có
+          thể nhận ưu đãi này miễn phí.'
+          },
+          {
+          q: 'Resort có bao gồm bữa sáng không?',
+          a: 'Tùy theo gói phòng bạn chọn. Gói "Bed & Breakfast" bao gồm bữa sáng buffet tại nhà hàng Tân Việt cho tất
+          cả khách trong phòng. Gói "Room Only" không bao gồm bữa sáng nhưng bạn có thể mua thêm với giá ưu đãi.'
+          },
+          {
+          q: 'Có những tiện ích nào dành cho trẻ em?',
+          a: 'Resort có khu Kids Club với nhiều hoạt động vui học cho trẻ từ 4–12 tuổi, hồ bơi trẻ em, sân chơi ngoài
+          trời và menu ẩm thực đặc biệt. Nhân viên chuyên nghiệp sẽ trông nom các bé để bố mẹ có thời gian riêng.'
+          },
+          {
+          q: 'Có dịch vụ đưa đón sân bay không?',
+          a: 'Có, chúng tôi cung cấp dịch vụ xe đưa đón từ Sân bay Quốc tế Cam Ranh đến resort (khoảng 15 phút). Cần đặt
+          trước ít nhất 24 giờ qua email hoặc điện thoại. Phí áp dụng tùy loại xe và số lượng hành khách.'
+          },
+          {
+          q: 'Resort có khu vực tổ chức sự kiện và tiệc cưới không?',
+          a: 'Chúng tôi có Grand Ballroom sức chứa 500 khách, cùng nhiều không gian ngoài trời bên bãi biển lý tưởng cho
+          tiệc cưới, hội nghị và sự kiện doanh nghiệp. Đội ngũ Event Manager chuyên nghiệp sẵn sàng tư vấn và lên kế
+          hoạch chi tiết.'
+          }
+          ] %}
+
+          {% for item in faq2 %}
+          <div class="faq-item border border-primary/20 bg-white group" x-data="{ open: false }">
+            <button class="w-full flex items-center justify-between p-5 text-left gap-4 focus:outline-none"
+              @click="open = !open" :aria-expanded="open">
+              <span class="font-semibold text-slate-900 font-body text-sm leading-snug">{{ item.q }}</span>
+              <span
+                class="flex-shrink-0 size-6 flex items-center justify-center text-primary transition-transform duration-300"
+                :class="{ 'rotate-45': open }">
+                {{icon('add')}}
+              </span>
+            </button>
+            <div x-show="open" x-collapse class="px-5 pb-5">
+              <p class="text-slate-600 font-body font-light leading-relaxed text-sm">{{ item.a }}</p>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# ── Contact CTA ── #}
+<section class="py-24 px-4 bg-background-light overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div class="flex flex-col gap-8 reveal fade-right">
+        <div class="inline-flex items-center gap-2 text-primary font-bold font-body text-xs tracking-widest">
+          <div class="w-10 h-[2px] bg-primary"></div>
+          <span>VẪN CÒN THẮC MẮC?</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight font-playfair">Đội Ngũ Chúng Tôi<br>Luôn
+          Sẵn Sàng</h2>
+        <p class="text-lg text-slate-600 leading-relaxed font-body font-light">
+          Nếu bạn không tìm thấy câu trả lời phù hợp, hãy liên hệ trực tiếp với chúng tôi. Đội ngũ tư vấn của Mövenpick
+          Resort Cam Ranh luôn sẵn sàng hỗ trợ 24/7.
+        </p>
+        <div class="grid grid-cols-2 mt-4">
+          <div class="flex items-center gap-4 py-4 border-b border-primary/20">
+            <div class="flex-shrink-0 size-12 border border-primary/30 flex items-center justify-center text-primary">
+              {{icon('phone')}}
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-slate-900 leading-none font-playfair">+84 258 398 9898</span>
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mt-1 font-body">Hotline
+                24/7</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-4 border-b border-primary/20">
+            <div class="flex-shrink-0 size-12 border border-primary/30 flex items-center justify-center text-primary">
+              {{icon('mail')}}
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-slate-900 leading-none font-playfair">info@moevenpick</span>
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mt-1 font-body">Email Hỗ
+                Trợ</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-4 border-b border-primary/20">
+            <div class="flex-shrink-0 size-12 border border-primary/30 flex items-center justify-center text-primary">
+              {{icon('schedule')}}
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-slate-900 leading-none font-playfair">24 / 7</span>
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mt-1 font-body">Thời Gian Hỗ
+                Trợ</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-4 border-b border-primary/20">
+            <div class="flex-shrink-0 size-12 border border-primary/30 flex items-center justify-center text-primary">
+              {{icon('location_on')}}
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-slate-900 leading-none font-playfair">Cam Ranh</span>
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mt-1 font-body">Khánh
+                Hòa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative reveal fade-left delay-200">
+        <div class="relative group">
+          <div class="absolute -inset-4 bg-primary/20 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+          </div>
+          <div class="relative overflow-hidden shadow-2xl h-[500px]" data-alt="Mövenpick resort staff welcoming guests">
+            <img alt="Đội ngũ hỗ trợ" class="w-full h-full object-cover"
+              src="https://movenpickresortcamranh.com/wp-content/uploads/2022/12/Villa-Pool-Movenpick-Cam-Ranh-1-1024x683.jpg">
+          </div>
+        </div>
+        <div class="p-6 border-l-4 border-primary bg-white italic text-slate-600 font-playfair text-xl mt-8">
+          "Sự hài lòng của quý khách chính là nguồn cảm hứng lớn nhất của chúng tôi."
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

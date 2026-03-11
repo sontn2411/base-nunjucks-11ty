@@ -1,0 +1,172 @@
+---
+layout: layouts/base.njk
+title: Dịch vụ đưa đón
+permalink: /dich-vu-dua-don/
+---
+
+{% from 'components/icons.njk' import icon %}
+
+{# ── Hero Section ── #}
+<section class="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-linear-to-b from-background-dark/60 via-background-dark/20 to-background-light z-10"></div>
+    <div class="w-full h-full bg-cover bg-center" data-alt="Luxury resort with Champa architecture and swimming pool"
+      style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvLItJv7JJxb8T37kUOmEADsudWlbAWLLi73fTUbSmzudX4EGY-wePCLt70jwp3bAOvHHKCRHm63pi6Xvf_BmEEr_BTOTkKM-klw3lxQi4b0iJiHruXE-2K9EBZrcG5gQ0vTaSfTVtGLvz9hEg5kdTzqJ-82VMu3j0lIUcYzNLX5O-tsGcrYIylb8g-NELOf9PWjd6rwh1ah54L2yTBRsSLrfiiir672UqmjNjrlpUipsL36v1ulllg6c17ISWolTMyML7byy5jFY')">
+    </div>
+  </div>
+  <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+    <span class="text-primary font-semibold tracking-[0.4em] uppercase mb-4 block text-xs reveal font-body">Tiện Ích Cao
+      Cấp</span>
+    <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight drop-shadow-2xl reveal delay-100 font-playfair">
+      Dịch Vụ <span class="text-primary drop-shadow-sm font-playfair">Đưa Đón</span>
+    </h1>
+    <p class="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-10 reveal delay-200 font-body">
+      Trải nghiệm sự thuận tiện tuyệt đối với dịch vụ đưa đón chuyên nghiệp, thân thiện môi trường tại Mövenpick Resort
+      Cam Ranh.
+    </p>
+  </div>
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+    {{icon('keyboard_double_arrow_down', 'text-white/50 w-16 h-16')}}
+  </div>
+</section>
+
+{# --- Dữ liệu tĩnh dùng chung --- #}
+{% set services = {
+  bus: {
+    tag: "Lịch trình định kỳ",
+    title: "Xe buýt đến Trung tâm Nha Trang",
+    desc: "Khám phá nhịp sống sôi động của thành phố Nha Trang với dịch vụ xe buýt đưa đón chuyên nghiệp. Chúng tôi đảm bảo sự tiện nghi tối đa cho hành khách trong suốt hành trình.",
+    price: "25,000 VND",
+    price_note: "Áp dụng cho mỗi khách, mỗi chuyến đi. Trẻ em dưới 6 tuổi được miễn phí.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgjS5c9wSNacb4e_yudoeIscW1iN9dKQ6Jfzl1Y4N8vb6rXn0rVTtd0Gg7_ajkbzPtgoVaOoGvueSsxE-uUIp3LZ5DhhrvhVca6VbNaNM-WYzu05Bg_fbMIU94qUWhDEiB84aUtcBIO7sI9gilsldQQBlsV1dggzPX8-DBykkuFrwK6UyRrbsneunbEOqRtnb-cDs60hfvfWsy6CeAyBEwEdxiCu3FN81SQ8w7o8xX4lG5y7sx-EAiklaCHLKXy2gqCaiBET9o4ys",
+    details: [
+      { icon: 'schedule', text: 'Khởi hành từ Resort: 09:00 | 14:00 | 19:00' },
+      { icon: 'location_on', text: 'Điểm dừng: Tháp Trầm Hương, Trung tâm Nha Trang' }
+    ]
+  },
+  airport: {
+    tag: "Sự riêng tư tuyệt đối",
+    title: "Dịch vụ Đưa đón Sân bay",
+    desc: "Bắt đầu và kết thúc kỳ nghỉ của bạn một cách thư thái nhất. Đội ngũ lái xe chuyên nghiệp sẽ đón bạn tại sảnh sân bay với bảng tên cá nhân và hỗ trợ hành lý chu đáo.",
+    price: "400,000 VND",
+    price_note: "Giá cố định cho mỗi chuyến đi một chiều, bao gồm phí cầu đường.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA3AYKh45HPE2uOAwzI82yqDlmqtD1jRNmMeSM2gozQFfy5EYGz43-E76kYZsiyIOWx0U2JtJqbKRqCz8q8fwwbiSKxS9l7dtZK_n0kwYoVJGvQbNmJ3nsX3PTkJNgHJjLj62TFIxc1jysxDZrlWHT8Nagb6rn6W-P5BVs2bJP3u_6Y4Gi5PoMrjyRI1vf2Yr7l0oZRLoAYJu3jQRJc9kLqoxJSApITpRXXKZZ_xtH1Xtd4v4-Wou_Yv4A2HfjOdY2etp9gR3RVexw",
+    highlights: [
+      { icon: 'groups', title: 'Tối đa 4 Khách', desc: 'Xe Sedan sang trọng' },
+      { icon: 'luggage', title: 'Hành lý tiêu chuẩn', desc: '2 vali lớn & 2 túi xách' }
+    ]
+  },
+  rental: {
+    tag: "Tự do khám phá",
+    title: "Dịch vụ cho thuê xe hơi",
+    desc: "Dành cho những tâm hồn thích phiêu lưu và muốn tự mình khám phá những cung đường biển đẹp nhất Cam Ranh. Chúng tôi cung cấp đa dạng các dòng xe đời mới từ sedan đến SUV gia đình.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAxLpw721vPP94OCDPtpger5hBhL-aYaLCXVZhD9fb6c_C8l_0ksdVatmukLvwA7srSLO6V_ioUtRoervcTqlrOi381rpELHXZugzy9ue_NN3fHkcJw4qkCCe6PQaq9tue3h2CX-Ad_y9i8cxjatSDINebXW8By6U1ok60k-Tj6b09t6cShtHkthqjKhXp-p9lUa-SXNTXRCTGQF3SEdRB11Zv3JjZWUItioHtdVCcC_hlaqGrtSmRYoMTDswh0aTiWJQ6fSh4-b4A",
+    details: [
+      { icon: 'directions_car', title: 'Dòng xe đa dạng', desc: 'Từ xe tiết kiệm nhiên liệu đến các dòng xe địa hình 7 chỗ mạnh mẽ.' },
+      { icon: 'map', title: 'Thiết bị định vị', desc: 'Tất cả xe đều trang bị GPS và bản đồ du lịch địa phương chi tiết.' }
+    ]
+  }
+} %}
+
+<div class="max-w-7xl mx-auto px-6 py-24 space-y-32 overflow-hidden">
+  
+  <!-- Section 1: Xe buýt -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 group relative reveal fade-right">
+      <div class="absolute -inset-4 border border-champa/30 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+      <div class="relative overflow-hidden h-[450px]">
+        <img alt="Nha Trang Shuttle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="{{ services.bus.image }}">
+      </div>
+    </div>
+    <div class="lg:col-span-5 flex flex-col justify-center reveal fade-left delay-200">
+      <span class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">{{ services.bus.tag }}</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 font-playfair">{{ services.bus.title }}</h2>
+      <div class="space-y-6 text-slate-600 leading-relaxed font-body font-light">
+        <p>{{ services.bus.desc }}</p>
+        <div class="p-6 bg-primary/5 border-l-4 border-primary">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-bold text-slate-900">Giá vé ưu đãi</span>
+            <span class="text-primary font-bold text-xl">{{ services.bus.price }}</span>
+          </div>
+          <p class="text-sm">{{ services.bus.price_note }}</p>
+        </div>
+        <ul class="space-y-3 pt-4">
+          {% for item in services.bus.details %}
+          <li class="flex items-center gap-3">
+            {{icon(item.icon, 'text-primary text-xl flex-shrink-0')}}
+            <span>{{ item.text }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Đưa đón Sân bay -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center reveal fade-right">
+      <span class="text-champa font-bold tracking-[0.2em] uppercase text-sm mb-4">{{ services.airport.tag }}</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 font-playfair">{{ services.airport.title }}</h2>
+      <div class="space-y-6 text-slate-600 leading-relaxed font-body font-light">
+        <p>{{ services.airport.desc }}</p>
+        <div class="p-6 bg-champa/5 border-l-4 border-champa">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-bold text-slate-900">Dịch vụ trọn gói</span>
+            <span class="text-primary font-bold text-xl">{{ services.airport.price }}</span>
+          </div>
+          <p class="text-sm">{{ services.airport.price_note }}</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 pt-4">
+          {% for item in services.airport.highlights %}
+          <div class="flex flex-col gap-1 p-4 bg-background-light border border-slate-200">
+            {{icon(item.icon, 'text-primary text-xl mb-1')}}
+            <span class="font-bold text-slate-900">{{ item.title }}</span>
+            <span class="text-xs italic">{{ item.desc }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-7 order-1 lg:order-2 group relative reveal fade-left delay-200">
+      <div class="absolute -inset-4 border border-primary/20 transform -translate-x-4 translate-y-4 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+      <div class="relative overflow-hidden h-[450px]">
+        <img alt="Airport Transfer Service" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="{{ services.airport.image }}">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Cho thuê xe -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 group relative reveal fade-right">
+      <div class="absolute -inset-4 border border-champa/30 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+      <div class="relative overflow-hidden h-[450px]">
+        <img alt="Car Rental Service" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="{{ services.rental.image }}">
+      </div>
+    </div>
+    <div class="lg:col-span-5 flex flex-col justify-center reveal fade-left delay-200">
+      <span class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">{{ services.rental.tag }}</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 font-playfair">{{ services.rental.title }}</h2>
+      <div class="space-y-6 text-slate-600 leading-relaxed font-body font-light">
+        <p>{{ services.rental.desc }}</p>
+        <div class="flex items-start gap-4 p-4 bg-champa/5 border border-champa/10">
+          {{icon('info', 'text-champa pt-1 w-10 h-10 flex-shrink-0')}}
+          <div class="text-sm italic">Quý khách vui lòng mang theo Giấy phép lái xe hợp lệ. Bảo hiểm thân vỏ đã được bao gồm trong phí thuê xe.</div>
+        </div>
+        <ul class="space-y-4 pt-4">
+          {% for item in services.rental.details %}
+          <li class="flex items-start gap-4">
+            <div class="bg-primary/10 p-2 rounded-full flex-shrink-0">
+              {{icon(item.icon, 'text-primary text-xl')}}
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900">{{ item.title }}</h4>
+              <p class="text-sm">{{ item.desc }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
