@@ -31,11 +31,53 @@
       <p class="text-[#7A8B99] text-base max-w-2xl mx-auto">Khám phá vẻ đẹp của Mövenpick Resort Cam Ranh qua bộ sưu tập
         hình ảnh</p>
     </div>
+    {% set galleryItems = [
+    {
+    src: "./assets/images/gallery1.jpg",
+    alt: "Resort toàn cảnh",
+    span: "col-span-2 row-span-2",
+    delay: "100ms"
+    },
+    {
+    src:
+    "./assets/images/gallery2.jpg",
+    alt: "Hồ bơi vô cực",
+    span: "col-span-1 row-span-1",
+    delay: "180ms"
+    },
+    {
+    src:
+    "./assets/images/gallery3.jpg",
+    alt: "Spa & Wellness",
+    span: "col-span-1 row-span-1",
+    delay: "260ms"
+    },
+    {
+    src:
+    "./assets/images/gallery4.jpg",
+    alt: "Nội thất Villa",
+    span: "col-span-1 row-span-1",
+    delay: "340ms"
+    },
+    {
+    src:
+    "./assets/images/gallery2.jpg",
+    alt: "Nhà hàng",
+    span: "col-span-1 row-span-1",
+    delay: "420ms"
+    },
+    {
+    src:
+    "./assets/images/gallery3.jpg",
+    alt: "Hoàng hôn biển",
+    span: "col-span-2 row-span-1",
+    delay: "500ms"
+    }
+    ] %}
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[200px] md:auto-rows-[250px]">
-      <div class="col-span-2 row-span-2 relative overflow-hidden cursor-pointer group reveal reveal-up"
-        style="transition-delay: 100ms;"><img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/9e51a241-90a7-4775-ac19-091536556f3b.png"
-          alt="Resort toàn cảnh"
+      {% for item in galleryItems %}
+      <div class="{{ item.span }} relative overflow-hidden cursor-pointer group reveal reveal-up"
+        style="transition-delay: {{ item.delay }};"><img src="{{ item.src }}" alt="{{ item.alt }}"
           class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
         <div
           class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
@@ -45,100 +87,12 @@
               <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
               <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
               <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
-                class="text-white text-sm font-medium uppercase tracking-wider">Resort toàn cảnh</span>
+                class="text-white text-sm font-medium uppercase tracking-wider">{{ item.alt }}</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
-        style="transition-delay: 180ms;"><img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/7fdc8154-0902-4b0b-866c-1e18c95bde07.png"
-          alt="Hồ bơi vô cực"
-          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-        <div
-          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
-          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
-            <div class="relative inline-block px-6 py-3">
-              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
-              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
-              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
-              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
-                class="text-white text-sm font-medium uppercase tracking-wider">Hồ bơi vô cực</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
-        style="transition-delay: 260ms;"><img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d622eba7-e867-4c89-b38d-25322e6ed110.png"
-          alt="Spa &amp; Wellness"
-          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-        <div
-          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
-          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
-            <div class="relative inline-block px-6 py-3">
-              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
-              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
-              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
-              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
-                class="text-white text-sm font-medium uppercase tracking-wider">Spa &amp; Wellness</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
-        style="transition-delay: 340ms;"><img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d7b1cd3e-03ee-4e10-98dd-5e8b590766f5.png"
-          alt="Nội thất Villa"
-          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-        <div
-          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
-          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
-            <div class="relative inline-block px-6 py-3">
-              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
-              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
-              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
-              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
-                class="text-white text-sm font-medium uppercase tracking-wider">Nội thất Villa</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-1 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
-        style="transition-delay: 420ms;"><img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/d1be92fe-3cc9-47d2-92c9-ebcf0f8bea6b.png"
-          alt="Nhà hàng" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-        <div
-          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
-          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
-            <div class="relative inline-block px-6 py-3">
-              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
-              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
-              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
-              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
-                class="text-white text-sm font-medium uppercase tracking-wider">Nhà hàng</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-2 row-span-1 relative overflow-hidden cursor-pointer group reveal reveal-up"
-        style="transition-delay: 500ms;"><img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/640479/2026-03-08/407166b5-c9cc-4af9-8c55-5c4a2083dd84.png"
-          alt="Hoàng hôn biển"
-          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-        <div
-          class="absolute inset-0 bg-[#0D1B2A]/0 group-hover:bg-[#0D1B2A]/40 transition-colors duration-300 flex items-center justify-center">
-          <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-center">
-            <div class="relative inline-block px-6 py-3">
-              <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary"></div>
-              <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary"></div>
-              <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary"></div>
-              <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary"></div><span
-                class="text-white text-sm font-medium uppercase tracking-wider">Hoàng hôn biển</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
