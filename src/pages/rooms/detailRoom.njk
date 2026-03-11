@@ -1,0 +1,231 @@
+---
+layout: layouts/base.njk
+title: Suite Tổng Thống Hướng Biển
+permalink: /phong-nghi/chi-tiet-phong/
+---
+
+{% from 'components/icons.njk' import icon %}
+
+{% set room = {
+name: "Suite Tổng Thống Hướng Biển",
+category: "Phòng & Suite",
+tagline: "Đỉnh cao của xa hoa",
+area: "200",
+floor: "Tầng thượng",
+hero: "https://movenpickresortcamranh.com/wp-content/uploads/2022/06/Movenpick-Resort-Cam-Ranh5.jpg",
+gallery: [
+"https://movenpickresortcamranh.com/wp-content/uploads/2022/06/Movenpick-Resort-Cam-Ranh5.jpg",
+"https://lh3.googleusercontent.com/aida-public/AB6AXuAvLItJv7JJxb8T37kUOmEADsudWlbAWLLi73fTUbSmzudX4EGY-wePCLt70jwp3bAOvHHKCRHm63pi6Xvf_BmEEr_BTOTkKM-klw3lxQi4b0iJiHruXE-2K9EBZrcG5gQ0vTaSfTVtGLvz9hEg5kdTzqJ-82VMu3j0lIUcYzNLX5O-tsGcrYIylb8g-NELOf9PWjd6rwh1ah54L2yTBRsSLrfiiir672UqmjNjrlpUipsL36v1ulllg6c17ISWolTMyML7byy5jFY",
+"https://lh3.googleusercontent.com/aida-public/AB6AXuAxLpw721vPP94OCDPtpger5hBhL-aYaLCXVZhD9fb6c_C8l_0ksdVatmukLvwA7srSLO6V_ioUtRoervcTqlrOi381rpELHXZugzy9ue_NN3fHkcJw4qkCCe6PQaq9tue3h2CX-Ad_y9i8cxjatSDINebXW8By6U1ok60k-Tj6b09t6cShtHkthqjKhXp-p9lUa-SXNTXRCTGQF3SEdRB11Zv3JjZWUItioHtdVCcC_hlaqGrtSmRYoMTDswh0aTiWJQ6fSh4-b4A"
+],
+features: [
+{ icon: 'aspect_ratio', value: '200 m²', label: 'Diện tích' },
+{ icon: 'bed', value: 'King', label: 'Giường' },
+{ icon: 'bathtub', value: 'Bồn tắm', label: 'Phòng tắm' },
+{ icon: 'beach_access', value: 'Biển', label: 'View' }
+],
+amenities: {
+room: { title: "Tiện nghi phòng", items: ["Máy lạnh","Ban công","Miễn phí nước suối, trà, cà phê","Ấm đun nước","Bàn làm
+việc","Gối long vũ","Sàn gỗ","Két sắt an toàn","Wi-Fi tốc độ cao","Bàn ủi","Miễn phí minibar","TV 55 inch (kênh quốc
+tế)","Hệ thống báo cháy","Điện thoại","Ô / Dù"] },
+service: { title: "Dịch vụ phòng", items: ["Dịch vụ phòng 24/24","Dọn dẹp phòng mỗi ngày","Dịch vụ đánh thức buổi sáng"]
+},
+bathroom: { title: "Phòng tắm", items: ["Áo choàng tắm và khăn tắm","Vật dụng vệ sinh miễn phí","Máy sấy tóc","Bồn tắm
+thư giãn","Phòng tắm vòi sen","Dép đi trong phòng"] },
+policy: { title: "Chính sách", items: ["Nhận phòng 15:00 / Trả phòng 12:00","Trẻ em từ 16 tuổi tính như người
+lớn","Không mang vật nuôi","Phòng không hút thuốc (phạt 2,000,000 VND)"] }
+}
+} %}
+
+{# ──────────────────────── HERO ──────────────────────── #}
+<section class="relative h-[85vh] min-h-[560px] overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="{{ room.hero }}" alt="{{ room.name }}"
+      class="w-full h-full object-cover scale-105 transition-transform duration-8000 hover:scale-100">
+    <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+  </div>
+
+  {# Title block #}
+  <div class="absolute bottom-0 left-0 right-0 z-20 px-8 md:px-16 pb-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="inline-flex items-center gap-3 mb-4">
+        <div class="w-10 h-px bg-primary"></div>
+        <span class="text-primary text-xs font-bold tracking-[0.4em] uppercase font-body">{{ room.tagline }}</span>
+      </div>
+      <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6 max-w-3xl">
+        {{ room.name }}
+      </h1>
+      {# Quick stats #}
+      <div class="flex flex-wrap gap-6">
+        {% for f in room.features %}
+        <div class="flex items-center gap-2 text-white/80">
+          {{icon(f.icon, 'w-4 h-4 text-primary')}}
+          <span class="text-sm font-body">{{ f.value }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ──────────────────────── MAIN LAYOUT: Nội dung + Sidebar ──────────────────────── #}
+<div class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+  <div class="grid lg:grid-cols-3 gap-16">
+
+    {# ── LEFT: Nội dung chính ── #}
+    <div class="lg:col-span-2 space-y-16">
+
+      {# Description #}
+      <div class="reveal fade-right">
+        <div class="inline-flex items-center gap-2 text-primary font-bold font-body text-xs tracking-widest mb-5">
+          <div class="w-8 h-[2px] bg-primary"></div>
+          <span>GIỚI THIỆU</span>
+        </div>
+        <p class="text-slate-700 text-lg leading-relaxed font-body font-light mb-4">
+          Được đặt ở tầng cao nhất của tòa nhà khách sạn, Suite Tổng Thống Hướng Biển được coi là viên ngọc của khu
+          nghỉ. Tổng diện tích lên đến 200 mét vuông, khách có thể thư giãn với tầm nhìn toàn cảnh của Bãi Dài — một
+          trong bãi biển tuyệt vời của Việt Nam.
+        </p>
+        <p class="text-slate-600 leading-relaxed font-body font-light">
+          Phòng ngủ chính có một giường king và phòng tắm riêng với bồn tắm và vòi sen riêng biệt. Tiện nghi trong phòng
+          bao gồm bàn làm việc, két sắt, thiết bị pha trà và cà phê, minibar, hai TV thông minh 55 inch. WiFi miễn phí
+          và dịch vụ phòng 24/7 cũng luôn sẵn sàng.
+        </p>
+      </div>
+
+      {# Feature Cards #}
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal fade-up">
+        {% for f in room.features %}
+        <div
+          class="text-center p-6 border border-slate-200 hover:border-primary hover:shadow-md transition-all duration-300 group">
+          <div class="flex justify-center mb-3">
+            {{icon(f.icon, 'w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300')}}
+          </div>
+          <div class="text-xl font-bold text-slate-900 font-playfair mb-1">{{ f.value }}</div>
+          <div class="text-xs text-slate-500 font-body uppercase tracking-wider">{{ f.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+
+      {# Gallery Grid #}
+      <div class="space-y-4 reveal">
+        <div class="inline-flex items-center gap-2 text-primary font-bold font-body text-xs tracking-widest mb-5">
+          <div class="w-8 h-[2px] bg-primary"></div>
+          <span>THƯ VIỆN ẢNH</span>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="row-span-2 overflow-hidden h-72 md:h-96 group">
+            <img src="{{ room.gallery[0] }}" alt="Suite interior"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="overflow-hidden h-[140px] md:h-[184px] group">
+            <img src="{{ room.gallery[1] }}" alt="Suite view"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="overflow-hidden h-[140px] md:h-[184px] group">
+            <img src="{{ room.gallery[2] }}" alt="Suite bathroom"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+      </div>
+
+      {# Amenities #}
+      <div class="reveal">
+        <div class="inline-flex items-center gap-2 text-primary font-bold font-body text-xs tracking-widest mb-8">
+          <div class="w-8 h-[2px] bg-primary"></div>
+          <span>TIỆN NGHI ĐI KÈM</span>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-x-8 gap-y-10">
+          {% for key, section in room.amenities %}
+          <div>
+            <h3 class="font-bold text-slate-900 font-body text-sm mb-4 flex items-center gap-2">
+              <span class="inline-block w-5 h-[2px] bg-primary"></span>
+              {{ section.title | upper }}
+            </h3>
+            <ul class="space-y-2">
+              {% for item in section.items %}
+              <li class="flex items-start gap-2 text-slate-600 font-body font-light text-sm">
+                {{icon('check-circle', 'text-primary w-4 h-4 flex-shrink-0 mt-0.5')}}
+                {{ item }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+    {# ── RIGHT: Booking Sidebar ── #}
+    <aside class="lg:col-span-1">
+      <div class="sticky top-28 space-y-4">
+        {# Booking box #}
+        <div class="border border-slate-200 p-8 shadow-lg bg-white">
+          <div class="text-center mb-6">
+            <span class="text-xs font-bold text-slate-400 font-body uppercase tracking-widest block mb-1">Bắt đầu
+              từ</span>
+            <div class="text-3xl font-bold text-slate-900 font-playfair">Liên hệ</div>
+            <div class="text-sm text-slate-500 font-body mt-1">để nhận bảng giá ưu đãi</div>
+          </div>
+          <div class="w-full h-px bg-slate-100 mb-6"></div>
+          <div class="space-y-3 mb-6">
+            <div class="flex justify-between text-sm font-body">
+              <span class="text-slate-500">Diện tích</span>
+              <span class="font-semibold text-slate-800">{{ room.area }} m²</span>
+            </div>
+            <div class="flex justify-between text-sm font-body">
+              <span class="text-slate-500">Giường</span>
+              <span class="font-semibold text-slate-800">King size</span>
+            </div>
+            <div class="flex justify-between text-sm font-body">
+              <span class="text-slate-500">Vị trí</span>
+              <span class="font-semibold text-slate-800">{{ room.floor }}</span>
+            </div>
+            <div class="flex justify-between text-sm font-body">
+              <span class="text-slate-500">Tầm nhìn</span>
+              <span class="font-semibold text-slate-800">Hướng biển</span>
+            </div>
+          </div>
+          <a href="tel:+842583989898"
+            class="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold font-body text-sm uppercase tracking-widest px-6 py-4 hover:bg-primary/80 transition-colors duration-300 mb-3">
+            {{icon('phone', 'w-4 h-4')}}
+            Đặt Ngay
+          </a>
+          <a href="mailto:info.camranh@movenpick.com"
+            class="w-full flex items-center justify-center gap-2 border border-primary text-primary font-bold font-body text-sm uppercase tracking-widest px-6 py-3 hover:bg-primary hover:text-white transition-colors duration-300">
+            {{icon('mail', 'w-4 h-4')}}
+            Gửi Email
+          </a>
+        </div>
+
+        {# Highlight note #}
+        <div class="bg-primary/5 border-l-4 border-primary p-5">
+          <p class="text-sm text-slate-600 font-body font-light italic leading-relaxed">
+            "Suite Tổng Thống Hướng Biển là lựa chọn hoàn hảo cho những dịp đặc biệt khi bạn muốn tận hưởng sự xa hoa
+            tuyệt đỉnh với tầm nhìn ra biển Bãi Dài hùng vĩ."
+          </p>
+        </div>
+
+        {# Contact #}
+        <div class="border border-slate-200 p-6 bg-slate-50 space-y-3">
+          <h4 class="font-bold text-slate-900 font-body text-xs uppercase tracking-wider mb-4">Hỗ trợ 24/7</h4>
+          <a href="tel:+842583989898"
+            class="flex items-center gap-3 text-sm text-slate-700 hover:text-primary transition-colors font-body">
+            {{icon('phone', 'w-4 h-4 text-primary')}}
+            +84 258 398 9898
+          </a>
+          <a href="mailto:info.camranh@movenpick.com"
+            class="flex items-center gap-3 text-sm text-slate-700 hover:text-primary transition-colors font-body">
+            {{icon('mail', 'w-4 h-4 text-primary')}}
+            info.camranh@movenpick.com
+          </a>
+          <div class="flex items-center gap-3 text-sm text-slate-700 font-body">
+            {{icon('location_on', 'w-4 h-4 text-primary')}}
+            Bãi Dài, Cam Ranh, Khánh Hòa
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>

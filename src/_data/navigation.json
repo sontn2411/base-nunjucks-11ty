@@ -19,35 +19,35 @@
   },
   {
     "label": "Phòng Nghỉ",
-    "url": "/rooms/",
+    "url": "/phong-nghi/",
     "children": [
       {
         "label": "Deluxe King hướng biển",
-        "url": "/"
+        "url": "/phong-nghi/chi-tiet-phong/"
       },
       {
         "label": "Deluxe Twin hướng biển",
-        "url": ""
+        "url": "/phong-nghi/chi-tiet-phong/"
       },
       {
         "label": "Junior Suite Hướng Biển",
-        "url": ""
+        "url": "/phong-nghi/chi-tiet-phong/"
       },
       {
         "label": "Deluxe Suite Hướng Biển",
-        "url": ""
+        "url": "/phong-nghi/chi-tiet-phong/"
       },
       {
         "label": "Suite Tổng Thống Hướng Biển",
-        "url": ""
+        "url": "/phong-nghi/chi-tiet-phong/"
       },
       {
         "label": "Biệt thự hướng biển",
-        "url": ""
+        "url": "/phong-nghi/chi-tiet-phong/"
       },
       {
         "label": "Phòng studio",
-        "url": ""
+        "url": "/phong-nghi/chi-tiet-phong/"
       }
     ]
   },
